@@ -1,0 +1,136 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "corails_tombstone"
+	group: "455999BBFBEF424D"
+	icon: "tombstone:advancement_3"
+	id: "0AED9A1A2DF988EB"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Grave Dust é o componente mais básico do Corail's Tombstone. Farme um pouco disso antes de prosseguir"]
+			id: "194BB3DDCA56717F"
+			rewards: [
+				{
+					count: 4
+					id: "4D706691B8BF207C"
+					item: "tombstone:grave_dust"
+					type: "item"
+				}
+				{
+					description: ""
+					icon: {
+						Count: 1b
+						id: "tombstone:decorative_grave_simple"
+						tag: {
+							model_texture: 0
+						}
+					}
+					id: "265D05091162F553"
+					type: "toast"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					count: 4L
+					id: "3672A5F4FDED22E4"
+					item: "tombstone:grave_dust"
+					match_nbt: false
+					only_from_crafting: false
+					title: "Consiga 4 Grave Dust"
+					type: "item"
+				}
+				{
+					entity: "minecraft:zombie"
+					icon: "minecraft:husk_spawn_egg"
+					id: "0CC689D642D3DA4A"
+					title: "Mate 7 Husks"
+					type: "kill"
+					value: 7L
+				}
+				{
+					entity: "minecraft:zombie"
+					icon: "minecraft:zombie_head"
+					id: "16D028FD6C2AD6C2"
+					title: "Mate 10 Zumbis"
+					type: "kill"
+					value: 10L
+				}
+				{
+					entity: "minecraft:skeleton"
+					icon: "minecraft:skeleton_skull"
+					id: "5F069BD579BCA026"
+					title: "Mate 10 Esqueletos"
+					type: "kill"
+					value: 10L
+				}
+			]
+			title: "Consiga Grave Dust"
+			x: -3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["194BB3DDCA56717F"]
+			description: ["Combine &8Pedra&r e &9Cinzas de Túmulo&r para criar &0Dark Marble&r"]
+			id: "5784A0443C32187A"
+			rewards: [{
+				description: ""
+				id: "143C60D930D89429"
+				type: "toast"
+			}]
+			tasks: [{
+				consume_items: false
+				count: 8L
+				id: "2A7947FB8CC169CD"
+				item: "tombstone:dark_marble"
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -3.5d
+			y: -2.0d
+		}
+		{
+			id: "67DABB540EFD3B01"
+			tasks: [
+				{
+					consume_items: false
+					id: "3691535DDE6C53D7"
+					item: {
+						Count: 1b
+						id: "tombstone:decorative_subaraki_grave"
+						tag: {
+							model_texture: 0
+						}
+					}
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 2L
+					id: "69921DBE9FDF13A3"
+					item: "tombstone:essence_of_undeath"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: -5.0d
+		}
+		{
+			description: ["Crie uma receita via KubeJS para isso"]
+			id: "6883215A6BDC26F2"
+			tasks: [{
+				id: "4DEBACB4FBE13AD3"
+				item: "tombstone:essence_of_undeath"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -3.5d
+		}
+	]
+	title: "Corail's Tombstone"
+}

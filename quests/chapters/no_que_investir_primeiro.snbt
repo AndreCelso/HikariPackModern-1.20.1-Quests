@@ -1,0 +1,1113 @@
+{
+	consume_items: false
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "no_que_investir_primeiro"
+	group: "455999BBFBEF424D"
+	icon: "minecraft:recovery_compass"
+	id: "738BAE6BE77257FF"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			can_repeat: false
+			dependencies: [
+				"4782948A24DD7717"
+				"757FDA8015B193D6"
+				"3E89B0EACDDF61B8"
+				"2599B1E599F3371F"
+			]
+			description: ["Achar minérios raros, ou simplesmente avistá-los em uma caverna escura e gigante pode ser complicado. Por isso ao adquirir ao menos 1 de cada recurso dos respectivos minérios, invista nestes charms para que você possa enxergar-los mais facilmente e até sob as rochas, dentro das paredes "]
+			hide: true
+			hide_dependency_lines: false
+			icon: {
+				Count: 1b
+				id: "apotheosis:potion_charm"
+				tag: {
+					Damage: 0
+					Potion: "potionsmaster:emerald_sight"
+					charm_enabled: 1b
+				}
+			}
+			id: "4B4F529D709C0AD9"
+			subtitle: "Potion, Potion, Potion Masters, Ohhhhhh!"
+			tags: [
+				"charms"
+				"potions_master"
+				"ore_sight"
+			]
+			tasks: [
+				{
+					consume_items: false
+					icon: {
+						Count: 1b
+						id: "apotheosis:potion_charm"
+						tag: {
+							Damage: 0
+							Potion: "potionsmaster:diamond_sight"
+							charm_enabled: 1b
+						}
+					}
+					id: "0060382B0C9DB6A6"
+					item: {
+						Count: 1b
+						id: "apotheosis:potion_charm"
+						tag: {
+							Damage: 0
+							Potion: "potionsmaster:diamond_sight"
+						}
+					}
+					match_nbt: true
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "56D89904BEC0F007"
+					item: {
+						Count: 1b
+						id: "apotheosis:potion_charm"
+						tag: {
+							Damage: 0
+							Potion: "potionsmaster:osmium_sight"
+						}
+					}
+					match_nbt: true
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "73450ED6A0EBDF29"
+					item: {
+						Count: 1b
+						id: "apotheosis:potion_charm"
+						tag: {
+							Damage: 0
+							Potion: "potionsmaster:gold_sight"
+						}
+					}
+					match_nbt: true
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "3ADAE131E75B6A3C"
+					item: {
+						Count: 1b
+						id: "apotheosis:potion_charm"
+						tag: {
+							Damage: 0
+							Potion: "potionsmaster:redstone_sight"
+						}
+					}
+					match_nbt: true
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7F5E7B21518A7BD2"
+					item: {
+						Count: 1b
+						id: "apotheosis:potion_charm"
+						tag: {
+							Damage: 0
+							Potion: "potionsmaster:iron_sight"
+						}
+					}
+					match_nbt: true
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			title: "Amuleto de Tandera, Me dê visão além do Alcance"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			can_repeat: false
+			dependencies: [
+				"4782948A24DD7717"
+				"757FDA8015B193D6"
+				"3E89B0EACDDF61B8"
+			]
+			description: ["Este é o primeiro passo para a Visão de Minérios. Cada uma dessas poções pode ser usada em um crafting de charm"]
+			hide: true
+			hide_dependency_lines: false
+			icon: {
+				Count: 1b
+				id: "minecraft:potion"
+				tag: {
+					Potion: "potionsmaster:emerald_sight"
+				}
+			}
+			id: "2599B1E599F3371F"
+			tags: [
+				"ore_sight_part1"
+				"potion"
+				"potions_master"
+			]
+			tasks: [
+				{
+					consume_items: false
+					id: "66B392AEF6801DA9"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "potionsmaster:diamond_sight"
+						}
+					}
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "0D0DDF21AB71EE16"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "potionsmaster:gold_sight"
+						}
+					}
+					match_nbt: true
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "18D268EF7B23DF0F"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "potionsmaster:redstone_sight"
+						}
+					}
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "58805FF77347D08D"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "potionsmaster:iron_sight"
+						}
+					}
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7BFD039F23980FB0"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "potionsmaster:osmium_sight"
+						}
+					}
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "Charms de Minério Parte I"
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			can_repeat: false
+			dependencies: [
+				"4782948A24DD7717"
+				"757FDA8015B193D6"
+			]
+			description: ["Antes de você poder fabricar &aPoções&r, é necessário possuir um &eSuporte de Poções&r, Sem ele é impossível fazer &aPoções&r no &9Early Game&r. Para isso, é necessário que você tenha visitado a dimensão do &cNether&r e obtido ao menos uma &eVara de Blaze&r "]
+			hide: true
+			icon: "minecraft:brewing_stand"
+			id: "3E89B0EACDDF61B8"
+			rewards: [
+				{
+					count: 3
+					id: "24BC8BA7E90C79F6"
+					item: "minecraft:blaze_powder"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "5F2F1B5E69734A50"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:water"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "134A7F07CB1E13A9"
+					type: "xp"
+					xp: 40
+				}
+			]
+			subtitle: "Suporte de Poções"
+			tags: [
+				"potion"
+				"potion_stand"
+			]
+			tasks: [
+				{
+					consume_items: false
+					icon: "minecraft:brewing_stand"
+					id: "13DEDA7224348135"
+					item: "minecraft:brewing_stand"
+					match_nbt: true
+					only_from_crafting: true
+					title: "Suporte de Poções"
+					type: "item"
+				}
+				{
+					consume_items: false
+					icon: "minecraft:blaze_rod"
+					id: "2F92621EB04138CC"
+					item: "minecraft:blaze_rod"
+					match_nbt: true
+					only_from_crafting: false
+					title: "Vara de Blaze"
+					type: "item"
+				}
+				{
+					consume_items: false
+					icon: "minecraft:blaze_powder"
+					id: "406ABEFBF5D5EBB1"
+					item: "minecraft:blaze_powder"
+					only_from_crafting: false
+					title: "Pó de Blaze"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "6CBDC949200D03EC"
+					item: "minecraft:cobblestone"
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "Fullmetal Alchemist"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			description: ["Em qualquer Mundo, quer &aVanilla&r, ou &dModded&r, uma primeira visitinha ao &cNether&r é &4INDISPENSÁVEL&r. Procure Acessar o &cNether&r o mais rápido possível assim que spawnar no Mundo, pois há recursos que só podem ser obtidos nessa dimensão"]
+			id: "4782948A24DD7717"
+			subtitle: "Nether"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				icon: "minecraft:netherrack"
+				id: "6BFA6D6720FF3054"
+				title: "Welcome To The Nether"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4782948A24DD7717"]
+			description: ["&dFerro Carmesim&r é um material primordial para o &9Silent Gear&r, é a partir dele que você fará ligas ainda mais poderosas neste mod"]
+			hide: true
+			id: "30ABE5C4A11FD0DA"
+			rewards: [{
+				id: "1544D057F81A3C75"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				consume_items: false
+				icon: "silentgear:raw_crimson_iron"
+				id: "63513F0D672C6083"
+				item: "silentgear:raw_crimson_iron"
+				match_nbt: true
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"30ABE5C4A11FD0DA"
+				"08BADE1F352E8037"
+			]
+			description: ["Coloque um &5Minério Bruto de Ferro Carmesim&r numa &eEnrichment Chamber&r do &aMekanism&r para obter &d3x Pó de Ferro Carmesim&r"]
+			hide: true
+			id: "1EBF115482C95691"
+			subtitle: "Por que 1 se posso ter 3?"
+			tasks: [{
+				consume_items: false
+				count: 3L
+				icon: "silentgear:crimson_iron_dust"
+				id: "19A5BC712C191916"
+				item: "silentgear:crimson_iron_dust"
+				match_nbt: false
+				only_from_crafting: false
+				title: "Carmesim Dobrado"
+				type: "item"
+			}]
+			title: "Triade Carmesim"
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4782948A24DD7717"]
+			description: ["Pra se fazer um omelete é preciso quebrar alguns ovos. Pra continuar a progressão você vai ter que matar alguns blazes para obter Blaze Rod"]
+			hide: true
+			id: "757FDA8015B193D6"
+			rewards: [{
+				id: "5D126C6131B1FBDB"
+				item: "minecraft:blaze_rod"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "minecraft:blaze"
+				icon: "minecraft:blaze_spawn_egg"
+				id: "0C5EF472C26425DF"
+				tags: ["blaze"]
+				title: "Kill some Blaze"
+				type: "kill"
+				value: 7L
+			}]
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			description: ["Este &2Botany Pot&r ajudará você a produzir em grandes quantidades, &arecursos naturais&r, que por sua vez podem ser transformados em &aBiocombustível&r. "]
+			icon: "botanypots:terracotta_botany_pot"
+			id: "1E722C13BC259C3D"
+			tasks: [{
+				consume_items: false
+				id: "11A93C0FEC3A615C"
+				item: "botanypots:terracotta_hopper_botany_pot"
+				match_nbt: false
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1E722C13BC259C3D"]
+			description: ["Recomenda-se que use o &aBotany Pot&r com um bom &2Bloco Solo&r, de pelo menos nível &6Tertium&r ou acima"]
+			id: "3B9E29D62F179036"
+			tasks: [
+				{
+					consume_items: false
+					id: "07ACDD82F5E28B2C"
+					item: "mysticalagriculture:inferium_farmland"
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					id: "3FD529BA6D9B759A"
+					item: "mysticalagriculture:prudentium_farmland"
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					id: "1357C7095CE9251B"
+					item: "mysticalagriculture:tertium_farmland"
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			title: "Mystical Agriculture Farmlands"
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3B9E29D62F179036"]
+			id: "40DD270E7552EA93"
+			tasks: [{
+				id: "648C1BBE90972008"
+				item: "minecraft:melon_slice"
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3B9E29D62F179036"]
+			description: ["O &aBotany Pot&r também serve como uma boa farm de madeira no começo, apenas arme o setup e deixe farmando"]
+			icon: "minecraft:oak_log"
+			id: "0F77CF08AD692249"
+			tasks: [
+				{
+					id: "2F63E1DF6AB9A1AC"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:logs"
+						}
+					}
+					title: "Any #minecraft:logs"
+					type: "item"
+				}
+				{
+					id: "75E94392F2C858B5"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:saplings"
+						}
+					}
+					title: "Any #minecraft:saplings"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			id: "3D8241C681147308"
+			rewards: [
+				{
+					command: "/gamerule keepInventory true"
+					id: "60353785AFB37EBA"
+					type: "command"
+				}
+				{
+					command: "/gamerule doWeatherCycle false"
+					id: "4F3543E2194FE7D6"
+					type: "command"
+				}
+				{
+					command: "/gamerule doDaylightCycle false"
+					id: "4FBE48224CC2D1E2"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "0BE5BB65774D5822"
+				title: "Comandos Essenciais"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3B9E29D62F179036"]
+			id: "0209D8B69D27C000"
+			tasks: [{
+				id: "668A24BB6DE7F8F9"
+				item: "minecraft:cactus"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3B9E29D62F179036"]
+			icon: "mysticalagriculture:inferium_essence"
+			id: "258D0BD178520DCB"
+			tasks: [{
+				id: "7A80839087CC09CD"
+				item: "mysticalagriculture:inferium_seeds"
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -2.5d
+			y: -3.5d
+		}
+		{
+			description: ["Está longe de casa mas não quer dormir com uma cama simples pois não quer alterar o seu spawn point? Os &aSacos de Dormir&r do mod &cConforts&r te ajudam nisso, eles passam a noite sem alterar o spawn point e podem ser levados facilmente para qualquer lugar"]
+			id: "1769FDDA89D84A28"
+			rewards: [{
+				id: "77714191186C3E0D"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "pentagon"
+			subtitle: "Dormindo Fora de Casa"
+			tasks: [{
+				id: "5A2EB5BA428E8469"
+				item: "comforts:sleeping_bag_white"
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -13.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1769FDDA89D84A28"]
+			description: ["Cansado de esperar o &eDia&r passar até que chegue a &9Noite&r pra fazer algo específico? Com a &3Rede&r do &cConforts&r, você pode dormir durante o &eDia&r e skipá-lo direto para a &9Noite&r"]
+			icon: "comforts:hammock_white"
+			id: "435703FDD80E9CEE"
+			rewards: [{
+				description: "Faça uma Rede do Comforts"
+				icon: "comforts:hammock_white"
+				id: "4C967A7E8A4E7A17"
+				title: "Soneca da Tarde"
+				type: "toast"
+			}]
+			shape: "hexagon"
+			subtitle: "Cochilinho da Tarde"
+			tasks: [
+				{
+					consume_items: false
+					id: "2530CF8F20840732"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "comforts:hammocks"
+						}
+					}
+					only_from_crafting: true
+					title: "Pano de Rede"
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 2L
+					id: "0425128853A34CAB"
+					item: "comforts:rope_and_nail"
+					only_from_crafting: true
+					title: "Corda e Prego"
+					type: "item"
+				}
+			]
+			x: -13.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"2D3059FE58F2BFF1"
+				"29D7ACF181CF1A45"
+			]
+			description: ["Este Obelisco guarda a sua XP"]
+			id: "710FEF23C57935EB"
+			subtitle: "Armazenamento de XP"
+			tasks: [{
+				consume_items: false
+				id: "2C4507143B0184ED"
+				item: "utilitix:experience_crystal"
+				match_nbt: false
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -13.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["406ABEFBF5D5EBB1"]
+			hide: true
+			id: "2D3059FE58F2BFF1"
+			tasks: [{
+				consume_items: false
+				id: "314AAC9582E4ED73"
+				item: "mob_grinding_utils:tank_sink"
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -13.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2D3059FE58F2BFF1"]
+			description: ["Para criar um &aFrasco de Experiência&r, simplesmente suba no &aXP Drain Tank&r e espere até que se acumule pelo menos &91B&r de &aXP Juice&r dentro do &9Tanque&r, depois clique com o &6Botão Direito&r no &9Tanque&r com um &7Frasco&r na mão"]
+			id: "29D7ACF181CF1A45"
+			tasks: [{
+				consume_items: false
+				id: "05A76CDDA88D127E"
+				item: "minecraft:experience_bottle"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -13.5d
+			y: -0.5d
+		}
+		{
+			description: ["Este Bloco scaneia todo inventário posicionado em sua área de funcionamento e te permite acessar estes inventários a partir dele, além de possuir uma Crafting Grid Integrada, muito útil"]
+			id: "7DA8BF72531BF402"
+			subtitle: "Tudo em um só lugar"
+			tasks: [{
+				id: "774360085C0F766E"
+				item: "rftoolsstorage:storage_scanner"
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -11.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["757FDA8015B193D6"]
+			description: ["No começo, a &dSag Mill&r é sua melhor forma de obter o máximo de lucro de certos recursos, como &6blaze powder&r. Sempre cheque o JEI/REI por receitas que rendem mais na &dSag Mill&r"]
+			hide: true
+			icon: "enderio:sag_mill"
+			id: "0D999F9F9E70317E"
+			rewards: [{
+				description: ""
+				icon: "minecraft:blaze_powder"
+				id: "44CEB4B68BF065B8"
+				type: "toast"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "382ED972B8154779"
+				item: "enderio:sag_mill"
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			description: ["Faça um Barril do Sophisticated Storage"]
+			icon: {
+				Count: 1b
+				id: "sophisticatedstorage:barrel"
+				tag: {
+					woodType: "oak"
+				}
+			}
+			id: "221A712CEF4045F1"
+			rewards: [{
+				description: ""
+				icon: {
+					Count: 1b
+					id: "sophisticatedstorage:barrel"
+					tag: {
+						woodType: "oak"
+					}
+				}
+				id: "289CF5CE10A2ABBD"
+				title: "El Chavo del Ocho"
+				type: "toast"
+			}]
+			tasks: [{
+				id: "41A94A443BB5664E"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "sophisticatedstorage:base_tier_wooden_storage"
+					}
+				}
+				title: "Any #sophisticatedstorage:base_tier_wooden_storage"
+				type: "item"
+			}]
+			title: "A Casa do Chaves"
+			x: -10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["221A712CEF4045F1"]
+			hide: true
+			id: "541DCA9A33AA23F8"
+			tasks: [{
+				id: "039A7F80AFCA7BC6"
+				item: "sophisticatedstorage:basic_to_iron_tier_upgrade"
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -10.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"221A712CEF4045F1"
+				"541DCA9A33AA23F8"
+			]
+			hide: true
+			id: "378D4B7B6B5E6C92"
+			tasks: [{
+				id: "6C453C72E356930D"
+				item: "sophisticatedstorage:iron_to_gold_tier_upgrade"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"221A712CEF4045F1"
+				"541DCA9A33AA23F8"
+				"378D4B7B6B5E6C92"
+			]
+			hide: true
+			id: "72303DEB590A8ADC"
+			tasks: [{
+				id: "10CC2D44F7741801"
+				item: "sophisticatedstorage:gold_to_diamond_tier_upgrade"
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -10.0d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"221A712CEF4045F1"
+				"541DCA9A33AA23F8"
+				"378D4B7B6B5E6C92"
+				"72303DEB590A8ADC"
+			]
+			hide: true
+			id: "6E48F6C4F91A74EB"
+			tasks: [{
+				id: "2CE3C307BAD25CBA"
+				item: "sophisticatedstorage:diamond_to_netherite_tier_upgrade"
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -10.0d
+			y: -8.0d
+		}
+		{
+			id: "4AF141BC1EBDC358"
+			rewards: [{
+				description: ""
+				icon: {
+					Count: 1b
+					id: "sophisticatedbackpacks:backpack"
+					tag: {
+						contentsUuid: [I;
+							1573750323
+							1074218240
+							-2117676071
+							462502163
+						]
+						inventorySlots: 27
+						upgradeSlots: 1
+					}
+				}
+				id: "55A35C8263D7F055"
+				title: "Armazenamento Portátil"
+				type: "toast"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "4EB20C5FEBB2EE44"
+				item: {
+					Count: 1b
+					id: "sophisticatedbackpacks:backpack"
+					tag: {
+						contentsUuid: [I;
+							1573750323
+							1074218240
+							-2117676071
+							462502163
+						]
+						inventorySlots: 27
+						upgradeSlots: 1
+					}
+				}
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -8.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4AF141BC1EBDC358"]
+			description: ["Uma Mochila Maior"]
+			hide: true
+			id: "4E1E8BFEA4924D20"
+			rewards: [{
+				description: ""
+				icon: {
+					Count: 1b
+					id: "sophisticatedbackpacks:iron_backpack"
+					tag: {
+						contentsUuid: [I;
+							-1368095031
+							-124104714
+							-2018272737
+							73139958
+						]
+						inventorySlots: 54
+						upgradeSlots: 2
+					}
+				}
+				id: "64FAA6137ABDEF70"
+				title: "Uma mochila maior"
+				type: "toast"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "3DBCAA6889FC8A99"
+				item: {
+					Count: 1b
+					id: "sophisticatedbackpacks:iron_backpack"
+					tag: {
+						contentsUuid: [I;
+							-1368095031
+							-124104714
+							-2018272737
+							73139958
+						]
+						inventorySlots: 54
+						upgradeSlots: 2
+					}
+				}
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -8.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"4E1E8BFEA4924D20"
+				"4AF141BC1EBDC358"
+			]
+			hide: true
+			id: "7049F21A90D307C2"
+			rewards: [{
+				description: ""
+				icon: {
+					Count: 1b
+					id: "sophisticatedbackpacks:gold_backpack"
+					tag: {
+						contentsUuid: [I;
+							569374678
+							-1795076422
+							-1150780966
+							-1310566958
+						]
+						inventorySlots: 81
+						upgradeSlots: 3
+					}
+				}
+				id: "0C82D5ADB0DCA0E7"
+				title: "Uma mochila ainda maior"
+				type: "toast"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "078A7B971C678F9F"
+				item: {
+					Count: 1b
+					id: "sophisticatedbackpacks:gold_backpack"
+					tag: {
+						contentsUuid: [I;
+							569374678
+							-1795076422
+							-1150780966
+							-1310566958
+						]
+						inventorySlots: 81
+						upgradeSlots: 3
+					}
+				}
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -8.5d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"7049F21A90D307C2"
+				"4E1E8BFEA4924D20"
+				"4AF141BC1EBDC358"
+			]
+			hide: true
+			id: "0F1E24C3CE252A7B"
+			rewards: [{
+				description: ""
+				icon: {
+					Count: 1b
+					id: "sophisticatedbackpacks:diamond_backpack"
+					tag: {
+						contentsUuid: [I;
+							2105737478
+							-950120983
+							-1271197421
+							-1748988706
+						]
+						inventorySlots: 108
+						upgradeSlots: 5
+					}
+				}
+				id: "5A61EBC755E2A6EA"
+				title: "Uma mochila Maior ainda"
+				type: "toast"
+			}]
+			tasks: [{
+				id: "2475AD19315DEDA5"
+				item: {
+					Count: 1b
+					id: "sophisticatedbackpacks:diamond_backpack"
+					tag: {
+						contentsUuid: [I;
+							2105737478
+							-950120983
+							-1271197421
+							-1748988706
+						]
+						inventorySlots: 108
+						upgradeSlots: 5
+					}
+				}
+				type: "item"
+			}]
+			x: -8.5d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"4AF141BC1EBDC358"
+				"4E1E8BFEA4924D20"
+				"7049F21A90D307C2"
+				"0F1E24C3CE252A7B"
+			]
+			hide: true
+			id: "78808C88A47E46B2"
+			rewards: [{
+				description: ""
+				icon: {
+					Count: 1b
+					id: "sophisticatedbackpacks:netherite_backpack"
+					tag: {
+						contentsUuid: [I;
+							-474724169
+							125521895
+							-1168894420
+							66473708
+						]
+						inventorySlots: 120
+						upgradeSlots: 7
+					}
+				}
+				id: "66652790F1DB8433"
+				title: "Mochila Bolada"
+				type: "toast"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "790769FA29E93F2A"
+				item: {
+					Count: 1b
+					id: "sophisticatedbackpacks:netherite_backpack"
+					tag: {
+						contentsUuid: [I;
+							-474724169
+							125521895
+							-1168894420
+							66473708
+						]
+						inventorySlots: 120
+						upgradeSlots: 7
+					}
+				}
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -8.5d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"6AFBB5C7D836B366"
+				"01788323280FAC86"
+			]
+			description: [""]
+			id: "6E02B79CBE882C74"
+			rewards: [{
+				description: ""
+				icon: "minecraft:lapis_lazuli"
+				id: "397FDF9E90947135"
+				title: "Fortuna!!!!"
+				type: "toast"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "27A3787A79F7C26E"
+				item: {
+					Count: 1b
+					id: "evilcraft:vengeance_pickaxe"
+					tag: {
+						Damage: 0
+						Enchantments: [
+							{
+								id: "minecraft:fortune"
+								lvl: 5s
+							}
+							{
+								id: "evilcraft:vengeance"
+								lvl: 3s
+							}
+						]
+					}
+				}
+				only_from_crafting: true
+				type: "item"
+			}]
+			title: "Fortuna V Early Game"
+			x: -8.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6E02B79CBE882C74"]
+			description: ["Esta Teia do Apotheosis permite que você remova qualquer madição de items, ferramentas e armaduras quando usada"]
+			id: "53F0F4522C05CFE4"
+			tasks: [{
+				id: "015BB116552FA73B"
+				item: "apotheosis:prismatic_web"
+				type: "item"
+			}]
+			title: "Adeus Maldições"
+			x: -7.0d
+			y: 1.5d
+		}
+		{
+			id: "6AFBB5C7D836B366"
+			tasks: [{
+				id: "415B6B7632A883DC"
+				item: "minecraft:granite"
+				type: "item"
+			}]
+			title: "Instale o Corail Tombstone"
+			x: -10.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6AFBB5C7D836B366"]
+			id: "01788323280FAC86"
+			shape: "hexagon"
+			tasks: [{
+				id: "39C3D726B0051106"
+				item: {
+					Count: 1b
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "minecraft:protection"
+							lvl: 4s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			x: -8.5d
+			y: 0.0d
+		}
+	]
+	subtitle: ["Estes são os primeiros recursos os quais você deve investir primeiro"]
+	tags: [
+		"beginnings"
+		"first_recursos"
+		"primeiros_recursos"
+	]
+	title: "No Que Investir Primeiro?"
+}
