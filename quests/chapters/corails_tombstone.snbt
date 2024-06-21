@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["3527EE9B7938538C"]
 			description: ["Grave Dust é o componente mais básico do Corail's Tombstone. Farme um pouco disso antes de prosseguir"]
 			id: "194BB3DDCA56717F"
 			rewards: [
@@ -21,13 +22,14 @@
 				{
 					description: ""
 					icon: {
-						Count: 1b
+						Count: 1
 						id: "tombstone:decorative_grave_simple"
 						tag: {
 							model_texture: 0
 						}
 					}
 					id: "265D05091162F553"
+					title: "E Morreu..."
 					type: "toast"
 				}
 			]
@@ -44,19 +46,11 @@
 				}
 				{
 					entity: "minecraft:zombie"
-					icon: "minecraft:husk_spawn_egg"
-					id: "0CC689D642D3DA4A"
-					title: "Mate 7 Husks"
-					type: "kill"
-					value: 7L
-				}
-				{
-					entity: "minecraft:zombie"
 					icon: "minecraft:zombie_head"
 					id: "16D028FD6C2AD6C2"
 					title: "Mate 10 Zumbis"
 					type: "kill"
-					value: 10L
+					value: 30L
 				}
 				{
 					entity: "minecraft:skeleton"
@@ -64,47 +58,88 @@
 					id: "5F069BD579BCA026"
 					title: "Mate 10 Esqueletos"
 					type: "kill"
-					value: 10L
+					value: 20L
 				}
 			]
 			title: "Consiga Grave Dust"
-			x: -3.5d
-			y: -0.5d
+			x: -9.5d
+			y: -6.0d
 		}
 		{
-			dependencies: ["194BB3DDCA56717F"]
+			dependencies: [
+				"194BB3DDCA56717F"
+				"3527EE9B7938538C"
+			]
 			description: ["Combine &8Pedra&r e &9Cinzas de Túmulo&r para criar &0Dark Marble&r"]
 			id: "5784A0443C32187A"
 			rewards: [{
 				description: ""
+				icon: "tombstone:blue_marble"
 				id: "143C60D930D89429"
+				title: "Marbles on Stream"
 				type: "toast"
 			}]
 			tasks: [{
 				consume_items: false
-				count: 8L
 				id: "2A7947FB8CC169CD"
-				item: "tombstone:dark_marble"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tombstone:grave_marbles"
+					}
+				}
+				match_nbt: false
 				only_from_crafting: true
+				title: "Any #tombstone:grave_marbles"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -2.0d
+			x: -8.0d
+			y: -6.0d
 		}
 		{
+			dependencies: [
+				"194BB3DDCA56717F"
+				"6883215A6BDC26F2"
+				"5784A0443C32187A"
+				"3527EE9B7938538C"
+			]
+			description: ["Crie uma &aLápide Decorativa&r, coloque-a no chão e espere cerca de &c10 minutos&r até que um &bRaio&r a Atinja e consiga uma &dSoul&r. Essa &dSoul&r será útil na Confecção de outros Craftings do Corail's Tombstone"]
+			icon: {
+				Count: 1
+				id: "tombstone:decorative_subaraki_grave"
+				tag: {
+					model_texture: 0
+				}
+			}
 			id: "67DABB540EFD3B01"
+			rewards: [{
+				description: ""
+				icon: {
+					Count: 1
+					id: "tombstone:decorative_subaraki_grave"
+					tag: {
+						model_texture: 1
+					}
+				}
+				id: "3475D21373157AEB"
+				title: "Prevenir Assistencial"
+				type: "toast"
+			}]
 			tasks: [
 				{
 					consume_items: false
 					id: "3691535DDE6C53D7"
 					item: {
-						Count: 1b
-						id: "tombstone:decorative_subaraki_grave"
+						Count: 1
+						id: "itemfilters:tag"
 						tag: {
-							model_texture: 0
+							value: "tombstone:decorative_graves"
 						}
 					}
+					match_nbt: false
 					only_from_crafting: true
+					title: "Any #tombstone:decorative_graves"
 					type: "item"
 				}
 				{
@@ -117,20 +152,77 @@
 					type: "item"
 				}
 			]
-			x: -3.5d
-			y: -5.0d
+			x: -5.0d
+			y: -6.0d
 		}
 		{
-			description: ["Crie uma receita via KubeJS para isso"]
+			dependencies: [
+				"194BB3DDCA56717F"
+				"13DEDA7224348135"
+				"3527EE9B7938538C"
+				"5784A0443C32187A"
+			]
+			description: ["Coloque um &1Grave Dust&r no &6Suporte de Poções&r e 3 &9Frascos com Água&r e crie 3 &eEssence of Undeath&r"]
 			id: "6883215A6BDC26F2"
+			rewards: [{
+				description: ""
+				icon: "tombstone:essence_of_undeath"
+				id: "5EE9962814406CD2"
+				title: "Essência dos Mortos-Vivos"
+				type: "toast"
+			}]
 			tasks: [{
+				consume_items: false
 				id: "4DEBACB4FBE13AD3"
 				item: "tombstone:essence_of_undeath"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -6.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"194BB3DDCA56717F"
+				"6883215A6BDC26F2"
+				"67DABB540EFD3B01"
+				"5784A0443C32187A"
+				"3527EE9B7938538C"
+			]
+			description: ["Ao criar um túmulo do Corail, e obter uma alma sobre ele, crie o &bBook of Disenchanting&r, segure ele na &aOff Hand&r e o Item que deseja desencantar na &eMão Principal&r e clique com o &9botão direito&r no &dTúmulo com a Alma&r"]
+			id: "59F169FD06C35E83"
+			rewards: [{
+				description: ""
+				icon: "tombstone:book_of_disenchantment"
+				id: "2DE95581AE3B3EB0"
+				title: "Me desencantei com Você"
+				type: "toast"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "7681D1EEB934B700"
+				item: "tombstone:book_of_disenchantment"
+				match_nbt: false
+				only_from_crafting: true
+				title: "Me Desencantei com Você (╥﹏╥)"
 				type: "item"
 			}]
 			x: -3.5d
-			y: -3.5d
+			y: -6.0d
+		}
+		{
+			id: "3527EE9B7938538C"
+			shape: "gear"
+			tasks: [{
+				id: "00BED89C6DB733A2"
+				title: "Corail's Tombstone Começo"
+				type: "checkmark"
+			}]
+			x: -11.0d
+			y: -6.0d
 		}
 	]
+	subtitle: ["Quest rumo ao Disenchanting Early Game"]
 	title: "Corail's Tombstone"
 }

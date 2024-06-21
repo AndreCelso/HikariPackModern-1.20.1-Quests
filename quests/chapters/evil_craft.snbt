@@ -1,0 +1,485 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "evil_craft"
+	group: "455999BBFBEF424D"
+	icon: "evilcraft:origins_of_darkness"
+	id: "1543E1B7B93CFE05"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Consiga alguma &0Dark Gem&r. Ela é o recurso mais básico do &cEvil Craft&r e é obtida quebrando &dDark Ore&r (Veja o &7JEI/REI&r na aba do &aJust Enough Resources&r para saber o range de spawn do Minério)"]
+			id: "1722EAA94A958616"
+			rewards: [{
+				description: ""
+				icon: "evilcraft:dark_gem"
+				id: "64B6056AE46464E0"
+				title: "Começando Mal"
+				type: "toast"
+			}]
+			subtitle: "Consiga Alguma Dark Gem"
+			tasks: [{
+				consume_items: false
+				count: 4L
+				id: "2335C42752BDB0B6"
+				item: "evilcraft:dark_gem"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "Começando Mal"
+			x: -12.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1722EAA94A958616"]
+			description: ["Está Maça Escurecida, quando usada para alimentar algum mob do Minecraft Vanilla, o faz gerar o livro manual do mod. &cATENÇÃO!!! ESTÁ RECEITA DESCRITA NÃO FOI IMPLEMENTADA PELO AUTOR DO MOD AINDA, PORÉM HÁ UMA RECEITA ALTERNATIVA DE MINHA AUTORIA ADICIONADA PELO KUBEJS USANDO OS RITUAIS DO OCCULTISM&r. Visite o JEI/REI pesquisando por Origins of Darkness e clicando nele para ver as receitas"]
+			hide: true
+			id: "19B5049C8457C301"
+			rewards: [{
+				description: ""
+				icon: "evilcraft:darkened_apple"
+				id: "5D7990F76A49F6E7"
+				title: "Maça Emo"
+				type: "toast"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "3DFBD9F47705E920"
+				item: "evilcraft:darkened_apple"
+				match_nbt: false
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -10.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"19B5049C8457C301"
+				"1722EAA94A958616"
+				"1A75C0408EDEC843"
+				"30A964BFDC3F4479"
+				"2C07D627583B7A94"
+				"242F5C223BA3B36C"
+				"7F5FBE804EA53148"
+				"3F464AB7A152C11F"
+				"2E80BDDAB239606C"
+				"29842928B6D1EC93"
+				"017B4E4AFCD9379C"
+				"6E3E82927F857651"
+				"5501E6215350526B"
+			]
+			description: ["&cATENÇÃO: A RECEITA PADRÃO DO MOD AINDA NÃO FOI IMPLEMENTADA&r. Porém há uma receita alternativa disponível de minha autoria adicionada pelo &dKubeJS&r para o &0Occultism&r. Você precisa de um &5Livro Vinculado de Djini&r e um &ePentáculo de Compulsão Espectral de Eziveus&r, &02 Dark Gems&r e &02 Darkened Apples&r"]
+			hide: true
+			id: "02AAF844FAB7B155"
+			rewards: [{
+				description: ""
+				icon: "evilcraft:origins_of_darkness"
+				id: "4F87D05FFBD732DC"
+				title: "Origem das Trevas"
+				type: "toast"
+			}]
+			shape: "gear"
+			tasks: [{
+				consume_items: false
+				id: "5C9138D581BBF4D1"
+				item: "evilcraft:origins_of_darkness"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -9.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"02AAF844FAB7B155"
+				"19B5049C8457C301"
+				"1722EAA94A958616"
+			]
+			description: ["O &cBlood Extractor&r é a primeira ferramenta do &4Evil Craft&r que você deve fazer. É com ela que você extrai &cBlood (Sangue)&r de mobs. Segure ela no &eInventário&r enquanto mata mobs com uma ferramenta &a(Espada ou Atomic Disassembler por exemplo).&r É possível expandir o &cInventário de Sangue do Blood Extractor&r ao fabricar mais &cBlood Extractors&r &be juntá-los numa Crafting Grid&r. É recomendável ainda você fazer vários deles e juntá-los numa grid 3x3 e funciona."]
+			hide: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						Amount: 0
+						FluidName: "minecraft:empty"
+						capacity: 5000
+					}
+				}
+				id: "evilcraft:blood_extractor"
+				tag: {
+					Fluid: {
+						Amount: 0
+						FluidName: "minecraft:empty"
+					}
+					capacity: 5000
+				}
+			}
+			id: "4129EC0CE1149A28"
+			rewards: [{
+				description: ""
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Amount: 0
+							FluidName: "minecraft:empty"
+							capacity: 5000
+						}
+					}
+					id: "evilcraft:blood_extractor"
+					tag: {
+						Fluid: {
+							Amount: 0
+							FluidName: "minecraft:empty"
+						}
+						capacity: 5000
+					}
+				}
+				id: "3B863E6E104EA257"
+				title: "Maria Sanguinária"
+				type: "toast"
+			}]
+			tasks: [
+				{
+					consume_items: false
+					id: "5C08A7B27C68BF0A"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Amount: 0
+								FluidName: "minecraft:empty"
+								capacity: 5000
+							}
+						}
+						id: "evilcraft:blood_extractor"
+						tag: {
+							Fluid: {
+								Amount: 0
+								FluidName: "minecraft:empty"
+							}
+							capacity: 5000
+						}
+					}
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "77A7A0081211598C"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:glass"
+						}
+					}
+					only_from_crafting: false
+					title: "Any #forge:glass"
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 3L
+					id: "7AA64AA2F0F6F439"
+					item: "evilcraft:dark_spike"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 2L
+					icon: "evilcraft:dark_gem"
+					id: "388526AF40816845"
+					item: "evilcraft:dark_gem"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "36F5F78C7E30D66E"
+					item: "minecraft:iron_ingot"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1722EAA94A958616"]
+			description: ["Este &eWeather Container&r é uma forma &cSurvival Sem Cheats&r de se ter controle sobre o clima. Fabrique alguns deles e procure por &6Estruturas no Mundo&r que possuam um Bloco chamado &bWeather Accumulator&r. Jogue o &eWeather Container&r nele e ele capturará o Clima dentro do Frasco. PS: O &bWeather Accumulator&r Precisa de um tempo para recarregar antes de poder capturar outro clima"]
+			hide: true
+			hide_dependency_lines: true
+			id: "662E4B1D0B214490"
+			optional: true
+			rewards: [{
+				description: ""
+				icon: {
+					Count: 1
+					id: "evilcraft:weather_container"
+					tag: {
+						weather: "CLEAR"
+					}
+				}
+				id: "4DE9512D52450594"
+				title: "/Weather Survival"
+				type: "toast"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "76D17EDFFA7FC982"
+				item: {
+					Count: 1
+					id: "evilcraft:weather_container"
+					tag: {
+						weather: "EMPTY"
+					}
+				}
+				only_from_crafting: true
+				type: "item"
+			}]
+			title: "/Weather Survival"
+			x: -7.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"4129EC0CE1149A28"
+				"02AAF844FAB7B155"
+				"19B5049C8457C301"
+				"1722EAA94A958616"
+			]
+			description: ["Para Fabricar uma &cDark Power Gem&r Faça uma &ePoça em formato de +&r &cde Baldes de Sangue no Chão&r Shift-Clicando com o Botão Direito com o &cBlood Extractor&r para Colocar &cSangue&r no Mundo e jogue uma &0Dark Gem&r na &cPoça&r, e ela consumirá todo o Sangue"]
+			hide: true
+			id: "70C04B244273D066"
+			rewards: [{
+				description: ""
+				icon: "evilcraft:dark_power_gem"
+				id: "15585FE5C0C595DD"
+				title: "Black Power Gem"
+				type: "toast"
+			}]
+			subtitle: "Dark Power Gem"
+			tasks: [{
+				consume_items: false
+				id: "70960070C64655A6"
+				item: "evilcraft:dark_power_gem"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"70C04B244273D066"
+				"4129EC0CE1149A28"
+				"02AAF844FAB7B155"
+				"19B5049C8457C301"
+				"1722EAA94A958616"
+			]
+			description: ["Crie &cPoças de Sangue&r do EvilCraft e espere o &4Sangue Coagular&r, formando um &4Bloco de Sangue Endurecido&r. Quebre-o e o coloque na fornanha e terá &4Hardened Blood Shards&r."]
+			hide: true
+			id: "6E7A980C3105109E"
+			rewards: [{
+				description: ""
+				icon: "evilcraft:blood_stain"
+				id: "28B226022D52DE28"
+				title: "ugh...Que Nojento"
+				type: "toast"
+			}]
+			tasks: [
+				{
+					consume_items: false
+					count: 9L
+					id: "5A49E7646855883C"
+					item: "evilcraft:hardened_blood_shard"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "31A3FD81E00EA8B9"
+					item: "evilcraft:hardened_blood"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"6E7A980C3105109E"
+				"70C04B244273D066"
+				"1722EAA94A958616"
+				"02AAF844FAB7B155"
+			]
+			description: ["Crie um &cBlood Infusion Core&r ao Envolver uma &4Dark Power Gem&r com &4Hardened Blood Shard&r na &eCrafting Grid&r "]
+			hide: true
+			id: "3AA2CD75D53BD56D"
+			rewards: [{
+				description: ""
+				icon: "evilcraft:blood_infusion_core"
+				id: "31D00370F96182AB"
+				title: "Blood Infusion Core"
+				type: "toast"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "1C6438F7A8ABE911"
+				item: "evilcraft:blood_infusion_core"
+				match_nbt: false
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"3AA2CD75D53BD56D"
+				"6E7A980C3105109E"
+				"19B5049C8457C301"
+				"1722EAA94A958616"
+				"70C04B244273D066"
+				"4129EC0CE1149A28"
+				"02AAF844FAB7B155"
+			]
+			description: ["Com um pouco de &7Pedregulho&r e o &cBlood Infusion Core&r feito na Quest Anterior, Crie um &cBlood Infuser&r, sua primeira máquina do EvilCraft."]
+			hide: true
+			icon: {
+				Count: 1
+				id: "evilcraft:blood_infuser"
+				tag: { }
+			}
+			id: "6E12D7A4BC930291"
+			rewards: [{
+				description: ""
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Amount: 0
+							FluidName: "minecraft:empty"
+							capacity: 10000
+						}
+					}
+					id: "evilcraft:blood_infuser"
+					tag: { }
+				}
+				id: "1885496B49BF4077"
+				title: "Infusão Sanguinária"
+				type: "toast"
+			}]
+			subtitle: "Blood Infuser"
+			tasks: [
+				{
+					id: "1C44753A3B33BC7D"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Amount: 0
+								FluidName: "minecraft:empty"
+								capacity: 10000
+							}
+						}
+						id: "evilcraft:blood_infuser"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "1F0602A91A9D40D9"
+					item: "evilcraft:blood_infusion_core"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "4D17E3DE578C4B9C"
+					item: { Count: 8, id: "minecraft:cobblestone" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"6E12D7A4BC930291"
+				"3AA2CD75D53BD56D"
+				"6E7A980C3105109E"
+				"70C04B244273D066"
+				"4129EC0CE1149A28"
+				"02AAF844FAB7B155"
+				"19B5049C8457C301"
+				"1722EAA94A958616"
+			]
+			description: ["Consiga alguns &6Arbustos Secos&r e os &cInfunda com Sangue no Blood Infuser&r para criar &4Undead Sappling&r. &aEsta Quest&r Libera a quest de &cUndead Log&r no &9Botany Pot&r no Capítulo \"&bNo que Investir Primeiro&r\""]
+			hide: true
+			icon: "evilcraft:undead_sapling"
+			id: "2B4A113A56A15894"
+			rewards: [{
+				description: ""
+				icon: "evilcraft:undead_sapling"
+				id: "0FFEFBC2339A974F"
+				title: "Morte Natural"
+				type: "toast"
+			}]
+			subtitle: "Undead Sappling"
+			tasks: [
+				{
+					consume_items: false
+					id: "58E93C17049FB1EB"
+					item: "evilcraft:undead_sapling"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "2BC072A516702052"
+					item: "minecraft:dead_bush"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "55293E01DDA9BF7B"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:shears"
+						}
+					}
+					match_nbt: false
+					only_from_crafting: true
+					title: "Any #forge:shears"
+					type: "item"
+				}
+			]
+			title: "Morte Natural"
+			x: 1.5d
+			y: -2.0d
+		}
+	]
+	title: "Evil Craft"
+}

@@ -1,0 +1,590 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ad_astra"
+	group: "455999BBFBEF424D"
+	icon: "ad_astra:earth_globe"
+	id: "5F4CAEEFC614C882"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "6E1B63FF3F91E31D"
+			tasks: [{
+				id: "4C8D6A130F64DA68"
+				title: "Bem Vindo ao Ad Astra"
+				type: "checkmark"
+			}]
+			x: -8.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6E1B63FF3F91E31D"]
+			description: [
+				"Consiga &0Petróleo&r procurando por fontes de &0petróleo&r jorrando na superficie do &9oceano&r. Depois"
+				"Fabrique uma &eFuel Refinery&r para &8Refinar o Petróleo&r em &eCombustíve&rl e o Primeiro Passo para deixar a &aTerra&r estará concluído"
+			]
+			id: "011E8793FE9AEA02"
+			rewards: [{
+				description: ""
+				icon: "ad_astra:fuel_refinery"
+				id: "57124179998A046C"
+				title: "Refinaria da Petrobras"
+				type: "toast"
+			}]
+			tasks: [
+				{
+					consume_items: false
+					id: "24D4B7D43CD6032F"
+					item: "ad_astra:oil_bucket"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "4CD210EB29B2EC18"
+					item: "ad_astra:fuel_bucket"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "2E879F94D6459705"
+					item: "ad_astra:fuel_refinery"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			title: "Combustível - Rumo ao Espaço Parte I"
+			x: -6.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"011E8793FE9AEA02"
+				"6E1B63FF3F91E31D"
+			]
+			description: ["Construa uma &eNasa Workbench&r. Com ela você pode fabricar &cFoguetes&r, os quais serão o seu principal e único meio para se alcançar o espaço"]
+			icon: "ad_astra:nasa_workbench"
+			id: "621FB4DD80802572"
+			rewards: [{
+				description: ""
+				icon: "ad_astra:nasa_workbench"
+				id: "214F70345B2AAD1F"
+				title: "PC da Nasa"
+				type: "toast"
+			}]
+			tasks: [
+				{
+					consume_items: false
+					id: "7ABEEF0678ED5255"
+					item: "ad_astra:nasa_workbench"
+					match_nbt: false
+					only_from_crafting: true
+					title: "PC da Nasa"
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 2L
+					id: "1E20965D7CF4557E"
+					item: "ad_astra:steel_plate"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 2L
+					id: "6A20A2AFC40F24DF"
+					item: "minecraft:redstone_block"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "710105DAFB4BD3C2"
+					item: "minecraft:crafting_table"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "022CE57FBE018395"
+					item: "mekanism:block_steel"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 2L
+					id: "5DF777AF929B21D0"
+					item: "minecraft:redstone_torch"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "65F78F2A42148003"
+					item: "minecraft:lever"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			x: -5.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6E1B63FF3F91E31D"]
+			description: ["Este é o primeiro &cFoguete&r do &dAd Astra&r que você pode fazer no &aEarly Game&r, os demais Tiers necessitam de recursos encontrados fora da &2Terra (Overworld)&r"]
+			icon: {
+				Count: 1
+				id: "ad_astra:tier_1_rocket"
+				tag: { }
+			}
+			id: "45BE17CEBF3D756A"
+			rewards: [{
+				description: ""
+				icon: {
+					Count: 1
+					id: "ad_astra:tier_1_rocket"
+					tag: { }
+				}
+				id: "08B85E65F3E871AC"
+				title: "Saturn V"
+				type: "toast"
+			}]
+			tasks: [
+				{
+					consume_items: false
+					id: "2560E1C3A8FBCF7F"
+					item: {
+						Count: 1
+						id: "ad_astra:tier_1_rocket"
+						tag: { }
+					}
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "38107F5B4F502F6E"
+					item: "ad_astra:rocket_nose_cone"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 6L
+					id: "48C22D264F7C96D5"
+					item: "mekanism:block_steel"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "73726FABA751C3A2"
+					item: "ad_astra:rocket_fin"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 2L
+					id: "784C7282F6A8C9AF"
+					item: "ad_astra:steel_tank"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7B396C8086884801"
+					item: "ad_astra:steel_engine"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			title: "Foguete Tier I"
+			x: -3.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"6E1B63FF3F91E31D"
+				"011E8793FE9AEA02"
+				"45BE17CEBF3D756A"
+				"621FB4DD80802572"
+			]
+			description: ["O &8Launch Pad&r é necessário para o &aLançamento do Foguete&r ao &dEspaço&r. Coloque o &3Foguete&r em Cima dele, Shift-Clique-Direito para abrir o &cInventário do Foguete&r e o &eCarregue com Combustível&r até encher o tanque &b(3 Buckets de Combustível é o suficiente)&r"]
+			icon: "ad_astra:launch_pad"
+			id: "78D9D3EEB91DAF63"
+			rewards: [{
+				description: ""
+				icon: "ad_astra:launch_pad"
+				id: "4698DBFBACC041BB"
+				title: "Pad um Launche"
+				type: "toast"
+			}]
+			subtitle: "Launch Pad"
+			tasks: [
+				{
+					consume_items: false
+					id: "4C90F67355D0BC6C"
+					item: "ad_astra:launch_pad"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 5L
+					id: "7F5D2D8FC1337AAE"
+					item: "ad_astra:steel_plate"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "5FE9C4C9274F7E1B"
+					item: "ad_astra:iron_plate"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			title: "Pad um Launche"
+			x: -2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"6E1B63FF3F91E31D"
+				"011E8793FE9AEA02"
+				"621FB4DD80802572"
+				"45BE17CEBF3D756A"
+				"78D9D3EEB91DAF63"
+			]
+			description: [
+				"Uma &aBase Espacial&r é algo muito interessante de se ter e fazer, contudo, também vem com outros downsides."
+				"Primeiro de tudo, a &aBase Espacial&r &cNÃO VEM PRESSURIZADA POR PADRÃO&r, o que significa que você precisa fazer algumas máquinas e setups iniciais para que sua base seja habitável e possua suporte a vida. Fabrique um &9Oxygen Distributor&r e um &bOxygen Loader&r. O &bOxygen Loader&r é utilizado para Produzir &bOxigênio&r a partir da &9Água&r se fornecido com &6Energia&r. Ele é necessário para se poder visitar o espaço sideral &csem morrer sufocado&r. Além disso, você precisará de uma &dRoupa Espacial&r para não congelar no espaço. &cATENÇÃO, TODAS AS PEÇAS DA ROUPA ESPACIAL SÃO NECESSÁRIAS EM UM AMBIENTE DESPRESSURIZADO COMO O ESPAÇO!!!&r. Carregue o &1Peitoral&r da &5Roupa Espacial&r com &bOxigênio&r no &bOxygen Loader&r e você estará &apronto para visitar o espaço&r. O &9Oxygen Distributor&r servirá para tornar sua &aBase Espacial&r habitável sem a necessidade de &dRoupa Espacial&r enquanto ela estiver &apressurizada&r. Vale lembrar também, que caso um bloco da base espacial que atue na vedação da"
+				"Base seja quebrado, &conde estava pressurizado será despressurizado imediatamente!!!&r "
+			]
+			icon: "ad_astra:earth_globe"
+			id: "5D558A7F1508BBEC"
+			min_width: 560
+			rewards: [{
+				description: ""
+				icon: {
+					Count: 1
+					id: "ad_astra:space_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "7E0DFBFC675D07E6"
+				title: "Base Espacial, ai vamos nós!"
+				type: "toast"
+			}]
+			subtitle: "Órbita da Terra"
+			tasks: [
+				{
+					dimension: "ad_astra:earth_orbit"
+					icon: "ad_astra:earth_globe"
+					id: "30AEC53EAC64A160"
+					title: "Órbita da Terra"
+					type: "dimension"
+				}
+				{
+					consume_items: false
+					count: 32L
+					id: "762BAE1481ACF7E6"
+					item: "ad_astra:desh_ingot"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 32L
+					id: "28380EB41C6225E6"
+					item: "mekanism:ingot_steel"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 64L
+					id: "7AE4BB12BD4F7737"
+					item: "ad_astra:iron_plate"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 32L
+					id: "4570BBCC25231627"
+					item: "ad_astra:desh_plate"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "03AA5769B35949A0"
+					item: {
+						Count: 1
+						id: "ad_astra:space_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "0DCC0607FE4F36F6"
+					item: {
+						Count: 1
+						id: "ad_astra:space_suit"
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "002182B7C5D8AE43"
+					item: {
+						Count: 1
+						id: "ad_astra:space_pants"
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "05E084CCCDC8174B"
+					item: {
+						Count: 1
+						id: "ad_astra:space_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "779167CAB7FE28E5"
+					item: "ad_astra:oxygen_loader"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6ED7737145615C19"
+					item: "ad_astra:oxygen_distributor"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			title: "Base Espacial!!"
+			x: -0.5d
+			y: -6.0d
+		}
+		{
+			id: "13A9E5A2B8CD3625"
+			tasks: [
+				{
+					id: "7D4C7B0A881FDDA9"
+					item: "ad_astra:raw_ostrum"
+					type: "item"
+				}
+				{
+					id: "21E64592BC3351A1"
+					item: "ad_astra:ostrum_ingot"
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"5D558A7F1508BBEC"
+				"78D9D3EEB91DAF63"
+				"6E1B63FF3F91E31D"
+				"011E8793FE9AEA02"
+				"621FB4DD80802572"
+				"45BE17CEBF3D756A"
+			]
+			description: [
+				"&6Desh&r é um &bMetal&r encontrado na &9Lua&r, é com ele que você consegue fazer o &dFoguete&r Tier &e2&r do &aAd Astra&r. Então obtenha um pouco dele e construa o &apróximo&r &cTier de Foguete&r para poder explorar &boutros planetas&r."
+				"É possível construir &6Portas de Desh&r também"
+			]
+			icon: "ad_astra:desh_ingot"
+			id: "3C9572F61C11442F"
+			rewards: [{
+				description: ""
+				icon: "ad_astra:raw_desh"
+				id: "197C9C747420129C"
+				title: "Desh Desh Desh"
+				type: "toast"
+			}]
+			subtitle: "Descrição"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A2777937AD4EB22"
+					item: "ad_astra:raw_desh"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "57636176FA54A9CC"
+					item: "ad_astra:desh_ingot"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "14859C5FBB3FDDC7"
+					item: "ad_astra:desh_sliding_door"
+					match_nbt: false
+					only_from_crafting: true
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"3C9572F61C11442F"
+				"5D558A7F1508BBEC"
+				"78D9D3EEB91DAF63"
+				"45BE17CEBF3D756A"
+				"011E8793FE9AEA02"
+				"6E1B63FF3F91E31D"
+				"621FB4DD80802572"
+			]
+			description: ["Com este &6Foguete Tier II&r você consegue voar para mais longe, assim conseguindo visitar planetas mais distantes da &aTerra&r"]
+			icon: {
+				Count: 1
+				id: "ad_astra:tier_2_rocket"
+				tag: { }
+			}
+			id: "1CCE7BBCC9294C54"
+			rewards: [{
+				description: ""
+				icon: {
+					Count: 1
+					id: "ad_astra:tier_2_rocket"
+					tag: { }
+				}
+				id: "2508C665D6A3CEC0"
+				title: "Foguete Tier II"
+				type: "toast"
+			}]
+			subtitle: "Foguete Tier 2"
+			tasks: [
+				{
+					consume_items: false
+					id: "0925849D53D29D31"
+					item: {
+						Count: 1
+						id: "ad_astra:tier_2_rocket"
+						tag: { }
+					}
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 6L
+					id: "6EE6004F56107962"
+					item: "ad_astra:desh_block"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 2L
+					id: "1E22020B94689538"
+					item: { Count: 2, id: "ad_astra:desh_tank" }
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "130E164C7F74DED0"
+					item: "ad_astra:desh_engine"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "62A0937268ADA943"
+					item: { Count: 4, id: "ad_astra:rocket_fin" }
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "085A57216A146729"
+					item: "ad_astra:rocket_nose_cone"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			title: "Foguete Tier II"
+			x: 2.5d
+			y: -6.0d
+		}
+	]
+	subtitle: ["Patrocinado pelo Elon Muschen"]
+	title: "Ad Astra"
+}

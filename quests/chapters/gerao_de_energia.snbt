@@ -48,7 +48,7 @@
 					consume_items: true
 					count: 2L
 					id: "7ABFCB2E102F4EAF"
-					item: { Count: 2b, id: "mekanism:steel_casing" }
+					item: { Count: 2, id: "mekanism:steel_casing" }
 					match_nbt: true
 					only_from_crafting: true
 					type: "item"
@@ -57,7 +57,7 @@
 					consume_items: true
 					count: 4L
 					id: "2508819B156167EB"
-					item: { Count: 4b, id: "mekanism:ingot_osmium" }
+					item: { Count: 4, id: "mekanism:ingot_osmium" }
 					match_nbt: false
 					only_from_crafting: false
 					type: "item"
@@ -66,7 +66,7 @@
 					consume_items: true
 					count: 2L
 					id: "042910FB0A82F6F4"
-					item: { Count: 2b, id: "mekanism:alloy_infused" }
+					item: { Count: 2, id: "mekanism:alloy_infused" }
 					match_nbt: false
 					only_from_crafting: false
 					type: "item"
@@ -106,7 +106,7 @@
 					consume_items: true
 					count: 2L
 					id: "42D7C69598253ED4"
-					item: { Count: 4b, id: "mekanism:alloy_infused" }
+					item: { Count: 4, id: "mekanism:alloy_infused" }
 					only_from_crafting: false
 					type: "item"
 				}
@@ -114,7 +114,7 @@
 					consume_items: true
 					count: 4L
 					id: "4B2BD3C96BD7C215"
-					item: { Count: 4b, id: "minecraft:iron_ingot" }
+					item: { Count: 4, id: "minecraft:iron_ingot" }
 					type: "item"
 				}
 				{
@@ -128,7 +128,7 @@
 					consume_items: true
 					count: 2L
 					id: "6ED4ED744D4B14AF"
-					item: { Count: 2b, id: "minecraft:redstone" }
+					item: { Count: 2, id: "minecraft:redstone" }
 					type: "item"
 				}
 			]
@@ -164,7 +164,7 @@
 				{
 					count: 2L
 					id: "3F8D77C959B362B2"
-					item: { Count: 2b, id: "mekanism:basic_control_circuit" }
+					item: { Count: 2, id: "mekanism:basic_control_circuit" }
 					type: "item"
 				}
 				{
@@ -175,7 +175,7 @@
 				{
 					count: 4L
 					id: "07C7B0EAB689C877"
-					item: { Count: 4b, id: "minecraft:redstone" }
+					item: { Count: 4, id: "minecraft:redstone" }
 					type: "item"
 				}
 			]
@@ -226,14 +226,14 @@
 					consume_items: true
 					count: 2L
 					id: "39FB67ADC858DD6A"
-					item: { Count: 2b, id: "mekanism:basic_control_circuit" }
+					item: { Count: 2, id: "mekanism:basic_control_circuit" }
 					type: "item"
 				}
 				{
 					consume_items: true
 					count: 2L
 					id: "0246FC8CDD01B571"
-					item: { Count: 2b, id: "mekanism:ingot_steel" }
+					item: { Count: 2, id: "mekanism:ingot_steel" }
 					type: "item"
 				}
 				{

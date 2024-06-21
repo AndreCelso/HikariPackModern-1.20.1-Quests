@@ -1,0 +1,583 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "silent_gear"
+	group: "455999BBFBEF424D"
+	icon: {
+		Count: 1
+		id: "silentgear:blueprint_book"
+		tag: {
+			Inventory: { }
+		}
+	}
+	id: "7FB32760B8306C86"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"73EAE6785C2DAD8F"
+				"2A988E8A5B673108"
+			]
+			description: ["A primeira Liga de Metais que você consegue fazer no &eSilent Gear&r é o &4Aço Carmesim (Crimson Steel)&r. Esta Liga é uma mistura de &6Blaze Rod&r, &eMagma Cream&r, e &cFerro Carmesim (Crimson Iron)&r. É uma liga que utiliza materiais um pouco escassos no Early Game, porém é uma liga bastante útil e potente, então considere fazer o mínimo necessário para poder avançar nas quests e no mod, para que não haja perda de recursos. Utilize os primeiros &4Crimson Steels&r que você fizer para criar a &5Alloy Mixer ou Mixer de Ligas&r"]
+			icon: "silentgear:crimson_steel_ingot"
+			id: "1118838078F27BA9"
+			rewards: [{
+				description: ""
+				icon: "silentgear:crimson_steel_ingot"
+				id: "0C66DEDBB9CA35F1"
+				title: "Primeira Liga do Silent Gear"
+				type: "toast"
+			}]
+			subtitle: "Primeira Liga - Aço Carmesim"
+			tasks: [
+				{
+					consume_items: false
+					count: 4L
+					id: "19555BEB34F13F36"
+					item: "silentgear:crimson_steel_ingot"
+					match_nbt: false
+					only_from_crafting: true
+					title: "Obtenha 4 Crimsom Steel Ingots"
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 16L
+					id: "081E31A0C54B5962"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ingots/crimson_iron"
+						}
+					}
+					match_nbt: false
+					only_from_crafting: false
+					title: "Obtenha 16 Ferros Carmesim"
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 8L
+					icon: "minecraft:blaze_rod"
+					id: "0DDD12BB656266BC"
+					item: "minecraft:blaze_rod"
+					match_nbt: false
+					only_from_crafting: false
+					title: "Obtenha 8 Blaze Rods"
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "0621023840206251"
+					item: "minecraft:magma_cream"
+					match_nbt: false
+					only_from_crafting: true
+					title: "Consiga 4 Magma Cream"
+					type: "item"
+				}
+			]
+			title: "Vermelho com Sangue II"
+			x: -6.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"1118838078F27BA9"
+				"73EAE6785C2DAD8F"
+				"2A988E8A5B673108"
+			]
+			description: ["A &cMetal Alloyer&r é a &bPrimeira Máquina&r do &eSilent Gear&r que você deve criar. É com ela que você conseguirá produzir mais &4Crimson Steel&r à um preço relativamente mais barato que usando a Crafting Grid para tal, além de conseguir criar ligas consideravelmente mais fortes com ela"]
+			id: "3FE9C482C589265F"
+			rewards: [{
+				description: ""
+				icon: "silentgear:metal_alloyer"
+				id: "4A23C854C7426D1C"
+				title: "Transformando Materiais em Ligas"
+				type: "toast"
+			}]
+			subtitle: "Fundidora de Ligas Metálicas"
+			tasks: [{
+				consume_items: false
+				id: "7F8AFA5FB5473A36"
+				item: "silentgear:metal_alloyer"
+				match_nbt: false
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			id: "73EAE6785C2DAD8F"
+			rewards: [{
+				description: ""
+				icon: {
+					Count: 1
+					id: "silentgear:blueprint_book"
+					tag: {
+						Inventory: { }
+					}
+				}
+				id: "4D5C34E4FE43D1E3"
+				title: "Começando Silenciosamente"
+				type: "toast"
+			}]
+			subtitle: "Inicio do Silent Gear"
+			tasks: [{
+				id: "734BD90F56A5FED2"
+				title: "Começo Silent Gear"
+				type: "checkmark"
+			}]
+			x: -9.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["73EAE6785C2DAD8F"]
+			description: ["O &9Livro de Blueprints&r é como uma &eenciclopédia de projetos&r de ferramentas, nele é onde você vai armazenar todos os seus &9Blueprints&r. Cada &9Blueprint&r pertence à um tipo de &6equipamento&r o qual será construido usando aquele &9Blueprint&r e &bqualquer material válido do Silent Gear&r (Visite o &aJEI&r para se familiarizar melhor com o uso dos &9Blueprints&r)"]
+			icon: {
+				Count: 1
+				id: "silentgear:blueprint_book"
+				tag: {
+					Inventory: { }
+				}
+			}
+			id: "2A988E8A5B673108"
+			rewards: [
+				{
+					id: "3C8369BDCD794088"
+					item: "silentgear:rod_blueprint"
+					type: "item"
+				}
+				{
+					id: "6B59B4FDB44B3E8E"
+					item: "silentgear:sword_blueprint"
+					type: "item"
+				}
+				{
+					id: "1D67D48B5C6A5F2B"
+					item: "silentgear:pickaxe_blueprint"
+					type: "item"
+				}
+				{
+					id: "0165DC1A4FD48DD9"
+					item: "silentgear:axe_blueprint"
+					type: "item"
+				}
+				{
+					id: "63493C80F65776E8"
+					item: "silentgear:tip_blueprint"
+					type: "item"
+				}
+				{
+					id: "76B8CB5D86B2C318"
+					item: "silentgear:shears_blueprint"
+					type: "item"
+				}
+				{
+					description: ""
+					icon: {
+						Count: 1
+						id: "silentgear:blueprint_package"
+						tag: {
+							silentlib.LootContainer: { }
+						}
+					}
+					id: "3568040BA7817FA9"
+					title: "Construtor Moderno"
+					type: "toast"
+				}
+			]
+			subtitle: "Blueprint Book"
+			tasks: [
+				{
+					consume_items: false
+					id: "64281CF34BF79E43"
+					item: {
+						Count: 1
+						id: "silentgear:blueprint_book"
+						tag: {
+							Inventory: { }
+						}
+					}
+					match_nbt: false
+					only_from_crafting: true
+					title: "Construa um Livro de Blueprints"
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 14L
+					id: "3C1A3BED1B95D281"
+					item: { Count: 14, id: "silentgear:blueprint_paper" }
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			x: -7.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"73EAE6785C2DAD8F"
+				"3FE9C482C589265F"
+				"2A988E8A5B673108"
+				"1118838078F27BA9"
+			]
+			description: ["&dAzure Silver&r é um material do &aSilent Gear&r encontrado somente no &bThe End&r, é com ele que você conseguirá fazer a próxima liga foda do Silent Gear"]
+			icon: "silentgear:azure_silver_ingot"
+			id: "6B4A6344F016E213"
+			rewards: [{
+				description: ""
+				icon: "silentgear:azure_silver_ingot"
+				id: "26B211D7ACA584EB"
+				title: "Prata Púrpura"
+				type: "toast"
+			}]
+			subtitle: "Azure Silver"
+			tasks: [
+				{
+					consume_items: false
+					id: "368D32193F1E80A2"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ingots/azure_silver"
+						}
+					}
+					match_nbt: false
+					only_from_crafting: false
+					title: "Descubra e Obtenha pelo menos 1 Azure Silver"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "50E4DEC1A7F19F4E"
+					item: "silentgear:raw_azure_silver"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 3L
+					id: "7F01EE3BABB1E1DB"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:dusts/azure_silver"
+						}
+					}
+					match_nbt: false
+					only_from_crafting: false
+					title: "Consiga Qualquer Azure Silver Dust"
+					type: "item"
+				}
+				{
+					dimension: "minecraft:the_end"
+					icon: "minecraft:end_portal_frame"
+					id: "046F062187746CAF"
+					title: "Tenha Visitado o The End ao menos 1 Vez"
+					type: "dimension"
+				}
+			]
+			title: "Descubra Azure Silver"
+			x: -3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"6B4A6344F016E213"
+				"3FE9C482C589265F"
+				"73EAE6785C2DAD8F"
+				"1118838078F27BA9"
+				"2A988E8A5B673108"
+			]
+			description: ["É uma liga feita com &eOuro&r, &dAzure Silver&r e &bEnder Pearl&r. É com ela que faremos uma liga ainda mais forte. O &9Azure Electrum&r é conhecido por sua propriedade de aumentar e muito o &9Mining Speed&r de ferramentas como &epicareta&r quando presente em sua composição. Para ver as características de cada material do Silent Gear guie-se pela tooltip do item"]
+			id: "575E190813E57907"
+			rewards: [{
+				description: ""
+				icon: "silentgear:azure_electrum_ingot"
+				id: "197EC4664C7CE2AE"
+				title: "Gotta Go Fast - Sanic"
+				type: "toast"
+			}]
+			subtitle: "Azure Electrum"
+			tasks: [{
+				consume_items: false
+				id: "1542C5B9B8A4454A"
+				item: "silentgear:azure_electrum_ingot"
+				match_nbt: false
+				only_from_crafting: true
+				title: "Consiga a 2ª Liga do Silent Gear"
+				type: "item"
+			}]
+			title: "Electrum Azul"
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"3FE9C482C589265F"
+				"73EAE6785C2DAD8F"
+				"2A988E8A5B673108"
+				"6B4A6344F016E213"
+				"575E190813E57907"
+				"1118838078F27BA9"
+			]
+			description: ["&5Aço de Tyrian&r é feito na &4Alloyer Mixer&r, misturando &cAço Carmesin&r, &9Azure Electrum&r, &dCrushed Shulker&r Shell e uma &6Netherite Scrap&r. É a liga com o potencial mais Bruto até este nível e pode ser combinada com outros materiais do &eSilent Gear&r para produzir uma Liga ainda Mais Forte. Como &6Ancient Debris&r é um recurso &cextremamente raro&r do Nether, é aconselhável multiplicá-los no &aCrusher do Mekanism&r (Veja a Receita clicando no item &6Dirty Netherite Scrap&r nesta quest e veja como transformá-lo de volta em &6Netherite Scrap&r)"]
+			icon: "silentgear:tyrian_steel_ingot"
+			id: "2AB75E5CECD9BE37"
+			rewards: [{
+				description: ""
+				icon: "silentgear:tyrian_steel_ingot"
+				id: "170F187D2BCE8359"
+				title: "A Liga Badass"
+				type: "toast"
+			}]
+			subtitle: "Aço de Tyrian"
+			tasks: [
+				{
+					consume_items: false
+					id: "230DDEBE68004EBE"
+					item: "silentgear:tyrian_steel_ingot"
+					match_nbt: false
+					only_from_crafting: false
+					title: "Consiga 1 Barra de Aço de Tyrian"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "29D9BCD23FA28BC4"
+					item: "silentgear:crimson_steel_ingot"
+					match_nbt: false
+					only_from_crafting: false
+					title: "Consiga 1 Aço Carmesim"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "2E0E5D0DDEC6D4EB"
+					item: "silentgear:azure_electrum_ingot"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "0F9F90F649C498D3"
+					item: "silentgear:crushed_shulker_shell"
+					match_nbt: false
+					only_from_crafting: true
+					title: "Consiga uma Concha de Shulker Esmagada"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "267CC679AF94C2E3"
+					item: "minecraft:netherite_scrap"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 3L
+					id: "3ADBBDECFD11E204"
+					item: "mekanism:dirty_netherite_scrap"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["731F31702DBF898D"]
+			description: [
+				"&9Sword Blade&r - &9Refined Obsidian&r do &aMekanism&r (no Tier &dMAX&r)"
+				"Tip - &9Lapis Lazuri&r para &9Luck&r (Não é &9Looting&r) (Tier &dMAX&r)"
+				"Tool Rod - Bone para Mais Dano"
+				"Coating - &6Netherite&r (Tier &dMAX&r)"
+			]
+			hide: true
+			hide_dependency_lines: true
+			icon: "silentgear:sword_blueprint"
+			id: "14E76204210BCDFF"
+			shape: "pentagon"
+			subtitle: "Setup Espada"
+			tasks: [
+				{
+					icon: "silentgear:sword_blueprint"
+					id: "125E33C8D86DD3CE"
+					title: "Boa espada Early Game"
+					type: "custom"
+				}
+				{
+					id: "709DF8BF53983CB2"
+					title: "Estou Ciente"
+					type: "checkmark"
+				}
+			]
+			x: -9.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["731F31702DBF898D"]
+			description: [
+				"Pickaxe Head - &1Azure Electrum&r (Tier &dMAX&r) para &bMining Speed&r Alto"
+				"Tool Rod - &bLiga de Aço de Tyrian&r ( 1x &5Aço de Tyrian&r + 2x &4Aço Carmesim&r + 1x &9Azure Electrum&r) para mais durabilidade (Tier &dMAX&r)"
+				"Tip - &aEsmeralda&r (Tier &dMAX&r) "
+			]
+			hide: true
+			hide_dependency_lines: true
+			icon: "silentgear:pickaxe_blueprint"
+			id: "5AB7773062E2CF20"
+			min_width: 300
+			rewards: [{
+				description: ""
+				icon: "silentgear:pickaxe_blueprint"
+				id: "2114B3A7809C66CB"
+				title: "Picarápida"
+				type: "toast"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					icon: "silentgear:pickaxe_blueprint"
+					id: "6916CCF8D6DD043E"
+					title: "Boa Picareta"
+					type: "custom"
+				}
+				{
+					id: "247F85DD07B23644"
+					title: "Estou Ciente"
+					type: "checkmark"
+				}
+			]
+			x: -7.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"2AB75E5CECD9BE37"
+				"3FE9C482C589265F"
+				"6B4A6344F016E213"
+				"575E190813E57907"
+				"2A988E8A5B673108"
+				"1118838078F27BA9"
+				"73EAE6785C2DAD8F"
+			]
+			description: ["O &bClassificador de materiais&r serve para &bclassificar&r os &emateriais válidos&r do &eSilent Gear&r, conferindo-lhes &aClassificações melhores&r (Ex. E > D > C > B > A > S > SS > SSS > MAX). Quanto maior a &3Classificação do Material&r, maior é o &dboost de status&r que ele confere na ferramenta no qual é utilizado. Para [&aClassificar um Material&r] é necessário um &6Catalisador&r, que será consumido no processo de &bClassificação&r. Os &6Catalisadores&r podem ser de Nivel &a1&r, &e2&r ou &63&r e quanto maior o Nível do Catalisador, maior são as chances de obter &dClassificações mais altas&r"]
+			icon: "silentgear:material_grader"
+			id: "043226DBFE4E8B4E"
+			rewards: [{
+				description: ""
+				icon: "silentgear:material_grader"
+				id: "119E1E9A05E79B09"
+				title: "Expert da Classificação"
+				type: "toast"
+			}]
+			subtitle: "Classificador de Materiais"
+			tasks: [
+				{
+					consume_items: false
+					id: "439F7DF3D49EE1EF"
+					item: "silentgear:material_grader"
+					match_nbt: false
+					only_from_crafting: true
+					title: "Fabrique um Classificador de Materiais"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "018477E4429FE4B5"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "silentgear:grader_catalysts/tier3"
+						}
+					}
+					match_nbt: false
+					only_from_crafting: true
+					title: "Catalisador Lv. 3"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "31C67E6C9608F447"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "silentgear:grader_catalysts/tier2"
+						}
+					}
+					match_nbt: false
+					only_from_crafting: true
+					title: "Catalisador Lv. 2"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "0C52651C10E6498F"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "silentgear:grader_catalysts/tier1"
+						}
+					}
+					match_nbt: false
+					only_from_crafting: true
+					title: "Catalisador Lv. 1"
+					type: "item"
+				}
+			]
+			title: "Classificando Materiais"
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"2AB75E5CECD9BE37"
+				"3FE9C482C589265F"
+				"2A988E8A5B673108"
+				"73EAE6785C2DAD8F"
+				"043226DBFE4E8B4E"
+				"575E190813E57907"
+				"6B4A6344F016E213"
+				"1118838078F27BA9"
+			]
+			description: ["A &dSalvager&r &cdestrói&r partes ou ferramentas do &eSilent Gear&r inteiras em seus componentes. Útil quando você quer recuperar os materiais de uma ferramenta não mais utilizada em seus materiais base e usá-los de novo em outra ferramenta. Note que ao fazer isso, caso o material possua classificação, ela será &cPERDIDA&r"]
+			id: "731F31702DBF898D"
+			rewards: [{
+				description: ""
+				icon: "silentgear:salvager"
+				id: "1FA7FB2249A8417E"
+				title: "Desmantelador Profissional"
+				type: "toast"
+			}]
+			subtitle: "Salvager"
+			tasks: [{
+				id: "30081408CD7A81BC"
+				item: "silentgear:salvager"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -0.5d
+		}
+	]
+	subtitle: [
+		"Early Decent Gear"
+		"Equipamento Early Game Decente"
+	]
+	title: "Silent Gear"
+}

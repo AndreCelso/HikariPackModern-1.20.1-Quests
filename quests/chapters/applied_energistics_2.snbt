@@ -1,0 +1,294 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "applied_energistics_2"
+	group: "455999BBFBEF424D"
+	icon: "ae2:controller"
+	id: "2BA73598999659E0"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Sua primeira tarefa para iniciar no &dApplied Energistics&r é encontrar um &dMeteoro do Applied&r, que podem ser encontrados mais facilmente com &bBússola de Meteoritos&r (&bMeteorite Compass&r) (Veja o JEI para receitas). A Bússola aponta pro Meteorito mais próximo de você e nele você pode encontrar As Prensas do Applied, e Drusas de Certus Quartz de todos os Tiers, incluindo a Flawless que não se deteriosa com o uso e deve ser movida usando Cardbox, caso minerada, ela regride um Tier"]
+			id: "70F65307F87FA488"
+			subtitle: "Cubo Misterioso"
+			tasks: [
+				{
+					icon: "ae2:mysterious_cube"
+					id: "137A8BCBE526AD17"
+					structure: "ae2:meteorite"
+					title: "Encontre um Meteorito do AE2"
+					type: "structure"
+				}
+				{
+					consume_items: false
+					id: "5C0BB25723515D06"
+					item: "ae2:meteorite_compass"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["70F65307F87FA488"]
+			description: ["Com a &6Serragem&r é possível criar &6Caixas de Papelão&r com as quais é possível &bmover quase qualquer item de lugar&r, movendo seu &dinventário interno&r e seu &9NBT&r intacto"]
+			icon: "ae2:flawless_budding_quartz"
+			id: "5C83928B48FB2EEA"
+			rewards: [{
+				description: ""
+				icon: "mekanism:cardboard_box"
+				id: "620F941E731E4D0A"
+				title: "Mekanism Mudanças"
+				type: "toast"
+			}]
+			subtitle: "Descrição"
+			tasks: [
+				{
+					consume_items: false
+					count: 4L
+					id: "5B79972DD1A09031"
+					item: "mekanism:cardboard_box"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					id: "1A7BFE008CA48889"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:sawdust"
+						}
+					}
+					title: "Any #forge:sawdust"
+					type: "item"
+				}
+			]
+			title: "Movendo Drusas de Certus Quartz"
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"5C83928B48FB2EEA"
+				"70F65307F87FA488"
+			]
+			description: [
+				"Para Obter &bCertus Quartz Crystal&r você precisa quebrar um &bAglomerado de Certus Quartz&r (&bCertus Quartz Cluster&r) que é o &dEstágio Final de Crescimento&r do &bCertus Quartz&r. Caso você quebre antes da maturidade total, você receberá &bPó de Certus Quartz&r"
+				"Lembrando que o &bCertus Quartz&r é afetado por &dFortuna&r, então se você tiver uma &aPicareta&r ou um &9Annihilation Plane&r encantado com &dFortuna&r, você receberá mais &bCertus Quartz&r"
+			]
+			id: "55F53AB24B9C3432"
+			rewards: [{
+				description: ""
+				icon: "ae2:quartz_cluster"
+				id: "24CD58E5E20A03AF"
+				type: "toast"
+			}]
+			subtitle: "Cristal de Certus Quartzo"
+			tasks: [{
+				consume_items: false
+				id: "78216FEFE16371E6"
+				item: "ae2:certus_quartz_crystal"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"55F53AB24B9C3432"
+				"5C83928B48FB2EEA"
+				"70F65307F87FA488"
+			]
+			description: ["Para criar &dFluix Crystal&r jogue &bCharged Certus Quartz&r, &eNether Quartz&r, e &cRedstone&r num &9Bloco d'agua&r ou &9qualquer fluido do Forge&r e espere a reação acontecer e obter Fluix Crystal"]
+			id: "7AC29AD9F7F9DE89"
+			rewards: [{
+				description: ""
+				icon: "ae2:fluix_crystal"
+				id: "4857D1BD3277BAC4"
+				title: "Fluix Crystal"
+				type: "toast"
+			}]
+			subtitle: "Fluix Crystal"
+			tasks: [{
+				id: "4B4112BB6FE40F4D"
+				item: "ae2:fluix_crystal"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"7AC29AD9F7F9DE89"
+				"55F53AB24B9C3432"
+				"5C83928B48FB2EEA"
+				"70F65307F87FA488"
+			]
+			description: ["Com um [&9ME Drive&r + Um &dHD de Items&r, exemplo o &eItem Storage Cell de 4k&r (&aOpção 1&r)] 1 &cCrafting Terminal&r, [1 &bStorage Bus&r + &bAlgum Inventário com Bastante Espaço&r, exemplo um &eBarrel de Ouro&r pra cima do &6Sophisticated Backpacks&r (&6Opção 2&r)] e alguns cabos são suficientes para criar uma &bRede Adhoc&r (&bRede Sem Controlador&r) totalmente funcional"]
+			icon: "ae2:drive"
+			id: "062ECFDC41C0E0DE"
+			rewards: [{
+				description: ""
+				icon: "ae2:drive"
+				id: "70032ADB8DFE070F"
+				title: "Item Cloud"
+				type: "toast"
+			}]
+			subtitle: "Sistema AE2 Básico"
+			tasks: [
+				{
+					consume_items: false
+					id: "2403B452343F062D"
+					item: "ae2:drive"
+					match_nbt: false
+					only_from_crafting: true
+					optional_task: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "289865B61716165F"
+					item: {
+						Count: 1
+						id: "ae2:item_storage_cell_4k"
+						tag: { }
+					}
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "70FCD3580393C79E"
+					item: "ae2:storage_bus"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 16L
+					id: "53E8EDF96896A72B"
+					item: { Count: 16, id: "ae2:fluix_glass_cable" }
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					id: "40694126997350DE"
+					item: "ae2:crafting_terminal"
+					type: "item"
+				}
+			]
+			title: "Sistema AE2 Básico"
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"062ECFDC41C0E0DE"
+				"70F65307F87FA488"
+				"7AC29AD9F7F9DE89"
+				"55F53AB24B9C3432"
+				"5C83928B48FB2EEA"
+			]
+			description: [
+				"Para que seu &dSistema do AE2&r seja capaz de criar items automaticamente, é necessário ter a estrutura apropriada. Sem &9CPUs de Crafting&r &cé impossível&r criar items automaticamente, seja items processados em máquinas ou de crafting grid. Por isso começe fazendo &aCPUs de Crafting&r (&aStorage Units&r) de &c1&r, &e4&r ou &a16&rk para iniciar. Quanto &emaior&r o &btamanho&r da sua CPU, &9maior&r e &bmais complexos&r craftings ela consegue suportar."
+				"Para &bCraftings&r de &dCrafting Grid&r é necessário um &6Molecular Assembler&r acoplado à um &ePattern Provider&r, pois o &ePattern Provider&r fornece os items necessários para o &6Assembler&r, que é quem executa o crafting e então &bretorna&r o item pronto &3ao Sistema&r. Para &ccraftings de máquina&r, um &ePattern Provider&r deve ser colocado &bacima da máquina&r ou em &5qualquer face&r que &9aceita&r e &6empurra&r items. (dependendo da máquina, deve ser configurado o &9I&r/&6O&r dentro da máquina) [OBS: &oAlgumas Máquinas&r podem &9receber&r e &6ejetar&r items &apelo mesmo lado&r]. "
+				"Por fim, as &dCo-Processing Unit&r permitem que &3mais craftings simultâneos&r sejam executadas &bpelo mesmo CPU&r [&6Devem ser acoplados no CPU desejado&r, pois as &bCPUs do AE2&r funcionam &o&acomo multibloco&r&r, portanto cada conjunto de CPU separado do outro, &csão CPUs diferentes&r] "
+			]
+			icon: "ae2:16k_crafting_storage"
+			id: "30E853C64AC38CA4"
+			min_width: 410
+			rewards: [{
+				description: ""
+				icon: "ae2:16k_crafting_storage"
+				id: "02D7E99F4B82E8F5"
+				title: "Crafting Appentice"
+				type: "toast"
+			}]
+			subtitle: "Como fazer"
+			tasks: [
+				{
+					consume_items: false
+					id: "7B6A22AE78B66D0B"
+					item: "ae2:4k_crafting_storage"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 2L
+					id: "25FA3D6A613F7B0F"
+					item: "ae2:crafting_accelerator"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 2L
+					id: "1201CB3404CAB50B"
+					item: "ae2:pattern_provider"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 2L
+					id: "6550E1E7E132BED5"
+					item: "ae2:molecular_assembler"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "5FE338C5CD70E335"
+					item: "ae2:cable_pattern_provider"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "4DCF38076A475B59"
+					item: "ae2:16k_crafting_storage"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			title: "Sistema de Crafting Automático Básico"
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			id: "18035329AE40249A"
+			tasks: [{
+				id: "439F765971C7FFA5"
+				item: {
+					Count: 1
+					id: "enderchests:ender_chest"
+					tag: {
+						code: "000"
+						owner: "all"
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+	]
+	title: "Applied Energistics 2"
+}

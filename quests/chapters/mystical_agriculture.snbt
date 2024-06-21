@@ -1,0 +1,1461 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mystical_agriculture"
+	group: "455999BBFBEF424D"
+	icon: "mysticalagriculture:honey_seeds"
+	id: "33FC8A3723E3C8B7"
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["&cQuer ficar rico de recursos cedo no jogo&r? Então se prepare pra mexer em um mod que &aGARANTE&r que você nunca mais precisará se preocupar com quaisquer recursos, &bminerar na mão, etc&r. Porém, veja bem, a riqueza não vem sem um custo, portanto, siga os passos das quests para descobrir como gerar recursos com o &dMystical Agriculture&r de forma eficiente"]
+			id: "3EEFB65D2229BDE8"
+			rewards: [{
+				description: ""
+				icon: "mysticalagriculture:blaze_seeds"
+				id: "42D670AD42B12374"
+				title: "Plantando Recusos - Início"
+				type: "toast"
+			}]
+			subtitle: "Descrição"
+			tasks: [{
+				id: "1C064DB141FC3E6A"
+				title: "Mystical Agriculture - Começos"
+				type: "checkmark"
+			}]
+			x: -8.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"3EEFB65D2229BDE8"
+				"487DF3E4593DC16C"
+			]
+			description: [
+				"&aInferium Essence&r, &6Soulium Dust&r e &bProsperity Shard&r são os &aRecursos Naturais&r &eMais Básicos&r do &dMystical Agriculture&r. São eles que permitem ao jogador fabricar os mais variados crops geradores de recursos. "
+				"&aInferium&r é o &bcomponente principal&r de &ctodo crafting do Mystical Agriculture&r, e &cé extensivamente utilizado&r, então não se esqueça de armazenar &cGrandes Quantidades&r dele e farmá-lo desde o começo. Você pode obter &aInferium&r minerando ou criando uma &aSemente de Inferium&r e plantando num &6Botany Pot&r ou numa &bfarmland vanilla&r mesmo. Há um setup de produção de &aInferium Essence&r bem eficiente que será mostrado adiante nas quests. &bProsperity Shards&r só são obtidos &evia mineração&r, junto com &6Soulium Dust&r que só é encontrada no &cNether&r. O Ideal para encontrar estes recursos mais facilmente no começo é através de uma &aDigital Miner do Mekanism&r, onde você pode setar &dfiltros&r de minérios e ela pega exatamente o que você desejar."
+			]
+			id: "631FE9EF1E0EF562"
+			min_width: 460
+			rewards: [{
+				description: ""
+				icon: "mysticalagriculture:inferium_essence"
+				id: "7D27B282E547EADB"
+				title: "Mystica Essentia"
+				type: "toast"
+			}]
+			subtitle: "Recusos Naturais Básicos"
+			tasks: [
+				{
+					consume_items: false
+					id: "7DB5721F3D367AB7"
+					item: "mysticalagriculture:inferium_essence"
+					match_nbt: false
+					only_from_crafting: false
+					title: "Descubra Inferium Essence"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "125B5E11772F4C55"
+					item: "mysticalagriculture:soulium_dust"
+					match_nbt: false
+					only_from_crafting: false
+					title: "Descubra Soulium"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "2B28A61541E93431"
+					item: "mysticalagriculture:prosperity_shard"
+					match_nbt: false
+					only_from_crafting: false
+					title: "Descubra Prosperity"
+					type: "item"
+				}
+			]
+			title: "Recursos Naturais Mystical"
+			x: -6.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"3EEFB65D2229BDE8"
+				"631FE9EF1E0EF562"
+			]
+			description: ["Link do Tutorial no Youtube:  https://www.youtube.com/watch?v=iLSlFHweJsI . &aEsta Farm&r pode ser feita no &bEarly Game&r e não serve apenas para o &aFarm de Inferium&r, mas de &9Qualquer Essência do Mystical&r que você for cultivar."]
+			id: "6BEC64C811D2F687"
+			rewards: [{
+				description: ""
+				icon: "mysticalagriculture:awakened_supremium_essence"
+				id: "3E19785FEFFBE437"
+				title: "Agricultor Místico"
+				type: "toast"
+			}]
+			subtitle: "Tutorial Farm de Inferium"
+			tasks: [
+				{
+					consume_items: false
+					id: "044CA5226E544E4E"
+					item: "mysticalagriculture:inferium_seeds"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "673BA93219DAD9E9"
+					item: "reliquary:fertile_lily_pad"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 3L
+					id: "40DD69707799677A"
+					item: "reliquary:fertile_essence"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					id: "7DF5834B5D27F394"
+					item: "minecraft:lily_pad"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "2E2900990B9FB557"
+					item: "farmingforblockheads:red_fertilizer"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			x: -4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"6BEC64C811D2F687"
+				"631FE9EF1E0EF562"
+				"3EEFB65D2229BDE8"
+			]
+			description: ["O &aInferium Essence&r serve principal como &eEssência de Crafting&r, é com ela que você Crafta todas as outras coisas do mod, além do fato de que ela é &9Tierizada&r. A &2Prudentium Essence&r é o &2Tier 2&r da &bEssência de Crafting&r, ela é feita com uma &aInferium Infusion Crystal&r. O &dAddon Mystical Agriculture Tiered Crystals&r tieriza os &cCrystais de Infusão&r também, fazendo com que você precisa de &bCristais do mesmo tier&r que a essência para upá-la para o &bTier Seguinte&r, Então rushe a &cMaster Infusion Crystal&r o mais rápido possível, pois ela não possui &9Durabilidade&r."]
+			icon: "mysticalagriculture:prudentium_essence"
+			id: "349718B52A81A860"
+			min_width: 390
+			rewards: [{
+				description: ""
+				icon: "mysticalagriculture:prudentium_essence"
+				id: "6368E4856359410B"
+				title: "Seja Prudente"
+				type: "toast"
+			}]
+			subtitle: "Essência de Crafting Tier 2"
+			tasks: [
+				{
+					consume_items: false
+					id: "6EC233525828B998"
+					item: "mysticalagriculture:prudentium_essence"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6822373008FD5067"
+					item: {
+						Count: 1
+						id: "matc:inferium_crystal"
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "5221E9F83EBAE437"
+					item: "mysticalagriculture:inferium_gemstone"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6A69253115A019FB"
+					item: "mysticalagriculture:prosperity_gemstone"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["349718B52A81A860"]
+			description: ["&6Tertium&r é a Essência &6Tier 3&r do &aMystical Agriculture&r. Mais Plantas podem ser Criadas com este &9Tier de Essência&r, continue subindo os Tiers!!!"]
+			icon: "mysticalagriculture:tertium_essence"
+			id: "7305E40E78D85CEE"
+			rewards: [{
+				description: ""
+				icon: "mysticalagriculture:tertium_essence"
+				id: "462305B5B9D85A1D"
+				title: "Third Time is a Charm!"
+				type: "toast"
+			}]
+			subtitle: "Essência Tier 3"
+			tasks: [
+				{
+					consume_items: false
+					id: "751D96A3E7A0723B"
+					item: "mysticalagriculture:tertium_essence"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "3B2ECD14FB366B8A"
+					item: {
+						Count: 1
+						id: "matc:prudentium_crystal"
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "7FF27CBAB85333A3"
+					item: { Count: 4, id: "mysticalagriculture:prudentium_essence" }
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"7305E40E78D85CEE"
+				"349718B52A81A860"
+			]
+			description: ["Essência &9Tier 4&r, mais plantas e craftings desbloqueados, continue subindo os tiers."]
+			icon: "mysticalagriculture:imperium_essence"
+			id: "2D327BD55796D3C4"
+			rewards: [{
+				description: ""
+				icon: "mysticalagriculture:imperium_essence"
+				id: "5CEBA54F8C581936"
+				title: "Imperador Essencial"
+				type: "toast"
+			}]
+			subtitle: "Essência Tier 4"
+			tasks: [
+				{
+					consume_items: false
+					id: "3648BBA318159EA0"
+					item: "mysticalagriculture:imperium_essence"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "13F42C31A9E02DF2"
+					item: {
+						Count: 1
+						id: "matc:tertium_crystal"
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "14184A371DA70DA7"
+					item: { Count: 4, id: "mysticalagriculture:tertium_essence" }
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"2D327BD55796D3C4"
+				"7305E40E78D85CEE"
+				"349718B52A81A860"
+			]
+			description: ["Essência &cTier 5&r e &bTier Final&r do &dMystical Agriculture Vanilla&r. Plantas &cTier 5&r Agora podem ser criadas com esta essência"]
+			icon: "mysticalagriculture:supremium_essence"
+			id: "763D3B797A6F686F"
+			rewards: [{
+				description: ""
+				icon: "mysticalagriculture:supremium_essence"
+				id: "57AC5F9A0686BB77"
+				title: "Tier Supremo"
+				type: "toast"
+			}]
+			subtitle: "Essence Tier 5"
+			tasks: [
+				{
+					consume_items: false
+					id: "2E91F24CF4EDC669"
+					item: "mysticalagriculture:supremium_essence"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "0BEAC861E61600BF"
+					item: {
+						Count: 1
+						id: "matc:imperium_crystal"
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "276DEFBD9712B7A1"
+					item: { Count: 4, id: "mysticalagriculture:imperium_essence" }
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"090833590D4B9F7F"
+				"2D327BD55796D3C4"
+			]
+			description: ["Esta &5Fluix Essence Seed&r, após chegar a &amaturidade máxima&r, lhe rende &dFluix Essence&r que pode ser convertido em &dFluix Cristal&r do AE2"]
+			icon: "mysticalagriculture:fluix_essence"
+			id: "3A917438C23DE7F5"
+			rewards: [{
+				description: ""
+				icon: "mysticalagriculture:fluix_seeds"
+				id: "27535CD77F6EE729"
+				title: "Plantando Fluix"
+				type: "toast"
+			}]
+			subtitle: "Fluix Essence Seed"
+			tasks: [
+				{
+					consume_items: false
+					id: "4C3EC592E691626F"
+					item: "mysticalagriculture:fluix_seeds"
+					match_nbt: false
+					only_from_crafting: false
+					title: "Consiga Fluix Essence Seed"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2D93DCA6B1776F56"
+					item: { Count: 4, id: "ae2:fluix_crystal" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "1AA97E6912FE6BFB"
+					item: { Count: 4, id: "mysticalagriculture:imperium_essence" }
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "02F28AFDF61478C1"
+					item: "mysticalagriculture:prosperity_seed_base"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			x: -7.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"349718B52A81A860"
+				"6BEC64C811D2F687"
+			]
+			description: ["O &cInfusion Altar&r é o meio pelo qual você vai criar &etodas&r as sementes do &aMystical Agriculture&r. Os &6Items nos Pedestais&r &cnão&r precisam estar na Ordem em que aparecem no JEI, apenas precisam estar presentes nos pedestais. O &cInfusion Altar&r pode ser facilmente automatizado usando &aXNET&r com canais de &dItems filtrados&r e &bConnectors&r conectados embaixo de &6todos os pedestais&r e do &cAltar&r, ligados a um baú de &9Entrada&r/&6Saída&r, conectado no &9Sistema do AE2&r via &ePattern Provider&r com os patterns ensinando as receitas que deseja criar automaticamente"]
+			id: "090833590D4B9F7F"
+			rewards: [{
+				description: ""
+				icon: "mysticalagriculture:infusion_altar"
+				id: "40021E0DC0D889BE"
+				title: "Altamente Infundido"
+				type: "toast"
+			}]
+			subtitle: "Infusion"
+			tasks: [
+				{
+					consume_items: false
+					id: "156A36ED5262CD88"
+					item: "mysticalagriculture:infusion_altar"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 8L
+					id: "2F2303544073A68D"
+					item: { Count: 8, id: "mysticalagriculture:infusion_pedestal" }
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"090833590D4B9F7F"
+				"7305E40E78D85CEE"
+			]
+			description: ["Ao crescer gera &bCertus Quartz Essence&r que pode ser convertido em &bCertus Quartzo&r"]
+			icon: "mysticalagriculture:certus_quartz_essence"
+			id: "4042EEE7D524E350"
+			rewards: [{
+				description: ""
+				icon: "mysticalagriculture:certus_quartz_seeds"
+				id: "243236303A299281"
+				title: "Plantando Quartzo Certo"
+				type: "toast"
+			}]
+			subtitle: "Certus Quartz Seed"
+			tasks: [
+				{
+					consume_items: false
+					id: "0B8E5975A0AFC79F"
+					item: "mysticalagriculture:certus_quartz_seeds"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "64AC4A5FCE568883"
+					item: { Count: 4, id: "ae2:certus_quartz_crystal" }
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "640565134CE07D1F"
+					item: { Count: 4, id: "mysticalagriculture:tertium_essence" }
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6354F3740D67CCBB"
+					item: "mysticalagriculture:prosperity_seed_base"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			x: -8.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"2D327BD55796D3C4"
+				"090833590D4B9F7F"
+			]
+			description: ["Ao crescer gera &eGold Essence&r que pode ser convertido em &eGold Ingot&r"]
+			icon: "mysticalagriculture:gold_essence"
+			id: "28E8127403676E79"
+			rewards: [{
+				description: ""
+				icon: "mysticalagriculture:gold_seeds"
+				id: "3FCF1C79D8D8B45F"
+				title: "Plantando Ouro"
+				type: "toast"
+			}]
+			subtitle: "Gold Seed"
+			tasks: [
+				{
+					consume_items: false
+					id: "066B83DF4F71ABBD"
+					item: "mysticalagriculture:gold_seeds"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "1010533619A476D2"
+					item: { Count: 4, id: "mysticalagriculture:imperium_essence" }
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "4E0D4512D839A760"
+					item: "mysticalagriculture:prosperity_seed_base"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "674A1FD4BF09CFF9"
+					item: { Count: 4, id: "minecraft:gold_ingot" }
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			x: -6.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"763D3B797A6F686F"
+				"090833590D4B9F7F"
+			]
+			description: ["Ao crescer gera &bDiamond Essence&r que pode ser convertido em &bDiamond&r"]
+			icon: "mysticalagriculture:diamond_essence"
+			id: "3E0836B8591C09DE"
+			rewards: [{
+				description: ""
+				icon: "mysticalagriculture:diamond_seeds"
+				id: "44812AFF9301A597"
+				title: "Plantando Diamante"
+				type: "toast"
+			}]
+			subtitle: "Diamond Seed"
+			tasks: [
+				{
+					consume_items: false
+					id: "7FC7D0FCE0A30684"
+					item: "mysticalagriculture:diamond_seeds"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "55F7D373B18A57DB"
+					item: { Count: 4, id: "mysticalagriculture:supremium_essence" }
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "7529304FB42B023E"
+					item: { Count: 4, id: "minecraft:diamond" }
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "41F1A75671121D9C"
+					item: "mysticalagriculture:prosperity_seed_base"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"763D3B797A6F686F"
+				"090833590D4B9F7F"
+			]
+			description: ["Ao crescer gera &6Netherite Essence&r que pode ser convertido em &6Netherite&r"]
+			icon: "mysticalagriculture:netherite_essence"
+			id: "5351E73408E413AD"
+			rewards: [{
+				description: ""
+				icon: "mysticalagriculture:netherite_seeds"
+				id: "241BDFEB4B6EAF15"
+				title: "Plantando Netherite"
+				type: "toast"
+			}]
+			subtitle: "Netherite Seed"
+			tasks: [
+				{
+					consume_items: false
+					id: "2492F1DB0EFC81E6"
+					item: "mysticalagriculture:netherite_seeds"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "102BE9053CFF5C3F"
+					item: { Count: 4, id: "mysticalagriculture:supremium_essence" }
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "14183F6F75BB5376"
+					item: { Count: 4, id: "minecraft:netherite_ingot" }
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "67B2976A23097F48"
+					item: "mysticalagriculture:prosperity_seed_base"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"2D327BD55796D3C4"
+				"090833590D4B9F7F"
+			]
+			description: ["Ao crescer gera &1Lapis Lazuli Seed&r que pode ser convertido em &1Lapis Lazuli&r"]
+			icon: "mysticalagriculture:lapis_lazuli_essence"
+			id: "1F1DD2AA453D635C"
+			rewards: [{
+				description: ""
+				icon: "mysticalagriculture:lapis_lazuli_seeds"
+				id: "578D07B38BBE62E6"
+				title: "Plantando Lapis"
+				type: "toast"
+			}]
+			subtitle: "Lapis Lazuli Seed"
+			tasks: [
+				{
+					consume_items: false
+					id: "3149EF8ED8AA2267"
+					item: "mysticalagriculture:lapis_lazuli_seeds"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "5060AA48F0BC13EF"
+					item: { Count: 4, id: "minecraft:lapis_lazuli" }
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "4C027800CDC10801"
+					item: { Count: 4, id: "mysticalagriculture:imperium_essence" }
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "03782CB40D6B88D1"
+					item: "mysticalagriculture:prosperity_seed_base"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			x: -5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"7305E40E78D85CEE"
+				"090833590D4B9F7F"
+			]
+			description: ["Ao crescer gera &cRedstone Essence&r que pode ser convertido em &cRedstone&r"]
+			icon: "mysticalagriculture:redstone_essence"
+			id: "2A0E53BFD6A760F0"
+			rewards: [{
+				description: ""
+				icon: "mysticalagriculture:redstone_seeds"
+				id: "6A5EBB1126E193F3"
+				title: "Plantando Redstone"
+				type: "toast"
+			}]
+			subtitle: "Redstone Seed"
+			tasks: [
+				{
+					consume_items: false
+					id: "3B82E4B1E60B754C"
+					item: "mysticalagriculture:redstone_seeds"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "385F7C12C284014C"
+					item: { Count: 4, id: "minecraft:redstone" }
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "2DAC5DCE33B36DBE"
+					item: { Count: 4, id: "mysticalagriculture:tertium_essence" }
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "507771138F93A1F9"
+					item: "mysticalagriculture:prosperity_seed_base"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			x: -11.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"7305E40E78D85CEE"
+				"090833590D4B9F7F"
+			]
+			description: ["Ao crescer gera &eGlowstone Essence&r que pode ser convertido em &eGlowstone Dust&r"]
+			icon: "mysticalagriculture:glowstone_essence"
+			id: "334D946AEB4AE8D8"
+			rewards: [{
+				description: ""
+				icon: "mysticalagriculture:glowstone_seeds"
+				id: "5ACDB777012DE8F1"
+				title: "Plantando Luz"
+				type: "toast"
+			}]
+			subtitle: "Glowstone Seeds"
+			tasks: [
+				{
+					consume_items: false
+					id: "39FEF78260586929"
+					item: "mysticalagriculture:glowstone_seeds"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "325DCE4AA8DDE98D"
+					item: { Count: 4, id: "minecraft:glowstone_dust" }
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "7115242ADD41BC8C"
+					item: { Count: 4, id: "mysticalagriculture:tertium_essence" }
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "5AAA35F925DB8DBE"
+					item: "mysticalagriculture:prosperity_seed_base"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			x: -10.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"090833590D4B9F7F"
+				"763D3B797A6F686F"
+			]
+			description: ["Ao crescer gera &aEmerald Essence&r que pode ser convertido em &aEmerald&r"]
+			icon: "mysticalagriculture:emerald_essence"
+			id: "7F141832A6DFC33F"
+			rewards: [{
+				description: ""
+				icon: "mysticalagriculture:emerald_seeds"
+				id: "18EB713989A489E1"
+				title: "Plantando Esmeralda"
+				type: "toast"
+			}]
+			subtitle: "Emerald Seed"
+			tasks: [
+				{
+					id: "1ED1080B833100F6"
+					item: "mysticalagriculture:emerald_seeds"
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "6CF6BDF674D3BE21"
+					item: { Count: 4, id: "mysticalagriculture:supremium_essence" }
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2A065C934A9BB6A2"
+					item: { Count: 4, id: "minecraft:emerald" }
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "1CCD12E67DDDD1BE"
+					item: "mysticalagriculture:prosperity_seed_base"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"090833590D4B9F7F"
+				"349718B52A81A860"
+			]
+			description: ["Ao crescer gera &bDye Essence&r que pode ser convertido em &bQualquer Dye&r (Veja o &aJEI&r para todas as possíveis combinações)"]
+			icon: "mysticalagriculture:dye_essence"
+			id: "61CCF9B533FEBEAE"
+			rewards: [{
+				description: ""
+				icon: "mysticalagriculture:dye_seeds"
+				id: "3A35E343477A0A65"
+				title: "Pigmento Natural"
+				type: "toast"
+			}]
+			subtitle: "Dye Seed"
+			tasks: [
+				{
+					consume_items: false
+					id: "5ACB37E6ABBD8A0F"
+					item: "mysticalagriculture:dye_seeds"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "01F23645D2089E42"
+					item: { Count: 4, id: "mysticalagriculture:dye_agglomeratio" }
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "4806E03954292445"
+					item: { Count: 4, id: "mysticalagriculture:prudentium_essence" }
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "334A75746972CBDD"
+					item: "mysticalagriculture:prosperity_seed_base"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			x: -12.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"7305E40E78D85CEE"
+				"090833590D4B9F7F"
+			]
+			description: ["Ao crescer gera &bNether Quartz Essence&r que pode ser convertido em &bNether Quartz&r"]
+			icon: "mysticalagriculture:nether_quartz_essence"
+			id: "05051280013A3620"
+			rewards: [{
+				description: ""
+				icon: "mysticalagriculture:nether_quartz_seeds"
+				id: "00C35B60E3E06826"
+				title: "Plantando Nether Quartz"
+				type: "toast"
+			}]
+			subtitle: "Nether Quartz Seed"
+			tasks: [
+				{
+					consume_items: false
+					id: "72F18F06ADDEFEE7"
+					item: "mysticalagriculture:nether_quartz_seeds"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "45D53645CF4CBD88"
+					item: { Count: 4, id: "minecraft:quartz" }
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "6A93B24B8A23EE9E"
+					item: { Count: 4, id: "mysticalagriculture:tertium_essence" }
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "2C33E571E3460645"
+					item: "mysticalagriculture:prosperity_seed_base"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			x: -9.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"763D3B797A6F686F"
+				"090833590D4B9F7F"
+			]
+			description: ["Ao crescer gera &aUraninite Essence&r que pode ser convertido em &aUraninite&r"]
+			icon: "mysticalagriculture:uraninite_essence"
+			id: "7589333C2F97F7FE"
+			rewards: [{
+				description: ""
+				icon: "mysticalagriculture:uraninite_seeds"
+				id: "5C89DC7B0EEA4FC3"
+				title: "Plantação Radioativa"
+				type: "toast"
+			}]
+			subtitle: "Uraninite Seed"
+			tasks: [
+				{
+					consume_items: false
+					id: "063858FCD9C60F34"
+					item: "mysticalagriculture:uraninite_seeds"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "2FFF23B53F556B71"
+					item: "powah:uraninite"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "60C9A787981C2606"
+					item: "mysticalagriculture:supremium_essence"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "181E778EE36AE2A6"
+					item: "mysticalagriculture:prosperity_seed_base"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"2D327BD55796D3C4"
+				"090833590D4B9F7F"
+			]
+			description: ["Ao crescer gera &bOsmium Essence&r que pode ser convertido em &bOsmium Ingot&r"]
+			icon: "mysticalagriculture:osmium_essence"
+			id: "29E72CC768AF39BD"
+			rewards: [{
+				description: ""
+				icon: "mysticalagriculture:osmium_seeds"
+				id: "11A541C79CB9A799"
+				title: "Plantando Osmium"
+				type: "toast"
+			}]
+			subtitle: "Osmium Seed"
+			tasks: [
+				{
+					consume_items: false
+					id: "599646DB81600EC9"
+					item: "mysticalagriculture:osmium_seeds"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "5683FF10A3684255"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ingots/osmium"
+						}
+					}
+					title: "Any #forge:ingots/osmium"
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "17EDDC4ED1F0F6CA"
+					item: { Count: 4, id: "mysticalagriculture:imperium_essence" }
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "13BC61795C1EDDF3"
+					item: { Count: 4, id: "mysticalagriculture:prosperity_seed_base" }
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			x: -4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["631FE9EF1E0EF562"]
+			description: ["&6Soul Extractor&r é a máquina que você precisa fazer para obter &bCrops de Mobs&r. É com ela que você extrai a alma de mobs e armazena em &6Soul Jar&r, (Veja o &aJEI&r para ver as receitas) consumindo &aItems Loot&r daquele Mob. Estes &6Soul Jars&r vão nas receitas das Seeds"]
+			icon: "mysticalagriculture:soul_extractor"
+			id: "1049BF448D128D8B"
+			rewards: [{
+				description: ""
+				icon: "mysticalagriculture:soul_extractor"
+				id: "200B7E6AAAF5AF6C"
+				title: "Extrator de Almas"
+				type: "toast"
+			}]
+			subtitle: "Soul Extractor"
+			tasks: [
+				{
+					consume_items: false
+					id: "33FAD9555D82578C"
+					item: "mysticalagriculture:soul_extractor"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 2L
+					id: "4C5F50BC5AB57F52"
+					item: { Count: 2, id: "mysticalagriculture:soulium_ingot" }
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 2L
+					id: "61F626224B023BD2"
+					item: {
+						Count: 1
+						id: "mysticalagriculture:soulium_dagger"
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "0E10F15DB2A3F3F1"
+					item: "mysticalagriculture:machine_frame"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "26D25F9B8212E3B3"
+					item: { Count: 4, id: "minecraft:iron_ingot" }
+					type: "item"
+				}
+			]
+			x: -6.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["1049BF448D128D8B"]
+			description: ["&6Soul Jars&r são necessários para a criação de &2Sementes de Mobs&r do &9Mystical Agriculture&r. Elas contém a &bEssência do Mob&r do qual será castado no crafting"]
+			icon: "mysticalagriculture:soul_jar"
+			id: "684E6C87AE85E9E4"
+			rewards: [{
+				description: ""
+				icon: {
+					Count: 1
+					id: "mysticalagriculture:soul_jar"
+					tag: {
+						Souls: 10.0d
+						Type: "mysticalagriculture:blaze"
+					}
+				}
+				id: "14842B19E285EF68"
+				title: "Almas em Jarros"
+				type: "toast"
+			}]
+			subtitle: "Soul Jar"
+			tasks: [
+				{
+					consume_items: false
+					id: "511BE895E78ABDE6"
+					item: "mysticalagriculture:soul_jar"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "5B4FFA2702E7E0B7"
+					item: "mysticalagriculture:soul_glass"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "0AA9B77F3A3A111C"
+					item: "mysticalagriculture:soul_dust"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "04AA2D756073F10B"
+					item: "minecraft:glass"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "69983B7D1C975759"
+					item: "mysticalagriculture:soulium_ingot"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			x: -4.5d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"7305E40E78D85CEE"
+				"1049BF448D128D8B"
+				"684E6C87AE85E9E4"
+			]
+			description: ["Ao crescer gera &2Zombie Essence&r que pode ser convertido em &2Loots de Zumbi&r"]
+			icon: "mysticalagriculture:zombie_essence"
+			id: "2A5135F0ACE9306F"
+			rewards: [{
+				description: ""
+				icon: "mysticalagriculture:zombie_seeds"
+				id: "78AEB69F97B24A13"
+				title: "Plantando Morte"
+				type: "toast"
+			}]
+			subtitle: "Zombie Seed"
+			tasks: [
+				{
+					consume_items: false
+					id: "39E97B02D53DE9B8"
+					item: "mysticalagriculture:zombie_seeds"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "76BF80684F5DAEEF"
+					item: {
+						Count: 1
+						id: "mysticalagriculture:soul_jar"
+						tag: {
+							Souls: 10.0d
+							Type: "mysticalagriculture:zombie"
+						}
+					}
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "005D9CD467730D4C"
+					item: { Count: 4, id: "mysticalagriculture:tertium_essence" }
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "2671FA7CCCF781BE"
+					item: "mysticalagriculture:soulium_seed_base"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					id: "1580E4C4C1CB1FA4"
+					item: "mysticalagriculture:prosperity_seed_base"
+					type: "item"
+				}
+			]
+			x: -7.5d
+			y: -8.5d
+		}
+		{
+			dependencies: [
+				"1049BF448D128D8B"
+				"684E6C87AE85E9E4"
+				"349718B52A81A860"
+			]
+			description: ["Ao crescer gera &bChicken Essence&r que pode ser convertido em &bLoots de Galinha&r"]
+			icon: "mysticalagriculture:chicken_essence"
+			id: "72EA57F767C54DFA"
+			rewards: [{
+				description: ""
+				icon: "mysticalagriculture:chicken_seeds"
+				id: "2B5AAEAAA4DFEC6F"
+				title: "Plantando Galinha"
+				type: "toast"
+			}]
+			subtitle: "Chicken Seed"
+			tasks: [
+				{
+					consume_items: false
+					id: "201D0DEF2D732434"
+					item: "mysticalagriculture:chicken_seeds"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "24162848D52D0741"
+					item: {
+						Count: 1
+						id: "mysticalagriculture:soul_jar"
+						tag: {
+							Souls: 8.0d
+							Type: "mysticalagriculture:chicken"
+						}
+					}
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "2201E118DA07BFE4"
+					item: "mysticalagriculture:prudentium_essence"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7CCE7DCDA30529FF"
+					item: "mysticalagriculture:soulium_seed_base"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			x: -5.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["6BEC64C811D2F687"]
+			description: ["O &dGrowth Accelerator&r &cAcelera&r o &eCrescimento de Crops&r do &bMystical Agriculture&r em um raio (&3Veja a Tooltip&r) e quanto melhor o &6Tier&r, &2mais rápido&r as plantas crescem e &1maior&r é o raio. Este é o Tier &a1&r"]
+			hide_dependency_lines: true
+			id: "413BC9DFDCDDB029"
+			rewards: [{
+				description: ""
+				icon: "mysticalagriculture:inferium_growth_accelerator"
+				id: "6D0F974AC3FDD03E"
+				title: "Acelerando Crescimento"
+				type: "toast"
+			}]
+			subtitle: "Inferium Growth Accelerator"
+			tasks: [{
+				consume_items: false
+				id: "335A02ED224CD840"
+				item: "mysticalagriculture:inferium_growth_accelerator"
+				match_nbt: false
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -10.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["349718B52A81A860"]
+			description: ["O &dGrowth Accelerator&r &cAcelera&r o &eCrescimento de Crops&r do &bMystical Agriculture&r em um raio (&3Veja a Tooltip&r) e quanto melhor o &6Tier&r, &2mais rápido&r as plantas crescem e &1maior&r é o raio. Este é o Tier &22&r"]
+			hide_dependency_lines: true
+			id: "0111ED82436B21A6"
+			subtitle: "Growth Accelerator"
+			tasks: [{
+				consume_items: false
+				id: "1DD4C8650A2F5192"
+				item: "mysticalagriculture:prudentium_growth_accelerator"
+				match_nbt: false
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -9.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7305E40E78D85CEE"]
+			hide_dependency_lines: true
+			id: "3F6F1BE627049203"
+			rewards: [{
+				description: ""
+				icon: "mysticalagriculture:tertium_growth_accelerator"
+				id: "57D83A92BE4246ED"
+				title: "Growth Tier 3"
+				type: "toast"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "26C700D436CC780E"
+				item: "mysticalagriculture:tertium_growth_accelerator"
+				match_nbt: false
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -8.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2D327BD55796D3C4"]
+			hide_dependency_lines: true
+			id: "21D487EC4578C9E8"
+			rewards: [{
+				description: ""
+				icon: "mysticalagriculture:imperium_growth_accelerator"
+				id: "7C3DA0C11411B161"
+				title: "Growth Tier 4"
+				type: "toast"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "179701077B48D434"
+				item: "mysticalagriculture:imperium_growth_accelerator"
+				match_nbt: false
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -7.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["763D3B797A6F686F"]
+			hide_dependency_lines: true
+			id: "1519839FB38D9377"
+			rewards: [{
+				description: ""
+				icon: "mysticalagriculture:supremium_growth_accelerator"
+				id: "75B313E4C4CF2416"
+				title: "Growth Tier 5"
+				type: "toast"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "18803025AE238ABC"
+				item: "mysticalagriculture:supremium_growth_accelerator"
+				match_nbt: false
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -6.5d
+			y: -0.5d
+		}
+	]
+	title: "Mystical Agriculture"
+}

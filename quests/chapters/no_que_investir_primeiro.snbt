@@ -21,7 +21,7 @@
 			hide: true
 			hide_dependency_lines: false
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "apotheosis:potion_charm"
 				tag: {
 					Damage: 0
@@ -40,7 +40,7 @@
 				{
 					consume_items: false
 					icon: {
-						Count: 1b
+						Count: 1
 						id: "apotheosis:potion_charm"
 						tag: {
 							Damage: 0
@@ -50,7 +50,7 @@
 					}
 					id: "0060382B0C9DB6A6"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "apotheosis:potion_charm"
 						tag: {
 							Damage: 0
@@ -58,14 +58,14 @@
 						}
 					}
 					match_nbt: true
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "56D89904BEC0F007"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "apotheosis:potion_charm"
 						tag: {
 							Damage: 0
@@ -73,14 +73,14 @@
 						}
 					}
 					match_nbt: true
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "73450ED6A0EBDF29"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "apotheosis:potion_charm"
 						tag: {
 							Damage: 0
@@ -88,14 +88,14 @@
 						}
 					}
 					match_nbt: true
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "3ADAE131E75B6A3C"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "apotheosis:potion_charm"
 						tag: {
 							Damage: 0
@@ -103,14 +103,13 @@
 						}
 					}
 					match_nbt: true
-					only_from_crafting: true
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7F5E7B21518A7BD2"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "apotheosis:potion_charm"
 						tag: {
 							Damage: 0
@@ -137,7 +136,7 @@
 			hide: true
 			hide_dependency_lines: false
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "minecraft:potion"
 				tag: {
 					Potion: "potionsmaster:emerald_sight"
@@ -154,7 +153,7 @@
 					consume_items: false
 					id: "66B392AEF6801DA9"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "minecraft:potion"
 						tag: {
 							Potion: "potionsmaster:diamond_sight"
@@ -167,7 +166,7 @@
 					consume_items: false
 					id: "0D0DDF21AB71EE16"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "minecraft:potion"
 						tag: {
 							Potion: "potionsmaster:gold_sight"
@@ -181,7 +180,7 @@
 					consume_items: false
 					id: "18D268EF7B23DF0F"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "minecraft:potion"
 						tag: {
 							Potion: "potionsmaster:redstone_sight"
@@ -194,7 +193,7 @@
 					consume_items: false
 					id: "58805FF77347D08D"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "minecraft:potion"
 						tag: {
 							Potion: "potionsmaster:iron_sight"
@@ -207,7 +206,7 @@
 					consume_items: false
 					id: "7BFD039F23980FB0"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "minecraft:potion"
 						tag: {
 							Potion: "potionsmaster:osmium_sight"
@@ -242,7 +241,7 @@
 					count: 3
 					id: "5F2F1B5E69734A50"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "minecraft:potion"
 						tag: {
 							Potion: "minecraft:water"
@@ -254,6 +253,13 @@
 					id: "134A7F07CB1E13A9"
 					type: "xp"
 					xp: 40
+				}
+				{
+					description: ""
+					icon: "minecraft:brewing_stand"
+					id: "52EADAE9DF713283"
+					title: "Fullmetal Alchemist"
+					type: "toast"
 				}
 			]
 			subtitle: "Suporte de Poções"
@@ -267,7 +273,7 @@
 					icon: "minecraft:brewing_stand"
 					id: "13DEDA7224348135"
 					item: "minecraft:brewing_stand"
-					match_nbt: true
+					match_nbt: false
 					only_from_crafting: true
 					title: "Suporte de Poções"
 					type: "item"
@@ -287,14 +293,17 @@
 					icon: "minecraft:blaze_powder"
 					id: "406ABEFBF5D5EBB1"
 					item: "minecraft:blaze_powder"
+					match_nbt: false
 					only_from_crafting: false
 					title: "Pó de Blaze"
 					type: "item"
 				}
 				{
+					consume_items: false
 					count: 3L
 					id: "6CBDC949200D03EC"
 					item: "minecraft:cobblestone"
+					match_nbt: false
 					only_from_crafting: false
 					type: "item"
 				}
@@ -304,7 +313,7 @@
 			y: 2.0d
 		}
 		{
-			description: ["Em qualquer Mundo, quer &aVanilla&r, ou &dModded&r, uma primeira visitinha ao &cNether&r é &4INDISPENSÁVEL&r. Procure Acessar o &cNether&r o mais rápido possível assim que spawnar no Mundo, pois há recursos que só podem ser obtidos nessa dimensão"]
+			description: ["Em qualquer Mundo, quer &aVanilla&r, ou &dModded&r, uma primeira visitinha ao &cNether&r é &4INDISPENSÁVEL&r. Procure Acessar o &cNether&r o mais rápido possível assim que spawnar no Mundo, pois há recursos que só podem ser obtidos nessa dimensão."]
 			id: "4782948A24DD7717"
 			subtitle: "Nether"
 			tasks: [{
@@ -332,17 +341,19 @@
 				icon: "silentgear:raw_crimson_iron"
 				id: "63513F0D672C6083"
 				item: "silentgear:raw_crimson_iron"
-				match_nbt: true
+				match_nbt: false
 				only_from_crafting: false
 				type: "item"
 			}]
-			x: 1.5d
-			y: 3.5d
+			title: "Vermelho como Sangue"
+			x: 1.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
 				"30ABE5C4A11FD0DA"
 				"08BADE1F352E8037"
+				"4782948A24DD7717"
 			]
 			description: ["Coloque um &5Minério Bruto de Ferro Carmesim&r numa &eEnrichment Chamber&r do &aMekanism&r para obter &d3x Pó de Ferro Carmesim&r"]
 			hide: true
@@ -360,8 +371,8 @@
 				type: "item"
 			}]
 			title: "Triade Carmesim"
-			x: 2.5d
-			y: 2.0d
+			x: 2.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["4782948A24DD7717"]
@@ -397,8 +408,8 @@
 				only_from_crafting: true
 				type: "item"
 			}]
-			x: -1.5d
-			y: -1.0d
+			x: 1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["1E722C13BC259C3D"]
@@ -426,31 +437,35 @@
 				}
 			]
 			title: "Mystical Agriculture Farmlands"
-			x: -1.5d
-			y: -2.5d
+			x: 1.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["3B9E29D62F179036"]
+			description: ["Use os &aBotany Pots&r ao seu favor e farm ao menos um pouco de &aMelância&r ao colocar um &9solo&r e uma &aSemente de Melância&r em um &aBotany Pot&r. Vale ressaltar que quanto mais forte for o &9Solo&r em que a planta foi plantada, &6mais rápido ela cresce&r. &cAtenção, esta Quest libera a progressão do Gas Burning Generator do Mekanism&r, pois você precisa de uma boa fonte de &aBiomassa&r para gerar &dEtileno&r e consequentemente &eEnergia&r"]
+			hide: true
 			id: "40DD270E7552EA93"
+			min_width: 455
 			tasks: [{
 				id: "648C1BBE90972008"
 				item: "minecraft:melon_slice"
 				only_from_crafting: false
 				type: "item"
 			}]
-			x: -1.5d
-			y: -4.0d
+			x: 1.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["3B9E29D62F179036"]
 			description: ["O &aBotany Pot&r também serve como uma boa farm de madeira no começo, apenas arme o setup e deixe farmando"]
+			hide: true
 			icon: "minecraft:oak_log"
 			id: "0F77CF08AD692249"
 			tasks: [
 				{
 					id: "2F63E1DF6AB9A1AC"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "minecraft:logs"
@@ -462,7 +477,7 @@
 				{
 					id: "75E94392F2C858B5"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "minecraft:saplings"
@@ -472,8 +487,8 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
-			y: -2.5d
+			x: 2.0d
+			y: -5.0d
 		}
 		{
 			id: "3D8241C681147308"
@@ -494,6 +509,7 @@
 					type: "command"
 				}
 			]
+			shape: "gear"
 			tasks: [{
 				id: "0BE5BB65774D5822"
 				title: "Comandos Essenciais"
@@ -504,17 +520,21 @@
 		}
 		{
 			dependencies: ["3B9E29D62F179036"]
+			description: ["Use os &aBotany Pots&r ao seu favor e farm ao menos um pouco de &aCacto&r ao colocar um &eAreia&r e um &aCacto&r em um &aBotany Pot&r. Vale ressaltar que quanto mais forte for o &9Solo&r em que a planta foi plantada, &cmais rápido ela cresce&r "]
+			hide: true
 			id: "0209D8B69D27C000"
 			tasks: [{
 				id: "668A24BB6DE7F8F9"
 				item: "minecraft:cactus"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -3.5d
+			x: 3.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["3B9E29D62F179036"]
+			description: ["Use os &aBotany Pots&r ao seu favor e farm ao menos um pouco de &aInferium Essence&r ao colocar um &9solo&r e uma &aSemente de Inferium&r em um &aBotany Pot&r. Vale ressaltar que quanto mais forte for o &9Solo&r em que a planta foi plantada, &cmais rápido ela cresce&r "]
+			hide: true
 			icon: "mysticalagriculture:inferium_essence"
 			id: "258D0BD178520DCB"
 			tasks: [{
@@ -523,27 +543,46 @@
 				only_from_crafting: true
 				type: "item"
 			}]
-			x: -2.5d
-			y: -3.5d
+			title: "Plante Inferium no Botany Pot"
+			x: 0.0d
+			y: -5.0d
 		}
 		{
 			description: ["Está longe de casa mas não quer dormir com uma cama simples pois não quer alterar o seu spawn point? Os &aSacos de Dormir&r do mod &cConforts&r te ajudam nisso, eles passam a noite sem alterar o spawn point e podem ser levados facilmente para qualquer lugar"]
 			id: "1769FDDA89D84A28"
-			rewards: [{
-				id: "77714191186C3E0D"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "77714191186C3E0D"
+					type: "xp"
+					xp: 10
+				}
+				{
+					description: ""
+					icon: "comforts:sleeping_bag_white"
+					id: "5BD062888A5FB17E"
+					title: "Baiano Pobre"
+					type: "toast"
+				}
+			]
 			shape: "pentagon"
 			subtitle: "Dormindo Fora de Casa"
 			tasks: [{
+				consume_items: false
 				id: "5A2EB5BA428E8469"
-				item: "comforts:sleeping_bag_white"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "comforts:sleeping_bags"
+					}
+				}
+				match_nbt: false
 				only_from_crafting: true
+				title: "Any #comforts:sleeping_bags"
 				type: "item"
 			}]
-			x: -13.5d
-			y: 4.5d
+			x: -14.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["1769FDDA89D84A28"]
@@ -554,7 +593,7 @@
 				description: "Faça uma Rede do Comforts"
 				icon: "comforts:hammock_white"
 				id: "4C967A7E8A4E7A17"
-				title: "Soneca da Tarde"
+				title: "O Verdadeiro Baiano"
 				type: "toast"
 			}]
 			shape: "hexagon"
@@ -564,12 +603,13 @@
 					consume_items: false
 					id: "2530CF8F20840732"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "comforts:hammocks"
 						}
 					}
+					match_nbt: false
 					only_from_crafting: true
 					title: "Pano de Rede"
 					type: "item"
@@ -579,13 +619,14 @@
 					count: 2L
 					id: "0425128853A34CAB"
 					item: "comforts:rope_and_nail"
+					match_nbt: false
 					only_from_crafting: true
 					title: "Corda e Prego"
 					type: "item"
 				}
 			]
-			x: -13.5d
-			y: 3.0d
+			x: -12.5d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -594,6 +635,13 @@
 			]
 			description: ["Este Obelisco guarda a sua XP"]
 			id: "710FEF23C57935EB"
+			rewards: [{
+				description: ""
+				icon: "utilitix:experience_crystal"
+				id: "09FC793066B2CE87"
+				title: "Tankas a XP?"
+				type: "toast"
+			}]
 			subtitle: "Armazenamento de XP"
 			tasks: [{
 				consume_items: false
@@ -603,27 +651,42 @@
 				only_from_crafting: true
 				type: "item"
 			}]
-			x: -13.5d
+			x: -11.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["406ABEFBF5D5EBB1"]
 			hide: true
 			id: "2D3059FE58F2BFF1"
+			rewards: [{
+				description: ""
+				icon: "mob_grinding_utils:tank_sink"
+				id: "1BC03F3AA696B0AF"
+				title: "Tanque de XP"
+				type: "toast"
+			}]
 			tasks: [{
 				consume_items: false
 				id: "314AAC9582E4ED73"
 				item: "mob_grinding_utils:tank_sink"
+				match_nbt: false
 				only_from_crafting: true
 				type: "item"
 			}]
-			x: -13.5d
-			y: 1.0d
+			x: -14.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["2D3059FE58F2BFF1"]
 			description: ["Para criar um &aFrasco de Experiência&r, simplesmente suba no &aXP Drain Tank&r e espere até que se acumule pelo menos &91B&r de &aXP Juice&r dentro do &9Tanque&r, depois clique com o &6Botão Direito&r no &9Tanque&r com um &7Frasco&r na mão"]
 			id: "29D7ACF181CF1A45"
+			rewards: [{
+				description: ""
+				icon: "minecraft:experience_bottle"
+				id: "2CF25A2B706B1DFB"
+				title: "XP em Garrafa"
+				type: "toast"
+			}]
 			tasks: [{
 				consume_items: false
 				id: "05A76CDDA88D127E"
@@ -632,21 +695,23 @@
 				only_from_crafting: false
 				type: "item"
 			}]
-			x: -13.5d
-			y: -0.5d
+			x: -12.5d
+			y: -2.0d
 		}
 		{
 			description: ["Este Bloco scaneia todo inventário posicionado em sua área de funcionamento e te permite acessar estes inventários a partir dele, além de possuir uma Crafting Grid Integrada, muito útil"]
 			id: "7DA8BF72531BF402"
 			subtitle: "Tudo em um só lugar"
 			tasks: [{
+				consume_items: false
 				id: "774360085C0F766E"
 				item: "rftoolsstorage:storage_scanner"
+				match_nbt: false
 				only_from_crafting: true
 				type: "item"
 			}]
-			x: -11.5d
-			y: -2.0d
+			x: -14.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["757FDA8015B193D6"]
@@ -664,6 +729,7 @@
 				consume_items: false
 				id: "382ED972B8154779"
 				item: "enderio:sag_mill"
+				match_nbt: false
 				only_from_crafting: true
 				type: "item"
 			}]
@@ -673,7 +739,7 @@
 		{
 			description: ["Faça um Barril do Sophisticated Storage"]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "sophisticatedstorage:barrel"
 				tag: {
 					woodType: "oak"
@@ -683,7 +749,7 @@
 			rewards: [{
 				description: ""
 				icon: {
-					Count: 1b
+					Count: 1
 					id: "sophisticatedstorage:barrel"
 					tag: {
 						woodType: "oak"
@@ -693,34 +759,54 @@
 				title: "El Chavo del Ocho"
 				type: "toast"
 			}]
+			shape: "pentagon"
 			tasks: [{
+				consume_items: false
 				id: "41A94A443BB5664E"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "sophisticatedstorage:base_tier_wooden_storage"
 					}
 				}
+				match_nbt: false
+				only_from_crafting: true
 				title: "Any #sophisticatedstorage:base_tier_wooden_storage"
 				type: "item"
 			}]
 			title: "A Casa do Chaves"
-			x: -10.0d
-			y: -2.0d
+			x: -14.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["221A712CEF4045F1"]
+			description: ["Mais espaço interno para Items e Upgrades"]
 			hide: true
 			id: "541DCA9A33AA23F8"
+			rewards: [{
+				description: ""
+				icon: {
+					Count: 1
+					id: "sophisticatedstorage:iron_barrel"
+					tag: {
+						woodType: "birch"
+					}
+				}
+				id: "20C528F188457E82"
+				title: "Um Barril Maior"
+				type: "toast"
+			}]
 			tasks: [{
+				consume_items: false
 				id: "039A7F80AFCA7BC6"
 				item: "sophisticatedstorage:basic_to_iron_tier_upgrade"
+				match_nbt: false
 				only_from_crafting: true
 				type: "item"
 			}]
-			x: -10.0d
-			y: -3.5d
+			x: -12.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -729,12 +815,28 @@
 			]
 			hide: true
 			id: "378D4B7B6B5E6C92"
+			rewards: [{
+				description: ""
+				icon: {
+					Count: 1
+					id: "sophisticatedstorage:gold_barrel"
+					tag: {
+						woodType: "mangrove"
+					}
+				}
+				id: "45D2348D9BC7F7B1"
+				title: "Um Baú ainda Maior"
+				type: "toast"
+			}]
 			tasks: [{
+				consume_items: false
 				id: "6C453C72E356930D"
 				item: "sophisticatedstorage:iron_to_gold_tier_upgrade"
+				match_nbt: false
+				only_from_crafting: true
 				type: "item"
 			}]
-			x: -10.0d
+			x: -11.0d
 			y: -5.0d
 		}
 		{
@@ -743,16 +845,32 @@
 				"541DCA9A33AA23F8"
 				"378D4B7B6B5E6C92"
 			]
+			description: ["Um Baú bem Espaçoso com bastante espaço interno e mais slots de upgrade"]
 			hide: true
 			id: "72303DEB590A8ADC"
+			rewards: [{
+				description: ""
+				icon: {
+					Count: 1
+					id: "sophisticatedstorage:diamond_barrel"
+					tag: {
+						woodType: "mangrove"
+					}
+				}
+				id: "649DAB7001987995"
+				title: "Um Baú Ainda Ainda Maior"
+				type: "toast"
+			}]
 			tasks: [{
+				consume_items: false
 				id: "10CC2D44F7741801"
 				item: "sophisticatedstorage:gold_to_diamond_tier_upgrade"
+				match_nbt: false
 				only_from_crafting: true
 				type: "item"
 			}]
-			x: -10.0d
-			y: -6.5d
+			x: -9.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -761,23 +879,38 @@
 				"378D4B7B6B5E6C92"
 				"72303DEB590A8ADC"
 			]
+			description: ["O Tier Máximo de Barris do Sophisticated Backpacks. Possui o maior espaço interno e slots de upgrade"]
 			hide: true
 			id: "6E48F6C4F91A74EB"
+			rewards: [{
+				description: ""
+				icon: {
+					Count: 1
+					id: "sophisticatedstorage:netherite_barrel"
+					tag: {
+						woodType: "mangrove"
+					}
+				}
+				id: "384580EFD2E71157"
+				title: "A Mansão do Chaves"
+				type: "toast"
+			}]
 			tasks: [{
 				id: "2CE3C307BAD25CBA"
 				item: "sophisticatedstorage:diamond_to_netherite_tier_upgrade"
 				only_from_crafting: true
 				type: "item"
 			}]
-			x: -10.0d
-			y: -8.0d
+			x: -8.0d
+			y: -5.0d
 		}
 		{
+			description: ["A Mochila do &eSophisticated Backpack&r torna a sua exploração pelo mundo, além da mineração, muito mais tranquila e prazerosa sem o incômodo de voltar para a Base Frequentemente pra limpar seu inventário"]
 			id: "4AF141BC1EBDC358"
 			rewards: [{
 				description: ""
 				icon: {
-					Count: 1b
+					Count: 1
 					id: "sophisticatedbackpacks:backpack"
 					tag: {
 						contentsUuid: [I;
@@ -794,38 +927,40 @@
 				title: "Armazenamento Portátil"
 				type: "toast"
 			}]
+			shape: "pentagon"
 			tasks: [{
 				consume_items: false
-				id: "4EB20C5FEBB2EE44"
+				id: "6CA540D6B86F2D38"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "sophisticatedbackpacks:backpack"
 					tag: {
 						contentsUuid: [I;
-							1573750323
-							1074218240
-							-2117676071
-							462502163
+							563433496
+							1324499815
+							-2073362541
+							-575171514
 						]
 						inventorySlots: 27
 						upgradeSlots: 1
 					}
 				}
-				only_from_crafting: true
+				match_nbt: false
+				only_from_crafting: false
 				type: "item"
 			}]
-			x: -8.5d
-			y: -2.0d
+			x: -14.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["4AF141BC1EBDC358"]
-			description: ["Uma Mochila Maior"]
+			description: ["Com o &fUpgrade de Ferro&r da &eMochila do Sophisticated Backpacks&r, você terá &amais espaço&r para &2items&r e &caddons&r utilitários da mochila"]
 			hide: true
 			id: "4E1E8BFEA4924D20"
 			rewards: [{
 				description: ""
 				icon: {
-					Count: 1b
+					Count: 1
 					id: "sophisticatedbackpacks:iron_backpack"
 					tag: {
 						contentsUuid: [I;
@@ -842,11 +977,12 @@
 				title: "Uma mochila maior"
 				type: "toast"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				consume_items: false
 				id: "3DBCAA6889FC8A99"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "sophisticatedbackpacks:iron_backpack"
 					tag: {
 						contentsUuid: [I;
@@ -859,10 +995,11 @@
 						upgradeSlots: 2
 					}
 				}
+				match_nbt: false
 				only_from_crafting: true
 				type: "item"
 			}]
-			x: -8.5d
+			x: -12.5d
 			y: -3.5d
 		}
 		{
@@ -870,12 +1007,13 @@
 				"4E1E8BFEA4924D20"
 				"4AF141BC1EBDC358"
 			]
+			description: ["Mochila com Mais espaço ainda pra items e addons"]
 			hide: true
 			id: "7049F21A90D307C2"
 			rewards: [{
 				description: ""
 				icon: {
-					Count: 1b
+					Count: 1
 					id: "sophisticatedbackpacks:gold_backpack"
 					tag: {
 						contentsUuid: [I;
@@ -896,7 +1034,7 @@
 				consume_items: false
 				id: "078A7B971C678F9F"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "sophisticatedbackpacks:gold_backpack"
 					tag: {
 						contentsUuid: [I;
@@ -909,11 +1047,12 @@
 						upgradeSlots: 3
 					}
 				}
+				match_nbt: false
 				only_from_crafting: true
 				type: "item"
 			}]
-			x: -8.5d
-			y: -5.0d
+			x: -11.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -926,7 +1065,7 @@
 			rewards: [{
 				description: ""
 				icon: {
-					Count: 1b
+					Count: 1
 					id: "sophisticatedbackpacks:diamond_backpack"
 					tag: {
 						contentsUuid: [I;
@@ -944,9 +1083,10 @@
 				type: "toast"
 			}]
 			tasks: [{
+				consume_items: false
 				id: "2475AD19315DEDA5"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "sophisticatedbackpacks:diamond_backpack"
 					tag: {
 						contentsUuid: [I;
@@ -959,10 +1099,12 @@
 						upgradeSlots: 5
 					}
 				}
+				match_nbt: false
+				only_from_crafting: true
 				type: "item"
 			}]
-			x: -8.5d
-			y: -6.5d
+			x: -9.5d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -971,12 +1113,13 @@
 				"7049F21A90D307C2"
 				"0F1E24C3CE252A7B"
 			]
+			description: ["Mochila com o Espaço Maximizado dos slots de upgrade e de items"]
 			hide: true
 			id: "78808C88A47E46B2"
 			rewards: [{
 				description: ""
 				icon: {
-					Count: 1b
+					Count: 1
 					id: "sophisticatedbackpacks:netherite_backpack"
 					tag: {
 						contentsUuid: [I;
@@ -997,7 +1140,7 @@
 				consume_items: false
 				id: "790769FA29E93F2A"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "sophisticatedbackpacks:netherite_backpack"
 					tag: {
 						contentsUuid: [I;
@@ -1010,18 +1153,21 @@
 						upgradeSlots: 7
 					}
 				}
+				match_nbt: false
 				only_from_crafting: true
 				type: "item"
 			}]
-			x: -8.5d
-			y: -8.0d
+			x: -8.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
-				"6AFBB5C7D836B366"
-				"01788323280FAC86"
+				"59F169FD06C35E83"
+				"6E7A980C3105109E"
+				"0E8A8452E5476B64"
 			]
-			description: [""]
+			description: ["Use os Dark Sticks criados na Quest Anterior, além de Hardened Blood Shards e Diamante para Criar uma Vengeance Pickaxe"]
+			hide: false
 			id: "6E02B79CBE882C74"
 			rewards: [{
 				description: ""
@@ -1030,11 +1176,12 @@
 				title: "Fortuna!!!!"
 				type: "toast"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				consume_items: false
 				id: "27A3787A79F7C26E"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "evilcraft:vengeance_pickaxe"
 					tag: {
 						Damage: 0
@@ -1050,57 +1197,491 @@
 						]
 					}
 				}
+				match_nbt: false
 				only_from_crafting: true
 				type: "item"
 			}]
 			title: "Fortuna V Early Game"
-			x: -8.5d
-			y: 1.5d
+			x: -12.5d
+			y: 2.5d
 		}
 		{
-			dependencies: ["6E02B79CBE882C74"]
+			dependencies: [
+				"6E02B79CBE882C74"
+				"0E8A8452E5476B64"
+			]
 			description: ["Esta Teia do Apotheosis permite que você remova qualquer madição de items, ferramentas e armaduras quando usada"]
 			id: "53F0F4522C05CFE4"
+			shape: "diamond"
 			tasks: [{
 				id: "015BB116552FA73B"
 				item: "apotheosis:prismatic_web"
 				type: "item"
 			}]
 			title: "Adeus Maldições"
-			x: -7.0d
-			y: 1.5d
+			x: -11.0d
+			y: 2.5d
 		}
 		{
-			id: "6AFBB5C7D836B366"
-			tasks: [{
-				id: "415B6B7632A883DC"
-				item: "minecraft:granite"
-				type: "item"
+			dependencies: ["2C717CF7D9CE20EA"]
+			description: ["Esta será a sua &aPrincipal Forma&r de voar durante boa parte do jogo. Este &eAngel Ring&r lhe permite voar como no &bCriativo&r ao Custo de &aXP&r enquanto voa. &cATENÇÃO&r: Assim que a XP acabar o efeito do Anel &ccessará imediatamente&r. Não esqueça de progredir para a próxima quest nessa linha para ver como aprimorar o seu &eAngel Ring&r e fazê-lo consumir &eEnergia&r ao invés de &aXP&r para voar."]
+			hide: true
+			icon: "angelring:angel_ring"
+			id: "5DE3D44E6AC6EDBF"
+			min_width: 300
+			rewards: [{
+				description: ""
+				icon: "angelring:angel_ring"
+				id: "538C20D394EC047F"
+				title: "I Believe I Can Fly"
+				type: "toast"
 			}]
-			title: "Instale o Corail Tombstone"
-			x: -10.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["6AFBB5C7D836B366"]
-			id: "01788323280FAC86"
-			shape: "hexagon"
-			tasks: [{
-				id: "39C3D726B0051106"
-				item: {
-					Count: 1b
-					id: "minecraft:enchanted_book"
-					tag: {
-						StoredEnchantments: [{
-							id: "minecraft:protection"
-							lvl: 4s
-						}]
-					}
+			shape: "pentagon"
+			subtitle: "Angel Ring"
+			tasks: [
+				{
+					consume_items: false
+					id: "23CB5E16BE4C41C6"
+					item: "angelring:angel_ring"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
 				}
+				{
+					consume_items: false
+					count: 2L
+					id: "50AF6F8422523F20"
+					item: "minecraft:nether_star"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 3L
+					id: "062B42C402DCD033"
+					item: "minecraft:gold_block"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "3DAD95898D437226"
+					item: "angelring:diamond_ring"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 2L
+					id: "1E14F07BDE5A8BBA"
+					item: "minecraft:feather"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7343CDA3F0FA4BF4"
+					item: "minecraft:blaze_rod"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "I Believe i Can Fly"
+			x: -12.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["4782948A24DD7717"]
+			description: ["Este é um Item Importante na Fabricação do &eAngel Ring&r (Veja na próxima quest nessa linha)."]
+			hide_dependency_lines: true
+			icon: "angelring:diamond_ring"
+			id: "2C717CF7D9CE20EA"
+			rewards: [{
+				description: ""
+				icon: "angelring:diamond_ring"
+				id: "3F90E11CAC053ED3"
+				title: "Um Passo para o Céu"
+				type: "toast"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					consume_items: false
+					id: "0582B495E0372936"
+					item: "angelring:diamond_ring"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "613927C7BCBE6332"
+					item: {
+						Count: 1
+						id: "minecraft:elytra"
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "51B6653ADA52EE0E"
+					item: "minecraft:diamond_block"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 36L
+					id: "4DDB6933A2C1027A"
+					item: "minecraft:diamond"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "63DE457E1D7C7413"
+					item: "minecraft:ghast_tear"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					dimension: "minecraft:the_end"
+					icon: "minecraft:end_portal_frame"
+					id: "5878618E5ED31AE3"
+					title: "Visite o The End ao menos uma vez"
+					type: "dimension"
+				}
+			]
+			x: -14.0d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"2C717CF7D9CE20EA"
+				"5DE3D44E6AC6EDBF"
+			]
+			description: ["Com este Upgrade do &eAngel Ring&r ele deixará de consumir &eXP&r e passará a consumir &aEnergia (Forge Energy ou FE)&r. Pode ser &3Carregado manualmente&r ao colocá-lo em um inventário com &aEnergia&r como &aEnergy Cubes&r do Mekanism ou ainda &cCarregado Automaticamente&r via &bRede Wireless&r do Flux Networks &c(Necessita de um Controller de Flux para a Rede para funcionar)&r"]
+			hide: true
+			icon: "angelring:energetic_angel_ring"
+			id: "53A49105C69332EB"
+			min_width: 300
+			rewards: [{
+				description: ""
+				icon: "angelring:energetic_angel_ring"
+				id: "6E9B96B0E247116F"
+				title: "Voo Energético"
+				type: "toast"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					consume_items: false
+					id: "1FC02B6054220C98"
+					item: "angelring:energetic_angel_ring"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 2L
+					id: "6E6DDF5067B9543C"
+					item: "minecraft:netherite_ingot"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 2L
+					id: "38AB5F9ECEBB6983"
+					item: "minecraft:nether_star"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 2L
+					id: "0A67BB5122A89033"
+					item: "minecraft:redstone_block"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 2L
+					id: "55A9B74ED511D124"
+					item: "minecraft:gold_block"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			title: "Voo Energético"
+			x: -11.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["3D2BE04543566B4D"]
+			description: ["&0Flux&r é o Recurso mais básico do &bFlux Networks&r, é com ele que você consegue fazer os outros componentes do mod. Clique no &0Flux&r nesta quest para ver a receita dele no &7JEI/REI&r, Fabrique alguns deles e faça um &0Bloco de Flux (Veja no REI)&r, com ele você pode fazer Flux onde quiser sem estar na Bedrock"]
+			icon: "fluxnetworks:flux_block"
+			id: "0106AB27D975BAB0"
+			rewards: [{
+				description: ""
+				icon: "fluxnetworks:flux_dust"
+				id: "760D93B33FA43259"
+				title: "Flux"
+				type: "toast"
+			}]
+			tasks: [{
+				consume_items: false
+				count: 5L
+				id: "634ED24A248D10D0"
+				item: "fluxnetworks:flux_dust"
+				match_nbt: false
+				only_from_crafting: false
 				type: "item"
 			}]
-			x: -8.5d
-			y: 0.0d
+			x: -12.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"0106AB27D975BAB0"
+				"7F16728B542B2786"
+				"3D2BE04543566B4D"
+			]
+			description: ["O Ponto de Flux serve como uma Saída de Energia a partir da Rede do Flux Networks. Veja a Descrição do Flux Point na Tooltip do item"]
+			hide: true
+			icon: "fluxnetworks:flux_point"
+			id: "3F2D2264E97FE3A2"
+			rewards: [{
+				description: ""
+				icon: "fluxnetworks:flux_point"
+				id: "52CEEB6E82BEF130"
+				title: "Saida de Eletrons"
+				type: "toast"
+			}]
+			tasks: [
+				{
+					consume_items: false
+					id: "4E5939395F6439C5"
+					item: "fluxnetworks:flux_point"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "75BB7B0A4DAE9532"
+					item: "minecraft:redstone_block"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "6653250049012039"
+					item: "fluxnetworks:flux_core"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			x: -9.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"0106AB27D975BAB0"
+				"3D2BE04543566B4D"
+			]
+			description: ["O &8Flux Plug&r é a Porta de &9Entrada&r de &aEnergia&r para sua Rede Flux, é com este dispositivo que você extrai &aEnergia&r de Blocos e Estruturas Adjacentes e a Insere na sua Rede Flux"]
+			hide: true
+			icon: "fluxnetworks:flux_plug"
+			id: "7F16728B542B2786"
+			rewards: [{
+				description: ""
+				icon: "fluxnetworks:flux_plug"
+				id: "7B2540317A900390"
+				title: "Entrada de Elétrons"
+				type: "toast"
+			}]
+			tasks: [
+				{
+					consume_items: false
+					id: "2530FDA182352C0A"
+					item: "fluxnetworks:flux_plug"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "3A165A1916C3573F"
+					item: "fluxnetworks:flux_block"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "4CFD2C58257DF6B5"
+					item: "fluxnetworks:flux_core"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			x: -11.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"0106AB27D975BAB0"
+				"7F16728B542B2786"
+				"3F2D2264E97FE3A2"
+				"3D2BE04543566B4D"
+			]
+			description: ["É com este Bloco que você &9Cria e Gerencia suas Rede de Energia Flux Networks&r. E onde você habilita a maravilhosa habilidade de &eRecarga Wireless&r de seus items, estando eles, no &eInventário Curios&r, &bInventário&r, &cHotbar&r, &3Mão Principal&r, &5Off Hand&r e &dSlot de Armadura&r"]
+			hide: true
+			icon: "fluxnetworks:flux_controller"
+			id: "43F2769CC0BF340A"
+			rewards: [{
+				description: ""
+				icon: "fluxnetworks:flux_controller"
+				id: "6FA003A30E64E580"
+				title: "Central da Cemig"
+				type: "toast"
+			}]
+			tasks: [
+				{
+					consume_items: false
+					id: "7821CC880D956138"
+					item: "fluxnetworks:flux_controller"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 5L
+					id: "6B4D3B1D6CC8712C"
+					item: "fluxnetworks:flux_block"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 2L
+					id: "37E2CD4D41769244"
+					item: "fluxnetworks:flux_dust"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "39F6E9BAE6FDDF03"
+					item: "fluxnetworks:flux_core"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			x: -8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3B9E29D62F179036"]
+			description: ["Use os &aBotany Pots&r ao seu favor e farm ao menos um pouco de &dDemon Dream Fruit&r ao colocar um &9solo&r e uma &5Semente de Sonho Demoníaco&r em um &aBotany Pot&r. Vale ressaltar que quanto mais forte for o &9Solo&r em que a planta foi plantada, &bmais rápido ela cresce&r. &cEsta Quest libera a aba de Quests do Occultism&r"]
+			hide: true
+			id: "1C1351ECF99033BC"
+			tasks: [{
+				count: 3L
+				id: "428BD88B6B1E07FC"
+				item: "occultism:datura"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"3B9E29D62F179036"
+				"2B4A113A56A15894"
+			]
+			description: ["Farme Undead Log no Botany Pot "]
+			hide: true
+			id: "3054B6FBFE09D98D"
+			tasks: [{
+				consume_items: false
+				count: 10L
+				id: "12A156FEC5BB03D9"
+				item: "evilcraft:undead_log"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"1722EAA94A958616"
+				"2B4A113A56A15894"
+			]
+			description: ["Crie &0Dark Sticks&r com &cDuas Tábuas de Undead Log&r e uma &0Dark Gem&r"]
+			hide: true
+			id: "0E8A8452E5476B64"
+			rewards: [{
+				description: ""
+				icon: "evilcraft:dark_stick"
+				id: "0667DBDA57738E77"
+				title: "Dark Stick"
+				type: "toast"
+			}]
+			tasks: [{
+				consume_items: false
+				count: 2L
+				id: "1BE5715740FA00A4"
+				item: "evilcraft:dark_stick"
+				match_nbt: false
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -14.0d
+			y: 2.5d
+		}
+		{
+			id: "3D2BE04543566B4D"
+			tasks: [{
+				id: "39E57D52A1D4B629"
+				title: "Caminho Flux Networks"
+				type: "checkmark"
+			}]
+			x: -14.0d
+			y: 1.0d
 		}
 	]
 	subtitle: ["Estes são os primeiros recursos os quais você deve investir primeiro"]

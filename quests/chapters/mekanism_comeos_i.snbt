@@ -26,7 +26,7 @@
 					count: 2L
 					icon: "minecraft:furnace"
 					id: "4820A480A6FE5EC1"
-					item: { Count: 2b, id: "minecraft:furnace" }
+					item: { Count: 2, id: "minecraft:furnace" }
 					match_nbt: false
 					only_from_crafting: true
 					type: "item"
@@ -41,14 +41,14 @@
 					consume_items: true
 					count: 4L
 					id: "22ECB468912914F8"
-					item: { Count: 4b, id: "minecraft:iron_ingot" }
+					item: { Count: 4, id: "minecraft:iron_ingot" }
 					type: "item"
 				}
 				{
 					consume_items: true
 					count: 2L
 					id: "6586FA76B1DF88C2"
-					item: { Count: 2b, id: "minecraft:redstone" }
+					item: { Count: 2, id: "minecraft:redstone" }
 					type: "item"
 				}
 			]
@@ -79,7 +79,7 @@
 					consume_items: false
 					id: "095A6F04EBE607A0"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "alltheores:ore_hammers"
@@ -94,7 +94,7 @@
 					count: 2L
 					icon: "mekanism:dust_osmium"
 					id: "5E065C84351FA425"
-					item: { Count: 2b, id: "mekanism:dust_osmium" }
+					item: { Count: 2, id: "mekanism:dust_osmium" }
 					only_from_crafting: true
 					type: "item"
 				}
@@ -132,7 +132,7 @@
 					count: 4L
 					icon: "mekanism:ingot_steel"
 					id: "20C1FAF5B2264E1A"
-					item: { Count: 4b, id: "mekanism:ingot_steel" }
+					item: { Count: 4, id: "mekanism:ingot_steel" }
 					only_from_crafting: false
 					type: "item"
 				}
@@ -149,7 +149,7 @@
 					count: 4L
 					id: "6C6D08C69EE197F9"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "forge:glass"
@@ -188,7 +188,7 @@
 					consume_items: true
 					count: 2L
 					id: "26A64024EB518F99"
-					item: { Count: 2b, id: "mekanism:basic_control_circuit" }
+					item: { Count: 2, id: "mekanism:basic_control_circuit" }
 					match_nbt: false
 					only_from_crafting: false
 					type: "item"
@@ -203,14 +203,14 @@
 					consume_items: true
 					count: 2L
 					id: "496C150D8C83C387"
-					item: { Count: 2b, id: "minecraft:iron_ingot" }
+					item: { Count: 2, id: "minecraft:iron_ingot" }
 					type: "item"
 				}
 				{
 					consume_items: true
 					count: 4L
 					id: "6D4B809DEC0EF401"
-					item: { Count: 4b, id: "minecraft:redstone" }
+					item: { Count: 4, id: "minecraft:redstone" }
 					type: "item"
 				}
 			]
@@ -267,7 +267,7 @@
 					consume_items: true
 					count: 4L
 					id: "725C5BE6E3C4DE9D"
-					item: { Count: 4b, id: "mekanism:ingot_osmium" }
+					item: { Count: 4, id: "mekanism:ingot_osmium" }
 					match_nbt: false
 					only_from_crafting: false
 					type: "item"
@@ -276,14 +276,14 @@
 					consume_items: true
 					count: 4L
 					id: "4116617244276A49"
-					item: { Count: 4b, id: "minecraft:redstone" }
+					item: { Count: 4, id: "minecraft:redstone" }
 					match_nbt: false
 					only_from_crafting: false
 					type: "item"
 				}
 			]
 			title: "Tanque Químico Básico"
-			x: -4.5d
+			x: -9.0d
 			y: -5.0d
 		}
 		{
@@ -309,7 +309,7 @@
 				{
 					count: 4L
 					id: "4E34663BC81103D4"
-					item: { Count: 4b, id: "mekanism:alloy_infused" }
+					item: { Count: 4, id: "mekanism:alloy_infused" }
 					type: "item"
 				}
 				{
@@ -329,7 +329,7 @@
 				}
 			]
 			title: "Apelação Atômica"
-			x: 2.0d
+			x: -6.0d
 			y: -5.0d
 		}
 		{
@@ -410,7 +410,7 @@
 				only_from_crafting: true
 				type: "item"
 			}]
-			x: -8.5d
+			x: -13.0d
 			y: -5.0d
 		}
 		{
@@ -425,7 +425,7 @@
 				only_from_crafting: true
 				type: "item"
 			}]
-			x: -7.5d
+			x: -10.0d
 			y: -5.0d
 		}
 		{
@@ -440,7 +440,7 @@
 				only_from_crafting: true
 				type: "item"
 			}]
-			x: -6.5d
+			x: -12.0d
 			y: -5.0d
 		}
 		{
@@ -455,7 +455,7 @@
 				only_from_crafting: true
 				type: "item"
 			}]
-			x: -5.5d
+			x: -11.0d
 			y: -5.0d
 		}
 		{
@@ -691,7 +691,7 @@
 					consume_items: false
 					count: 2L
 					id: "43A81D9304138F0C"
-					item: { Count: 2b, id: "mekanism:teleportation_core" }
+					item: { Count: 2, id: "mekanism:teleportation_core" }
 					only_from_crafting: true
 					type: "item"
 				}
@@ -720,7 +720,7 @@
 				{
 					count: 2L
 					id: "63739BC80428CC08"
-					item: { Count: 2b, id: "mekanism:alloy_atomic" }
+					item: { Count: 2, id: "mekanism:alloy_atomic" }
 					type: "item"
 				}
 				{
@@ -729,8 +729,8 @@
 					type: "item"
 				}
 			]
-			x: 2.0d
-			y: -6.0d
+			x: -7.0d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -784,8 +784,112 @@
 				only_from_crafting: true
 				type: "item"
 			}]
-			x: -9.5d
+			x: -14.0d
 			y: -5.0d
+		}
+		{
+			description: ["Este é o seu primeiro e melhor método de armazenar &9Fluidos&r numa quantidade aceitável no Early Game "]
+			id: "3CA60C7DAA007054"
+			rewards: [{
+				description: ""
+				icon: "mekanism:basic_fluid_tank"
+				id: "0364D3F2CD4CD5F8"
+				title: "Intankáaaaaaaaaaavel"
+				type: "toast"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "0C5F0729CB618C22"
+				item: "mekanism:basic_fluid_tank"
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -8.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["4AB78BB177E1C24A"]
+			description: ["Esta será sua primeira forma de voo no Early Game. Não é voo Criativo mas já é alguma coisa."]
+			hide: true
+			hide_dependency_lines: true
+			id: "1C7FD2A67D3EAE4E"
+			rewards: [{
+				description: ""
+				icon: "mekanism:jetpack"
+				id: "1ED35CB433EFB539"
+				title: "Voar Voar, Subir Subir"
+				type: "toast"
+			}]
+			subtitle: "Voar Voar, Subir Subir"
+			tasks: [{
+				consume_items: false
+				id: "51586F135C9508EA"
+				item: "mekanism:jetpack"
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -15.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1C7FD2A67D3EAE4E"]
+			description: ["Este Upgrade para o Jetpack do Mekanism fará com que você &atome menos dano&r mesmo substituindo seu peitoral de armadura pelo Jetpack"]
+			id: "791064F7E751EEC4"
+			rewards: [{
+				description: ""
+				icon: {
+					Count: 1
+					id: "minecraft:netherite_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "148078A0CBE2C016"
+				title: "Jetpack à Prova de Flechas"
+				type: "toast"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "7EE036554A3BE7CC"
+				item: "mekanism:jetpack_armored"
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -15.0d
+			y: -6.5d
+		}
+		{
+			description: ["Esta máquina é responsável por serrar qualquer tipo de madeira em seus sub produtos como &eTábuas&r, &6Gravetos&r e &cSerragem&r. Com a &6Serragem&r é possível criar &6Caixas de Papelão&r com as quais é possível &bmover quase qualquer item de lugar&r, movendo seu &dinventário interno&r e seu &9NBT&r intacto"]
+			icon: "mekanism:precision_sawmill"
+			id: "746F09E82CAC4575"
+			rewards: [{
+				description: ""
+				icon: "mekanism:sawdust"
+				id: "4FDBEB59234BBB4C"
+				title: "José Serra"
+				type: "toast"
+			}]
+			subtitle: "Serraria de Precisão"
+			tasks: [
+				{
+					consume_items: false
+					id: "15ED4E390D9E57D9"
+					item: "mekanism:precision_sawmill"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6DB5CA3F3F188C9F"
+					item: "mekanism:cardboard_box"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			x: -15.0d
+			y: -3.5d
 		}
 	]
 	tags: [
