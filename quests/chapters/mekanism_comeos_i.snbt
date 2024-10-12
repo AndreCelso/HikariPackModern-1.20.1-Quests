@@ -11,49 +11,75 @@
 		{
 			dependencies: ["4AB78BB177E1C24A"]
 			description: ["Esta deve ser a primeira máquina do &aMekanism&r que você deve fazer. É com ela que você cria as Ligas &cFundida&r, &bReforçada&r e &dAtômica&r, além do famigerado &7Aço&r que é outro recurso primordial para o &aMekanism&r"]
-			hide: true
 			icon: "mekanism:metallurgic_infuser"
 			id: "5C83964152856555"
 			rewards: [{
-				id: "2B011AF4D52896CF"
-				item: "mekanism:metallurgic_infuser"
-				type: "item"
+				auto: "disabled"
+				description: ""
+				icon: "mekanism:metallurgic_infuser"
+				id: "604C9BF80E14291B"
+				team_reward: true
+				title: "Infusor Metalúrgico"
+				type: "toast"
 			}]
 			subtitle: "Infusor Metalúrgico"
 			tasks: [
 				{
-					consume_items: true
-					count: 2L
+					consume_items: false
+					count: 8L
 					icon: "minecraft:furnace"
 					id: "4820A480A6FE5EC1"
-					item: { Count: 2, id: "minecraft:furnace" }
+					item: "minecraft:furnace"
 					match_nbt: false
 					only_from_crafting: true
 					type: "item"
 				}
 				{
-					consume_items: true
-					id: "105769C7D82DA3C9"
-					item: "mekanism:ingot_osmium"
-					type: "item"
-				}
-				{
-					consume_items: true
+					consume_items: false
 					count: 4L
-					id: "22ECB468912914F8"
-					item: { Count: 4, id: "minecraft:iron_ingot" }
+					id: "105769C7D82DA3C9"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ingots/osmium"
+						}
+					}
+					match_nbt: false
+					only_from_crafting: false
+					title: "Any #forge:ingots/osmium"
 					type: "item"
 				}
 				{
-					consume_items: true
-					count: 2L
+					consume_items: false
+					count: 16L
+					id: "22ECB468912914F8"
+					item: "minecraft:iron_ingot"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 8L
 					id: "6586FA76B1DF88C2"
-					item: { Count: 2, id: "minecraft:redstone" }
+					item: "minecraft:redstone"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "1147E74F144E519E"
+					item: { Count: 4, id: "mekanism:metallurgic_infuser" }
+					match_nbt: false
+					only_from_crafting: true
 					type: "item"
 				}
 			]
 			title: "Metallurgic Infuser"
-			x: -1.0d
+			x: 2.0d
 			y: 0.5d
 		}
 		{
@@ -94,14 +120,14 @@
 					count: 2L
 					icon: "mekanism:dust_osmium"
 					id: "5E065C84351FA425"
-					item: { Count: 2, id: "mekanism:dust_osmium" }
+					item: "mekanism:dust_osmium"
 					only_from_crafting: true
 					type: "item"
 				}
 			]
 			title: "Getting Started"
-			x: -1.0d
-			y: 2.0d
+			x: 3.5d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -110,7 +136,6 @@
 				"2FDA086042DB946C"
 			]
 			description: ["O &7Steel Casing&r é o &ccore/coração&r das máquinas, praticamente toda máquina do mekanism requer um em seu crafting"]
-			hide: true
 			icon: "mekanism:steel_casing"
 			id: "5E653E4F90F4AC0B"
 			rewards: [
@@ -160,13 +185,12 @@
 				}
 			]
 			title: "Eu Acredito no Coração das Máquinas"
-			x: -1.0d
-			y: -1.0d
+			x: -2.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["5E653E4F90F4AC0B"]
 			description: ["É aqui que as coisas melhoram um pouco. Com a &aEnrichment Chamber&r, você é capaz de enriquecer minérios em até &e3x&r, além de poder fabricar também, &cRedstone&r, &8Carvão&r, &bDiamante&r, e &5Obsidiana Enriquecidos&r, que rendem até &a8x&r mais do que usar estes tipos de infusão na forma &cnão-enriquecida&r."]
-			hide: true
 			hide_dependency_lines: false
 			icon: "mekanism:enrichment_chamber"
 			id: "08BADE1F352E8037"
@@ -215,76 +239,65 @@
 				}
 			]
 			title: "Enrichment Chamber"
-			x: -1.0d
-			y: -2.5d
-		}
-		{
-			dependencies: [
-				"4AB78BB177E1C24A"
-				"5E653E4F90F4AC0B"
-				"08BADE1F352E8037"
-				"5C83964152856555"
-			]
-			description: ["Faça mais alguns &aInfusores Metalúrgicos&r, para os outros &9Tipos de Infusão&r"]
-			hide: true
-			id: "6A7A8BCDEB293460"
-			tasks: [{
-				consume_items: false
-				count: 3L
-				icon: "mekanism:metallurgic_infuser"
-				id: "671D68D55AC63FAC"
-				item: "mekanism:metallurgic_infuser"
-				only_from_crafting: true
-				type: "item"
-			}]
-			x: -1.0d
-			y: -4.0d
+			x: -5.5d
+			y: 2.5d
 		}
 		{
 			can_repeat: false
 			dependencies: ["4AB78BB177E1C24A"]
 			description: ["O &aTanque Químico Básico&r vai ser sua primeira forma de armazenar &egases&r do mekanism"]
-			hide: true
 			hide_dependency_lines: true
 			icon: "mekanism:basic_chemical_tank"
 			id: "5B3755647C422A7C"
 			min_width: 250
 			rewards: [
 				{
-					id: "2DF913C5C58E0AF2"
-					item: "mekanism:basic_chemical_tank"
-					type: "item"
-				}
-				{
 					id: "04C70F26C2C9EF6A"
 					type: "xp"
 					xp: 10
+				}
+				{
+					auto: "disabled"
+					description: ""
+					icon: "mekanism:basic_chemical_tank"
+					id: "1B3A50840E50DF8F"
+					team_reward: true
+					title: "Botijão de Peido"
+					type: "toast"
 				}
 			]
 			subtitle: "Armazenamento Químico Básico"
 			tasks: [
 				{
-					consume_items: true
+					consume_items: false
 					count: 4L
 					id: "725C5BE6E3C4DE9D"
-					item: { Count: 4, id: "mekanism:ingot_osmium" }
+					item: "mekanism:ingot_osmium"
 					match_nbt: false
 					only_from_crafting: false
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					count: 4L
 					id: "4116617244276A49"
-					item: { Count: 4, id: "minecraft:redstone" }
+					item: "minecraft:redstone"
 					match_nbt: false
 					only_from_crafting: false
 					type: "item"
 				}
+				{
+					consume_items: false
+					id: "6108EFCA43DF82FF"
+					item: "mekanism:basic_chemical_tank"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
 			]
 			title: "Tanque Químico Básico"
-			x: -9.0d
-			y: -5.0d
+			x: -16.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -292,14 +305,16 @@
 				"618857F09421BC91"
 				"438554B19500C6C7"
 			]
-			hide: true
+			description: ["Ferramenta Multi-uso essencial para o Early Game, possui boa Velocidade de Mineração, e dá muito dano em mobs, ideal para combate e mineração."]
 			hide_dependency_lines: true
 			icon: "mekanism:atomic_disassembler"
 			id: "29B9252A6ED3A071"
 			rewards: [{
+				auto: "disabled"
 				description: ""
 				icon: "mekanism:atomic_disassembler"
 				id: "4672CA8E8B6C12A7"
+				team_reward: true
 				title: "Apelação Atômica"
 				type: "toast"
 			}]
@@ -307,35 +322,46 @@
 			tags: ["atomic_disassembler"]
 			tasks: [
 				{
+					consume_items: false
 					count: 4L
 					id: "4E34663BC81103D4"
-					item: { Count: 4, id: "mekanism:alloy_infused" }
+					item: "mekanism:alloy_infused"
+					match_nbt: false
+					only_from_crafting: false
 					type: "item"
 				}
 				{
+					consume_items: false
 					id: "62C6340ADBAAE217"
 					item: "mekanism:alloy_atomic"
+					match_nbt: false
+					only_from_crafting: false
 					type: "item"
 				}
 				{
+					consume_items: false
 					id: "5664EFA82BC89899"
 					item: "mekanism:ingot_refined_obsidian"
+					match_nbt: false
+					only_from_crafting: false
 					type: "item"
 				}
 				{
+					consume_items: false
 					id: "4EF6353FC0AD8776"
 					item: "mekanism:energy_tablet"
+					match_nbt: false
+					only_from_crafting: true
 					type: "item"
 				}
 			]
 			title: "Apelação Atômica"
-			x: -6.0d
-			y: -5.0d
+			x: -15.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["08BADE1F352E8037"]
 			description: ["Faça &8Carbono Enriquecido&r na &aEnrichment Chamber&r com &0Carvão&r"]
-			hide: true
 			hide_dependency_lines: false
 			icon: "mekanism:enriched_carbon"
 			id: "25CB2D6BCBE6D2BC"
@@ -344,14 +370,12 @@
 				item: "mekanism:enriched_carbon"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -1.0d
+			x: -7.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["08BADE1F352E8037"]
-			hide: true
 			hide_dependency_lines: false
-			hide_dependent_lines: true
 			id: "5F990FE267A155E8"
 			tasks: [{
 				consume_items: false
@@ -363,13 +387,11 @@
 				title: "Redstone Enriquecida"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -2.0d
+			x: -8.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["08BADE1F352E8037"]
-			hide: true
-			hide_dependent_lines: true
 			id: "3C3AEDEBC8DB9FFE"
 			tasks: [{
 				consume_items: false
@@ -379,13 +401,11 @@
 				only_from_crafting: false
 				type: "item"
 			}]
-			x: -2.5d
-			y: -4.0d
+			x: -4.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["08BADE1F352E8037"]
-			hide: true
-			hide_dependent_lines: true
 			id: "14DFEA54DBB6A26A"
 			tasks: [{
 				consume_items: false
@@ -395,96 +415,136 @@
 				only_from_crafting: false
 				type: "item"
 			}]
-			x: -2.5d
-			y: -3.0d
+			x: -3.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["2FDA086042DB946C"]
 			description: ["Meio de Transporte de &9Fluidos&r mais básico, ideal para o &aEarly Game&r"]
-			hide: true
 			hide_dependency_lines: true
 			id: "190B96284C733869"
+			rewards: [{
+				auto: "disabled"
+				description: ""
+				icon: "mekanism:basic_mechanical_pipe"
+				id: "048249A8CE192B59"
+				team_reward: true
+				title: "Estrada de Fluidos"
+				type: "toast"
+			}]
+			subtitle: "Tubo Mecânico Básico"
 			tasks: [{
 				id: "445714681E69771F"
 				item: "mekanism:basic_mechanical_pipe"
 				only_from_crafting: true
 				type: "item"
 			}]
-			x: -13.0d
-			y: -5.0d
+			x: -16.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["2FDA086042DB946C"]
 			description: ["Meio de Transporte de &eEnergia&r mais básico, ideal para o &aEarly Game&r"]
-			hide: true
 			hide_dependency_lines: true
 			id: "090E0D3C5DB148C4"
+			rewards: [{
+				auto: "disabled"
+				description: ""
+				icon: "mekanism:basic_universal_cable"
+				id: "5525AF6609309FAD"
+				team_reward: true
+				title: "Transporte de Energia"
+				type: "toast"
+			}]
+			subtitle: "Cabo Universal Básico"
 			tasks: [{
 				id: "5BF689CBACD10903"
 				item: "mekanism:basic_universal_cable"
 				only_from_crafting: true
 				type: "item"
 			}]
-			x: -10.0d
-			y: -5.0d
+			x: -16.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["2FDA086042DB946C"]
 			description: ["Meio de Transporte de &6Gases&r mais básico, ideal para o &aEarly Game&r"]
-			hide: true
 			hide_dependency_lines: true
 			id: "528E343031F2934B"
+			rewards: [{
+				auto: "disabled"
+				description: ""
+				icon: "mekanism:basic_pressurized_tube"
+				id: "202D5CEDF49C5DFB"
+				team_reward: true
+				title: "Encanamento da Copagaz"
+				type: "toast"
+			}]
+			subtitle: "Tubo Pressurizado Básico"
 			tasks: [{
 				id: "6D26156782A7F477"
 				item: "mekanism:basic_pressurized_tube"
 				only_from_crafting: true
 				type: "item"
 			}]
-			x: -12.0d
-			y: -5.0d
+			x: -16.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["2FDA086042DB946C"]
 			description: ["Meio de Transporte de &dItems&r mais básico, ideal para o &aEarly Game&r"]
-			hide: true
 			hide_dependency_lines: true
 			id: "6C3FB385968F1B92"
+			rewards: [{
+				auto: "disabled"
+				description: ""
+				icon: "mekanism:basic_logistical_transporter"
+				id: "542383571E2092DF"
+				team_reward: true
+				title: "Transporte de Items"
+				type: "toast"
+			}]
 			tasks: [{
 				id: "16C0681BDB3E82B3"
 				item: "mekanism:basic_logistical_transporter"
 				only_from_crafting: true
 				type: "item"
 			}]
-			x: -11.0d
-			y: -5.0d
+			x: -16.0d
+			y: 5.5d
 		}
 		{
-			dependencies: [
-				"6A7A8BCDEB293460"
-				"600E97F6FACF7F38"
-			]
+			dependencies: ["600E97F6FACF7F38"]
 			description: ["O instalador de Nível aumenta o Tier da máquina no respectivo tier do Instalador, fazendo com que as máquinas processem mais items em paralelo"]
-			hide: true
-			hide_dependency_lines: true
+			hide_dependency_lines: false
 			id: "7247ACA828D659AC"
+			rewards: [{
+				auto: "disabled"
+				description: ""
+				icon: "mekanism:basic_smelting_factory"
+				id: "0F86612B7DE015DD"
+				team_reward: true
+				title: "A Fantástica Fábrica do Mekanism"
+				type: "toast"
+			}]
 			subtitle: "Precisa de um Empurrãozinho?"
 			tasks: [{
+				consume_items: false
 				id: "4A095D190C572BC2"
 				item: "mekanism:basic_tier_installer"
+				match_nbt: false
 				only_from_crafting: true
 				type: "item"
 			}]
-			x: 2.0d
-			y: -1.0d
+			x: 0.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
-				"7247ACA828D659AC"
 				"438554B19500C6C7"
 				"1B8ED038E37DB1A0"
 			]
-			hide: true
-			hide_dependency_lines: true
+			hide_dependency_lines: false
 			id: "34AEDF9A4969EEC1"
 			tasks: [{
 				id: "1D75B2B3E8BA360B"
@@ -492,49 +552,41 @@
 				only_from_crafting: true
 				type: "item"
 			}]
-			x: 2.0d
-			y: -2.0d
+			x: -8.5d
+			y: 8.5d
 		}
 		{
 			dependencies: [
-				"34AEDF9A4969EEC1"
-				"7247ACA828D659AC"
 				"618857F09421BC91"
 				"132F63BD66BE87F1"
 			]
-			hide: true
-			hide_dependency_lines: true
+			hide_dependency_lines: false
 			id: "41B151FF1D6E76BE"
 			tasks: [{
 				id: "7B369C95E27C2920"
 				item: "mekanism:elite_tier_installer"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -3.0d
+			x: -4.5d
+			y: 8.5d
 		}
 		{
 			dependencies: [
-				"41B151FF1D6E76BE"
-				"34AEDF9A4969EEC1"
-				"7247ACA828D659AC"
 				"17B3215638411AE3"
 				"7B771DF85269509D"
 			]
-			hide: true
-			hide_dependency_lines: true
+			hide_dependency_lines: false
 			id: "4F5ADCA59DE86C6B"
 			tasks: [{
 				id: "7FE83C6AFF684B7B"
 				item: "mekanism:ultimate_tier_installer"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -4.0d
+			x: -3.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["5C83964152856555"]
-			hide: true
 			hide_dependency_lines: false
 			id: "2FDA086042DB946C"
 			subtitle: "Sua Batata tá Açando"
@@ -543,53 +595,42 @@
 				item: "mekanism:ingot_steel"
 				type: "item"
 			}]
-			x: 0.5d
+			x: -1.0d
 			y: 0.5d
 		}
 		{
-			dependencies: [
-				"6A7A8BCDEB293460"
-				"5F990FE267A155E8"
-			]
-			hide: true
+			dependencies: ["5F990FE267A155E8"]
 			id: "438554B19500C6C7"
 			tasks: [{
 				id: "460709546C43ED3B"
 				item: "mekanism:alloy_infused"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -5.5d
+			x: -8.5d
+			y: 5.5d
 		}
 		{
-			dependencies: [
-				"6A7A8BCDEB293460"
-				"3C3AEDEBC8DB9FFE"
-			]
-			hide: true
+			dependencies: ["3C3AEDEBC8DB9FFE"]
 			id: "618857F09421BC91"
 			tasks: [{
 				id: "0D425CC28BBFD721"
 				item: "mekanism:alloy_reinforced"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -5.5d
+			x: -4.5d
+			y: 5.5d
 		}
 		{
-			dependencies: [
-				"6A7A8BCDEB293460"
-				"14DFEA54DBB6A26A"
-			]
-			hide: true
+			dependencies: ["14DFEA54DBB6A26A"]
+			hide_dependency_lines: false
 			id: "17B3215638411AE3"
 			tasks: [{
 				id: "40D53EA31751318B"
 				item: "mekanism:alloy_atomic"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -5.5d
+			x: -3.0d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -597,39 +638,33 @@
 				"600E97F6FACF7F38"
 			]
 			description: ["Junte um &aCircuito de Controle Básico&r com algumas &cLigas Fundidas&r para fazer um &cCircuito de Controle Avançado&r"]
-			hide: true
-			hide_dependent_lines: true
 			id: "1B8ED038E37DB1A0"
 			tasks: [{
 				id: "1BE51713517D05B3"
 				item: "mekanism:advanced_control_circuit"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -7.0d
+			x: -8.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["5C83964152856555"]
 			description: ["Infunda &cRedstone&r em um &bIngot de Ósmio&r no &eInfusor Metalúrgico&r para fazer &aCircuito de Controle Básico&r"]
-			hide: true
-			hide_dependent_lines: true
 			id: "600E97F6FACF7F38"
 			tasks: [{
 				id: "3519AEF969B64958"
 				item: "mekanism:basic_control_circuit"
 				type: "item"
 			}]
-			x: -2.5d
+			x: 0.5d
 			y: 0.5d
 		}
 		{
 			dependencies: [
 				"618857F09421BC91"
-				"600E97F6FACF7F38"
 				"1B8ED038E37DB1A0"
 			]
 			description: ["Novamente, Misture um &cCircuito de Controle Avançado&r + &bLigas Reforçadas&r para criar um &bCircuito de Controle Elite&r"]
-			hide: true
 			hide_dependency_lines: false
 			hide_dependent_lines: true
 			id: "132F63BD66BE87F1"
@@ -640,35 +675,33 @@
 				only_from_crafting: true
 				type: "item"
 			}]
-			x: -1.0d
-			y: -7.0d
+			x: -4.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
 				"17B3215638411AE3"
-				"600E97F6FACF7F38"
 				"1B8ED038E37DB1A0"
 				"132F63BD66BE87F1"
 			]
 			description: ["Misture &bCircuito de Controle Elite&r + &dLigas Atômicas&r para criar &dCircuito de Controle Fina&rl"]
-			hide: true
 			id: "7B771DF85269509D"
 			tasks: [{
 				id: "416F52FAD9102FCA"
 				item: "mekanism:ultimate_control_circuit"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -7.0d
+			x: -3.0d
+			y: 7.0d
 		}
 		{
 			dependencies: [
 				"17B3215638411AE3"
 				"600E97F6FACF7F38"
 				"5E653E4F90F4AC0B"
+				"51792B5989ABE21D"
 			]
 			description: ["A &9Digital Miner&r é uma excelente forma de &aMineração Automática&r no &eEarly Game&r, contudo na 1.20.1 ela consome quantidades maiores de energia, portanto não deixe de fazer uma boa geração de energia para abastecê-la. Também é possivel definir &1Filtros&r na &9Digital Miner&r, facilitando a obtenção de recursos específicos à um clique"]
-			hide: true
 			hide_dependency_lines: true
 			icon: "mekanism:digital_miner"
 			id: "487DF3E4593DC16C"
@@ -729,15 +762,11 @@
 					type: "item"
 				}
 			]
-			x: -7.0d
-			y: -5.0d
+			x: -16.0d
+			y: 9.5d
 		}
 		{
-			dependencies: [
-				"3C3AEDEBC8DB9FFE"
-				"6A7A8BCDEB293460"
-			]
-			hide: true
+			dependencies: ["3C3AEDEBC8DB9FFE"]
 			hide_dependency_lines: false
 			id: "3CE51CF52AC68B52"
 			tasks: [{
@@ -745,38 +774,57 @@
 				item: "mekanism:dust_refined_obsidian"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -4.0d
+			x: -6.5d
+			y: 5.5d
 		}
 		{
 			dependencies: [
-				"3C3AEDEBC8DB9FFE"
 				"3CE51CF52AC68B52"
-				"6A7A8BCDEB293460"
+				"5C6729289FD63A68"
 			]
 			icon: "mekanism:ingot_refined_obsidian"
 			id: "51792B5989ABE21D"
-			tasks: [
-				{
-					consume_items: false
-					id: "1710706D7179666B"
-					item: "mekanism:osmium_compressor"
-					only_from_crafting: true
-					type: "item"
-				}
-				{
-					id: "79F8A68DC7E2D397"
-					item: "mekanism:ingot_refined_obsidian"
-					type: "item"
-				}
-			]
-			x: -4.5d
-			y: -4.0d
+			rewards: [{
+				auto: "disabled"
+				description: ""
+				icon: "mekanism:ingot_refined_obsidian"
+				id: "18266A6FDAFCB61B"
+				team_reward: true
+				title: "Obsidiana Refinada"
+				type: "toast"
+			}]
+			tasks: [{
+				id: "79F8A68DC7E2D397"
+				item: "mekanism:ingot_refined_obsidian"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["438554B19500C6C7"]
 			hide_dependency_lines: true
 			id: "59E341B36E374A94"
+			rewards: [{
+				auto: "disabled"
+				description: ""
+				icon: {
+					Count: 1
+					id: "mekanism:basic_energy_cube"
+					tag: {
+						mekData: {
+							EnergyContainers: [{
+								Container: 0b
+								stored: "4000000"
+							}]
+						}
+					}
+				}
+				id: "51796D255E6A49D6"
+				team_reward: true
+				title: "Apartamento de Elétrons"
+				type: "toast"
+			}]
 			subtitle: "Apartamento de Eletrons"
 			tasks: [{
 				id: "7AC397B20F6C3D82"
@@ -784,8 +832,8 @@
 				only_from_crafting: true
 				type: "item"
 			}]
-			x: -14.0d
-			y: -5.0d
+			x: -16.0d
+			y: 2.5d
 		}
 		{
 			description: ["Este é o seu primeiro e melhor método de armazenar &9Fluidos&r numa quantidade aceitável no Early Game "]
@@ -804,13 +852,12 @@
 				only_from_crafting: true
 				type: "item"
 			}]
-			x: -8.0d
-			y: -5.0d
+			x: -16.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["4AB78BB177E1C24A"]
 			description: ["Esta será sua primeira forma de voo no Early Game. Não é voo Criativo mas já é alguma coisa."]
-			hide: true
 			hide_dependency_lines: true
 			id: "1C7FD2A67D3EAE4E"
 			rewards: [{
@@ -828,8 +875,8 @@
 				only_from_crafting: true
 				type: "item"
 			}]
-			x: -15.0d
-			y: -5.0d
+			x: -17.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["1C7FD2A67D3EAE4E"]
@@ -855,8 +902,8 @@
 				only_from_crafting: true
 				type: "item"
 			}]
-			x: -15.0d
-			y: -6.5d
+			x: -17.0d
+			y: 4.0d
 		}
 		{
 			description: ["Esta máquina é responsável por serrar qualquer tipo de madeira em seus sub produtos como &eTábuas&r, &6Gravetos&r e &cSerragem&r. Com a &6Serragem&r é possível criar &6Caixas de Papelão&r com as quais é possível &bmover quase qualquer item de lugar&r, movendo seu &dinventário interno&r e seu &9NBT&r intacto"]
@@ -889,7 +936,67 @@
 				}
 			]
 			x: -15.0d
-			y: -3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3CE51CF52AC68B52"]
+			icon: "mekanism:osmium_compressor"
+			id: "5C6729289FD63A68"
+			rewards: [{
+				description: ""
+				icon: "mekanism:osmium_compressor"
+				id: "33E5D08AB67AEDF8"
+				team_reward: true
+				title: "Prensa de Ósmio"
+				type: "toast"
+			}]
+			tasks: [
+				{
+					consume_items: false
+					id: "41238CFC6C280956"
+					item: "mekanism:osmium_compressor"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 8L
+					id: "632182BF2AF533AC"
+					item: "mekanism:alloy_infused"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 2L
+					id: "3D4AA7CEC35BCF1F"
+					item: { Count: 2, id: "mekanism:advanced_control_circuit" }
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "636E814429149735"
+					item: "mekanism:steel_casing"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 2L
+					id: "7DD499958AFBD1A4"
+					item: { Count: 2, id: "minecraft:bucket" }
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			x: -6.5d
+			y: 7.0d
 		}
 	]
 	tags: [

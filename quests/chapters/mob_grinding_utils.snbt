@@ -99,12 +99,9 @@
 				type: "toast"
 			}]
 			tasks: [{
-				consume_items: false
-				id: "7821A59FEECEC738"
-				item: "minecraft:spawner"
-				match_nbt: false
-				only_from_crafting: false
-				type: "item"
+				id: "700E1D4BEDBC066B"
+				title: "Ok, peguei o spawner"
+				type: "checkmark"
 			}]
 			x: -1.0d
 			y: -0.5d

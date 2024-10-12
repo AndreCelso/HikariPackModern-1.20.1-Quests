@@ -7,13 +7,7 @@
 	icon: "occultism:pentacle"
 	id: "312AFDCFA0BE452B"
 	order_index: 5
-	quest_links: [{
-		id: "19514982B8749691"
-		linked_quest: "02AAF844FAB7B155"
-		shape: "gear"
-		x: 9.0d
-		y: -8.0d
-	}]
+	quest_links: [ ]
 	quests: [
 		{
 			description: ["Junte um &6Livro&r e &dSementes de Sonho Demoníaco&r num &eCrafting Grid&r para criar um &1Dicionário de Espíritos&r, que é basicamente o manual do mod &5Occultism&r.Estas sementes podem ser obtidas &aquebrando grama com a mão&r (usar Ultimine pra quebrar várias gramas é mais eficiente para isto)"]
@@ -91,7 +85,6 @@
 		{
 			dependencies: ["7F5FBE804EA53148"]
 			description: ["&5Madeira do Outro Mundo&r é um material primordial na progressão do &0Occultism&r, você consegue adquirí-la comendo uma &dFruta de Sonho Demoníaco&r (&bO Efeito de Visão do Outro Mundo&r &cPRECISA&r estar ativo) e quebrando &9árvores comuns&r, que estarão como &3Árvores do Outro Mundo do Occultism&r se estiver sob o efeito da fruta. &cOBS!!!&r Você só pode colher recursos do outro mundo a princípio, &capenas sob o efeito da Fruta de Sonho Demníaco&r. Quebrar uma árvore de carvalho sem o efeito &cNÃO FARÁ DROPAR&r &5Madeira do Outro Mundo&r"]
-			hide: true
 			id: "242F5C223BA3B36C"
 			rewards: [{
 				description: ""
@@ -119,7 +112,6 @@
 				"7F5FBE804EA53148"
 			]
 			description: ["O &dFogo Místico&r é um fogo que transforma alguns dos items do &0Occultism&r. Veja o seu &6Dicionário de Espíritos&r para mais &eInformações&r sobre ele. Para criar &dFogo Místico&r simplesmente jogue uma &aDemon Fruit&r no chão e ateie fogo nela com um &7Flint Steel&r"]
-			hide: true
 			icon: "occultism:spirit_fire"
 			id: "2C07D627583B7A94"
 			rewards: [{
@@ -145,7 +137,6 @@
 				"2C07D627583B7A94"
 			]
 			description: ["Jogue &dMadeira do Outro Mundo&r em um &5Fogo Místico&r e receba de volta &eCinzas do Outro Mundo&r"]
-			hide: true
 			id: "30A964BFDC3F4479"
 			rewards: [{
 				description: ""
@@ -198,7 +189,6 @@
 				"31189A9927099758"
 			]
 			description: ["Primeiro de Tudo, pegue as &dOutra Pedras&r que você obteve na última quest e Coloque-as na &eFornalha&r, para se transformarem em &bOutra Pedra Queimada&r. Depois misture &dOutra Pedra Queimada&r na &eCrafting Table&r com &bCinzas do Outro Mundo&r para criar um &6Giz Branco Impuro&r. Por Fim, jogue o &6Giz Impuro&r no &dFogo Místico&r para &bPurificá-lo&r. O Apagador serve para vcoê apagar os símbolos colocados em lugar errado no chão"]
-			hide: true
 			icon: {
 				Count: 1
 				id: "occultism:chalk_white"
@@ -282,7 +272,6 @@
 				"2C07D627583B7A94"
 			]
 			description: ["O &eGiz Dourado&r também é necessário para a execução do &5Ritual de Compulsão Espectral de Eziveus&r, pois você precisa desenhar símbolos &eamarelos&r no &3Pentáculo&r. Veja a Entrada do Ritual no &6Dicionário de Espíritos&r para mais informações."]
-			hide: true
 			icon: {
 				Count: 1
 				id: "occultism:chalk_gold"
@@ -354,7 +343,6 @@
 				"3F464AB7A152C11F"
 			]
 			description: ["Este &dCristal Místico Sintonizado&r é necessário no Ritual que você deve executar para conseguir o livro do &cEvil Craft&r (&eDicas para o Referido Ritual nas quest anteriores nesta thread&r). Pegue &b8 Diamantes&r e os jogue no &dFogo Místico&r para serem transformados em &dGema Mística Sintonizada&r, depois siga a receita do &dCristal Místico&r com o seu JEI/REI em uma Crafting Grid"]
-			hide: true
 			icon: "occultism:spirit_attuned_crystal"
 			id: "2E80BDDAB239606C"
 			rewards: [{
@@ -403,7 +391,6 @@
 				"2E80BDDAB239606C"
 			]
 			description: ["As &7Tigelas Sacrificiais&r são onde você coloca os seus items e/ou fazem parte da &eEstrutura do Pentáculo&r"]
-			hide: true
 			icon: "occultism:golden_sacrificial_bowl"
 			id: "29842928B6D1EC93"
 			rewards: [{
@@ -462,7 +449,6 @@
 				"3F464AB7A152C11F"
 			]
 			description: ["Para criar &2Velas&r, primeiro é necessário fabricar um &bCutelo&r, com ele você deve matar alguns mobs pacíficos como &dovelhas, porcos, cavalos, etc&r. para conseguir um pouco de &3Sebo&r. Junte &3Sebo&r + &bLinha&r numa &9Crafting Grid&r para criar &2Velas&r. Elas são essenciais para os &0Rituais do Occultism&r"]
-			hide: true
 			icon: "occultism:candle_white"
 			id: "017B4E4AFCD9379C"
 			rewards: [{

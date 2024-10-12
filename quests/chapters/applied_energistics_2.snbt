@@ -10,7 +10,17 @@
 	quests: [
 		{
 			description: ["Sua primeira tarefa para iniciar no &dApplied Energistics&r é encontrar um &dMeteoro do Applied&r, que podem ser encontrados mais facilmente com &bBússola de Meteoritos&r (&bMeteorite Compass&r) (Veja o JEI para receitas). A Bússola aponta pro Meteorito mais próximo de você e nele você pode encontrar As Prensas do Applied, e Drusas de Certus Quartz de todos os Tiers, incluindo a Flawless que não se deteriosa com o uso e deve ser movida usando Cardbox, caso minerada, ela regride um Tier"]
+			icon: "ae2:mysterious_cube"
 			id: "70F65307F87FA488"
+			rewards: [{
+				auto: "disabled"
+				description: ""
+				icon: "ae2:meteorite_compass"
+				id: "799778FF40C9C78D"
+				team_reward: true
+				title: "Tecnologia Alienígena"
+				type: "toast"
+			}]
 			subtitle: "Cubo Misterioso"
 			tasks: [
 				{
@@ -29,7 +39,7 @@
 					type: "item"
 				}
 			]
-			x: -6.0d
+			x: -18.5d
 			y: -4.0d
 		}
 		{
@@ -56,6 +66,7 @@
 					type: "item"
 				}
 				{
+					consume_items: false
 					id: "1A7BFE008CA48889"
 					item: {
 						Count: 1
@@ -64,12 +75,14 @@
 							value: "forge:sawdust"
 						}
 					}
+					match_nbt: false
+					only_from_crafting: false
 					title: "Any #forge:sawdust"
 					type: "item"
 				}
 			]
 			title: "Movendo Drusas de Certus Quartz"
-			x: -4.0d
+			x: -17.0d
 			y: -4.0d
 		}
 		{
@@ -97,7 +110,7 @@
 				only_from_crafting: false
 				type: "item"
 			}]
-			x: -2.0d
+			x: -15.5d
 			y: -4.0d
 		}
 		{
@@ -109,19 +122,24 @@
 			description: ["Para criar &dFluix Crystal&r jogue &bCharged Certus Quartz&r, &eNether Quartz&r, e &cRedstone&r num &9Bloco d'agua&r ou &9qualquer fluido do Forge&r e espere a reação acontecer e obter Fluix Crystal"]
 			id: "7AC29AD9F7F9DE89"
 			rewards: [{
+				auto: "disabled"
 				description: ""
 				icon: "ae2:fluix_crystal"
 				id: "4857D1BD3277BAC4"
+				team_reward: true
 				title: "Fluix Crystal"
 				type: "toast"
 			}]
 			subtitle: "Fluix Crystal"
 			tasks: [{
+				consume_items: false
 				id: "4B4112BB6FE40F4D"
 				item: "ae2:fluix_crystal"
+				match_nbt: false
+				only_from_crafting: false
 				type: "item"
 			}]
-			x: 0.0d
+			x: -14.0d
 			y: -4.0d
 		}
 		{
@@ -182,13 +200,16 @@
 					type: "item"
 				}
 				{
+					consume_items: false
 					id: "40694126997350DE"
 					item: "ae2:crafting_terminal"
+					match_nbt: false
+					only_from_crafting: false
 					type: "item"
 				}
 			]
 			title: "Sistema AE2 Básico"
-			x: 2.0d
+			x: -12.5d
 			y: -4.0d
 		}
 		{
@@ -267,9 +288,17 @@
 					only_from_crafting: true
 					type: "item"
 				}
+				{
+					consume_items: false
+					id: "55FEB335B960D8CF"
+					item: "ae2:pattern_encoding_terminal"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
 			]
 			title: "Sistema de Crafting Automático Básico"
-			x: 4.0d
+			x: -11.0d
 			y: -4.0d
 		}
 		{
@@ -286,8 +315,74 @@
 				}
 				type: "item"
 			}]
-			x: 4.0d
-			y: -2.0d
+			x: 8.0d
+			y: -7.0d
+		}
+		{
+			icon: "expatternprovider:ex_molecular_assembler"
+			id: "6F2536A720181E1A"
+			rewards: [{
+				auto: "disabled"
+				description: ""
+				icon: "ae2:controller"
+				id: "2340D4717FE95890"
+				team_reward: true
+				title: "Processamento Next Gen"
+				type: "toast"
+			}]
+			tasks: [
+				{
+					consume_items: false
+					id: "7976593CAA64E51A"
+					item: "expatternprovider:ex_pattern_provider"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "36196222B662E6BC"
+					item: "expatternprovider:ex_molecular_assembler"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 2L
+					id: "0E05BD7309F82DDD"
+					item: { Count: 2, id: "ae2:me_p2p_tunnel" }
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "32D107A09EB410D7"
+					item: {
+						Count: 1
+						id: "betterp2p:advanced_memory_card"
+						tag: {
+							gui: 3b
+							selectedIndex: { }
+						}
+					}
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "64C1F2EDED3044EF"
+					item: "ae2:controller"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			title: "Tornando o Sistema mais Robusto"
+			x: -9.5d
+			y: -4.0d
 		}
 	]
 	title: "Applied Energistics 2"

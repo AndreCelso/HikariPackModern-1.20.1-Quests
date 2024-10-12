@@ -18,7 +18,6 @@
 				"2599B1E599F3371F"
 			]
 			description: ["Achar minérios raros, ou simplesmente avistá-los em uma caverna escura e gigante pode ser complicado. Por isso ao adquirir ao menos 1 de cada recurso dos respectivos minérios, invista nestes charms para que você possa enxergar-los mais facilmente e até sob as rochas, dentro das paredes "]
-			hide: true
 			hide_dependency_lines: false
 			icon: {
 				Count: 1
@@ -45,7 +44,6 @@
 						tag: {
 							Damage: 0
 							Potion: "potionsmaster:diamond_sight"
-							charm_enabled: 1b
 						}
 					}
 					id: "0060382B0C9DB6A6"
@@ -57,8 +55,9 @@
 							Potion: "potionsmaster:diamond_sight"
 						}
 					}
-					match_nbt: true
+					match_nbt: false
 					only_from_crafting: false
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -72,8 +71,9 @@
 							Potion: "potionsmaster:osmium_sight"
 						}
 					}
-					match_nbt: true
-					only_from_crafting: false
+					match_nbt: false
+					only_from_crafting: true
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -87,8 +87,9 @@
 							Potion: "potionsmaster:gold_sight"
 						}
 					}
-					match_nbt: true
-					only_from_crafting: false
+					match_nbt: false
+					only_from_crafting: true
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -102,7 +103,9 @@
 							Potion: "potionsmaster:redstone_sight"
 						}
 					}
-					match_nbt: true
+					match_nbt: false
+					only_from_crafting: true
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -116,8 +119,9 @@
 							Potion: "potionsmaster:iron_sight"
 						}
 					}
-					match_nbt: true
+					match_nbt: false
 					only_from_crafting: true
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -133,7 +137,6 @@
 				"3E89B0EACDDF61B8"
 			]
 			description: ["Este é o primeiro passo para a Visão de Minérios. Cada uma dessas poções pode ser usada em um crafting de charm"]
-			hide: true
 			hide_dependency_lines: false
 			icon: {
 				Count: 1
@@ -143,6 +146,25 @@
 				}
 			}
 			id: "2599B1E599F3371F"
+			rewards: [{
+				auto: "disabled"
+				description: ""
+				icon: {
+					Count: 1
+					id: "reliquary:potion"
+					tag: {
+						effects: [{
+							duration: 1
+							name: "minecraft:instant_health"
+							potency: 0
+						}]
+					}
+				}
+				id: "187EC67751CB23F3"
+				team_reward: true
+				title: "Mestre de Poções"
+				type: "toast"
+			}]
 			tags: [
 				"ore_sight_part1"
 				"potion"
@@ -160,6 +182,7 @@
 						}
 					}
 					only_from_crafting: false
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -174,6 +197,7 @@
 					}
 					match_nbt: true
 					only_from_crafting: false
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -187,6 +211,7 @@
 						}
 					}
 					only_from_crafting: false
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -200,6 +225,7 @@
 						}
 					}
 					only_from_crafting: false
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -213,6 +239,7 @@
 						}
 					}
 					only_from_crafting: false
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -227,7 +254,6 @@
 				"757FDA8015B193D6"
 			]
 			description: ["Antes de você poder fabricar &aPoções&r, é necessário possuir um &eSuporte de Poções&r, Sem ele é impossível fazer &aPoções&r no &9Early Game&r. Para isso, é necessário que você tenha visitado a dimensão do &cNether&r e obtido ao menos uma &eVara de Blaze&r "]
-			hide: true
 			icon: "minecraft:brewing_stand"
 			id: "3E89B0EACDDF61B8"
 			rewards: [
@@ -356,7 +382,6 @@
 				"4782948A24DD7717"
 			]
 			description: ["Coloque um &5Minério Bruto de Ferro Carmesim&r numa &eEnrichment Chamber&r do &aMekanism&r para obter &d3x Pó de Ferro Carmesim&r"]
-			hide: true
 			id: "1EBF115482C95691"
 			subtitle: "Por que 1 se posso ter 3?"
 			tasks: [{
@@ -443,7 +468,6 @@
 		{
 			dependencies: ["3B9E29D62F179036"]
 			description: ["Use os &aBotany Pots&r ao seu favor e farm ao menos um pouco de &aMelância&r ao colocar um &9solo&r e uma &aSemente de Melância&r em um &aBotany Pot&r. Vale ressaltar que quanto mais forte for o &9Solo&r em que a planta foi plantada, &6mais rápido ela cresce&r. &cAtenção, esta Quest libera a progressão do Gas Burning Generator do Mekanism&r, pois você precisa de uma boa fonte de &aBiomassa&r para gerar &dEtileno&r e consequentemente &eEnergia&r"]
-			hide: true
 			id: "40DD270E7552EA93"
 			min_width: 455
 			tasks: [{
@@ -458,7 +482,6 @@
 		{
 			dependencies: ["3B9E29D62F179036"]
 			description: ["O &aBotany Pot&r também serve como uma boa farm de madeira no começo, apenas arme o setup e deixe farmando"]
-			hide: true
 			icon: "minecraft:oak_log"
 			id: "0F77CF08AD692249"
 			tasks: [
@@ -521,7 +544,6 @@
 		{
 			dependencies: ["3B9E29D62F179036"]
 			description: ["Use os &aBotany Pots&r ao seu favor e farm ao menos um pouco de &aCacto&r ao colocar um &eAreia&r e um &aCacto&r em um &aBotany Pot&r. Vale ressaltar que quanto mais forte for o &9Solo&r em que a planta foi plantada, &cmais rápido ela cresce&r "]
-			hide: true
 			id: "0209D8B69D27C000"
 			tasks: [{
 				id: "668A24BB6DE7F8F9"
@@ -534,7 +556,6 @@
 		{
 			dependencies: ["3B9E29D62F179036"]
 			description: ["Use os &aBotany Pots&r ao seu favor e farm ao menos um pouco de &aInferium Essence&r ao colocar um &9solo&r e uma &aSemente de Inferium&r em um &aBotany Pot&r. Vale ressaltar que quanto mais forte for o &9Solo&r em que a planta foi plantada, &cmais rápido ela cresce&r "]
-			hide: true
 			icon: "mysticalagriculture:inferium_essence"
 			id: "258D0BD178520DCB"
 			tasks: [{
@@ -656,7 +677,6 @@
 		}
 		{
 			dependencies: ["406ABEFBF5D5EBB1"]
-			hide: true
 			id: "2D3059FE58F2BFF1"
 			rewards: [{
 				description: ""
@@ -716,7 +736,6 @@
 		{
 			dependencies: ["757FDA8015B193D6"]
 			description: ["No começo, a &dSag Mill&r é sua melhor forma de obter o máximo de lucro de certos recursos, como &6blaze powder&r. Sempre cheque o JEI/REI por receitas que rendem mais na &dSag Mill&r"]
-			hide: true
 			icon: "enderio:sag_mill"
 			id: "0D999F9F9E70317E"
 			rewards: [{
@@ -782,7 +801,6 @@
 		{
 			dependencies: ["221A712CEF4045F1"]
 			description: ["Mais espaço interno para Items e Upgrades"]
-			hide: true
 			id: "541DCA9A33AA23F8"
 			rewards: [{
 				description: ""
@@ -813,7 +831,6 @@
 				"221A712CEF4045F1"
 				"541DCA9A33AA23F8"
 			]
-			hide: true
 			id: "378D4B7B6B5E6C92"
 			rewards: [{
 				description: ""
@@ -846,7 +863,6 @@
 				"378D4B7B6B5E6C92"
 			]
 			description: ["Um Baú bem Espaçoso com bastante espaço interno e mais slots de upgrade"]
-			hide: true
 			id: "72303DEB590A8ADC"
 			rewards: [{
 				description: ""
@@ -880,7 +896,6 @@
 				"72303DEB590A8ADC"
 			]
 			description: ["O Tier Máximo de Barris do Sophisticated Backpacks. Possui o maior espaço interno e slots de upgrade"]
-			hide: true
 			id: "6E48F6C4F91A74EB"
 			rewards: [{
 				description: ""
@@ -1008,7 +1023,6 @@
 				"4AF141BC1EBDC358"
 			]
 			description: ["Mochila com Mais espaço ainda pra items e addons"]
-			hide: true
 			id: "7049F21A90D307C2"
 			rewards: [{
 				description: ""
@@ -1060,7 +1074,6 @@
 				"4E1E8BFEA4924D20"
 				"4AF141BC1EBDC358"
 			]
-			hide: true
 			id: "0F1E24C3CE252A7B"
 			rewards: [{
 				description: ""
@@ -1114,7 +1127,6 @@
 				"0F1E24C3CE252A7B"
 			]
 			description: ["Mochila com o Espaço Maximizado dos slots de upgrade e de items"]
-			hide: true
 			id: "78808C88A47E46B2"
 			rewards: [{
 				description: ""
@@ -1212,6 +1224,7 @@
 			]
 			description: ["Esta Teia do Apotheosis permite que você remova qualquer madição de items, ferramentas e armaduras quando usada"]
 			id: "53F0F4522C05CFE4"
+			optional: true
 			shape: "diamond"
 			tasks: [{
 				id: "015BB116552FA73B"
@@ -1225,7 +1238,6 @@
 		{
 			dependencies: ["2C717CF7D9CE20EA"]
 			description: ["Esta será a sua &aPrincipal Forma&r de voar durante boa parte do jogo. Este &eAngel Ring&r lhe permite voar como no &bCriativo&r ao Custo de &aXP&r enquanto voa. &cATENÇÃO&r: Assim que a XP acabar o efeito do Anel &ccessará imediatamente&r. Não esqueça de progredir para a próxima quest nessa linha para ver como aprimorar o seu &eAngel Ring&r e fazê-lo consumir &eEnergia&r ao invés de &aXP&r para voar."]
-			hide: true
 			icon: "angelring:angel_ring"
 			id: "5DE3D44E6AC6EDBF"
 			min_width: 300
@@ -1376,7 +1388,6 @@
 				"5DE3D44E6AC6EDBF"
 			]
 			description: ["Com este Upgrade do &eAngel Ring&r ele deixará de consumir &eXP&r e passará a consumir &aEnergia (Forge Energy ou FE)&r. Pode ser &3Carregado manualmente&r ao colocá-lo em um inventário com &aEnergia&r como &aEnergy Cubes&r do Mekanism ou ainda &cCarregado Automaticamente&r via &bRede Wireless&r do Flux Networks &c(Necessita de um Controller de Flux para a Rede para funcionar)&r"]
-			hide: true
 			icon: "angelring:energetic_angel_ring"
 			id: "53A49105C69332EB"
 			min_width: 300
@@ -1469,7 +1480,6 @@
 				"3D2BE04543566B4D"
 			]
 			description: ["O Ponto de Flux serve como uma Saída de Energia a partir da Rede do Flux Networks. Veja a Descrição do Flux Point na Tooltip do item"]
-			hide: true
 			icon: "fluxnetworks:flux_point"
 			id: "3F2D2264E97FE3A2"
 			rewards: [{
@@ -1515,7 +1525,6 @@
 				"3D2BE04543566B4D"
 			]
 			description: ["O &8Flux Plug&r é a Porta de &9Entrada&r de &aEnergia&r para sua Rede Flux, é com este dispositivo que você extrai &aEnergia&r de Blocos e Estruturas Adjacentes e a Insere na sua Rede Flux"]
-			hide: true
 			icon: "fluxnetworks:flux_plug"
 			id: "7F16728B542B2786"
 			rewards: [{
@@ -1563,7 +1572,6 @@
 				"3D2BE04543566B4D"
 			]
 			description: ["É com este Bloco que você &9Cria e Gerencia suas Rede de Energia Flux Networks&r. E onde você habilita a maravilhosa habilidade de &eRecarga Wireless&r de seus items, estando eles, no &eInventário Curios&r, &bInventário&r, &cHotbar&r, &3Mão Principal&r, &5Off Hand&r e &dSlot de Armadura&r"]
-			hide: true
 			icon: "fluxnetworks:flux_controller"
 			id: "43F2769CC0BF340A"
 			rewards: [{
@@ -1615,7 +1623,6 @@
 		{
 			dependencies: ["3B9E29D62F179036"]
 			description: ["Use os &aBotany Pots&r ao seu favor e farm ao menos um pouco de &dDemon Dream Fruit&r ao colocar um &9solo&r e uma &5Semente de Sonho Demoníaco&r em um &aBotany Pot&r. Vale ressaltar que quanto mais forte for o &9Solo&r em que a planta foi plantada, &bmais rápido ela cresce&r. &cEsta Quest libera a aba de Quests do Occultism&r"]
-			hide: true
 			id: "1C1351ECF99033BC"
 			tasks: [{
 				count: 3L
@@ -1632,7 +1639,6 @@
 				"2B4A113A56A15894"
 			]
 			description: ["Farme Undead Log no Botany Pot "]
-			hide: true
 			id: "3054B6FBFE09D98D"
 			tasks: [{
 				consume_items: false
@@ -1652,7 +1658,6 @@
 				"2B4A113A56A15894"
 			]
 			description: ["Crie &0Dark Sticks&r com &cDuas Tábuas de Undead Log&r e uma &0Dark Gem&r"]
-			hide: true
 			id: "0E8A8452E5476B64"
 			rewards: [{
 				description: ""

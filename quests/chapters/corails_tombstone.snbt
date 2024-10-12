@@ -12,6 +12,7 @@
 			dependencies: ["3527EE9B7938538C"]
 			description: ["Grave Dust é o componente mais básico do Corail's Tombstone. Farme um pouco disso antes de prosseguir"]
 			id: "194BB3DDCA56717F"
+			optional: true
 			rewards: [
 				{
 					count: 4
@@ -162,7 +163,7 @@
 				"3527EE9B7938538C"
 				"5784A0443C32187A"
 			]
-			description: ["Coloque um &1Grave Dust&r no &6Suporte de Poções&r e 3 &9Frascos com Água&r e crie 3 &eEssence of Undeath&r"]
+			description: ["Coloque um &1Grave Dust&r no &6Suporte de Poções&r e 3 &9Mundane Potion&r e crie 3 &eEssence of Undeath&r"]
 			id: "6883215A6BDC26F2"
 			rewards: [{
 				description: ""
@@ -184,7 +185,6 @@
 		}
 		{
 			dependencies: [
-				"194BB3DDCA56717F"
 				"6883215A6BDC26F2"
 				"67DABB540EFD3B01"
 				"5784A0443C32187A"

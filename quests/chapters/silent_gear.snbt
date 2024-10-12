@@ -74,7 +74,7 @@
 					id: "0621023840206251"
 					item: "minecraft:magma_cream"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					title: "Consiga 4 Magma Cream"
 					type: "item"
 				}
@@ -209,9 +209,9 @@
 				}
 				{
 					consume_items: false
-					count: 14L
+					count: 4L
 					id: "3C1A3BED1B95D281"
-					item: { Count: 14, id: "silentgear:blueprint_paper" }
+					item: "silentgear:blueprint_paper"
 					match_nbt: false
 					only_from_crafting: true
 					type: "item"
@@ -406,7 +406,6 @@
 				"Tool Rod - Bone para Mais Dano"
 				"Coating - &6Netherite&r (Tier &dMAX&r)"
 			]
-			hide: true
 			hide_dependency_lines: true
 			icon: "silentgear:sword_blueprint"
 			id: "14E76204210BCDFF"
@@ -435,7 +434,6 @@
 				"Tool Rod - &bLiga de Aço de Tyrian&r ( 1x &5Aço de Tyrian&r + 2x &4Aço Carmesim&r + 1x &9Azure Electrum&r) para mais durabilidade (Tier &dMAX&r)"
 				"Tip - &aEsmeralda&r (Tier &dMAX&r) "
 			]
-			hide: true
 			hide_dependency_lines: true
 			icon: "silentgear:pickaxe_blueprint"
 			id: "5AB7773062E2CF20"
@@ -507,6 +505,7 @@
 					}
 					match_nbt: false
 					only_from_crafting: true
+					optional_task: true
 					title: "Catalisador Lv. 3"
 					type: "item"
 				}
@@ -522,6 +521,7 @@
 					}
 					match_nbt: false
 					only_from_crafting: true
+					optional_task: true
 					title: "Catalisador Lv. 2"
 					type: "item"
 				}
@@ -537,6 +537,7 @@
 					}
 					match_nbt: false
 					only_from_crafting: true
+					optional_task: true
 					title: "Catalisador Lv. 1"
 					type: "item"
 				}
@@ -567,8 +568,11 @@
 			}]
 			subtitle: "Salvager"
 			tasks: [{
+				consume_items: false
 				id: "30081408CD7A81BC"
 				item: "silentgear:salvager"
+				match_nbt: false
+				only_from_crafting: true
 				type: "item"
 			}]
 			x: 3.0d

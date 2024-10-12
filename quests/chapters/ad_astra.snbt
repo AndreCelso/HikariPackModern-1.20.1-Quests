@@ -143,7 +143,6 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["6E1B63FF3F91E31D"]
 			description: ["Este é o primeiro &cFoguete&r do &dAd Astra&r que você pode fazer no &aEarly Game&r, os demais Tiers necessitam de recursos encontrados fora da &2Terra (Overworld)&r"]
 			icon: {
 				Count: 1
@@ -172,7 +171,7 @@
 						tag: { }
 					}
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 				{
@@ -221,7 +220,7 @@
 			]
 			title: "Foguete Tier I"
 			x: -3.5d
-			y: -6.0d
+			y: -7.5d
 		}
 		{
 			dependencies: [
@@ -270,14 +269,11 @@
 				}
 			]
 			title: "Pad um Launche"
-			x: -2.0d
+			x: -3.5d
 			y: -6.0d
 		}
 		{
 			dependencies: [
-				"6E1B63FF3F91E31D"
-				"011E8793FE9AEA02"
-				"621FB4DD80802572"
 				"45BE17CEBF3D756A"
 				"78D9D3EEB91DAF63"
 			]
@@ -421,35 +417,42 @@
 				}
 			]
 			title: "Base Espacial!!"
-			x: -0.5d
-			y: -6.0d
-		}
-		{
-			id: "13A9E5A2B8CD3625"
-			tasks: [
-				{
-					id: "7D4C7B0A881FDDA9"
-					item: "ad_astra:raw_ostrum"
-					type: "item"
-				}
-				{
-					id: "21E64592BC3351A1"
-					item: "ad_astra:ostrum_ingot"
-					type: "item"
-				}
-			]
-			x: -1.0d
-			y: -3.5d
+			x: -3.5d
+			y: -9.0d
 		}
 		{
 			dependencies: [
+				"1CCE7BBCC9294C54"
+				"3C9572F61C11442F"
 				"5D558A7F1508BBEC"
-				"78D9D3EEB91DAF63"
-				"6E1B63FF3F91E31D"
-				"011E8793FE9AEA02"
-				"621FB4DD80802572"
-				"45BE17CEBF3D756A"
 			]
+			description: ["&5Ostrum&r é o Segundo Material Espacial do Ad Astra e é Obtido em Marte. Com ele é possível criar partes para o Próximo Tier de Foguete"]
+			icon: "ad_astra:ostrum_ingot"
+			id: "13A9E5A2B8CD3625"
+			subtitle: "Ostrum"
+			tasks: [
+				{
+					consume_items: false
+					id: "7D4C7B0A881FDDA9"
+					item: "ad_astra:raw_ostrum"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "21E64592BC3351A1"
+					item: "ad_astra:ostrum_ingot"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["5D558A7F1508BBEC"]
 			description: [
 				"&6Desh&r é um &bMetal&r encontrado na &9Lua&r, é com ele que você consegue fazer o &dFoguete&r Tier &e2&r do &aAd Astra&r. Então obtenha um pouco dele e construa o &apróximo&r &cTier de Foguete&r para poder explorar &boutros planetas&r."
 				"É possível construir &6Portas de Desh&r também"
@@ -491,18 +494,14 @@
 					type: "item"
 				}
 			]
-			x: 1.0d
-			y: -6.0d
+			x: -2.0d
+			y: -9.0d
 		}
 		{
 			dependencies: [
 				"3C9572F61C11442F"
 				"5D558A7F1508BBEC"
-				"78D9D3EEB91DAF63"
 				"45BE17CEBF3D756A"
-				"011E8793FE9AEA02"
-				"6E1B63FF3F91E31D"
-				"621FB4DD80802572"
 			]
 			description: ["Com este &6Foguete Tier II&r você consegue voar para mais longe, assim conseguindo visitar planetas mais distantes da &aTerra&r"]
 			icon: {
@@ -581,7 +580,360 @@
 				}
 			]
 			title: "Foguete Tier II"
+			x: -0.5d
+			y: -9.0d
+		}
+		{
+			dependencies: [
+				"13A9E5A2B8CD3625"
+				"1CCE7BBCC9294C54"
+				"3C9572F61C11442F"
+				"5D558A7F1508BBEC"
+			]
+			description: ["Com este foguete, você consegue voar pra planetas ainda mais distantes do Overworld. &6Vênus&r e &4Mercúrio&r se Abrem pra você agora"]
+			icon: {
+				Count: 1
+				id: "ad_astra:tier_3_rocket"
+				tag: { }
+			}
+			id: "048E76348C4D3244"
+			rewards: [{
+				auto: "disabled"
+				description: ""
+				icon: {
+					Count: 1
+					id: "ad_astra:tier_3_rocket"
+					tag: { }
+				}
+				id: "5B79A31240AB8D11"
+				team_reward: true
+				title: "Foguete Tier III"
+				type: "toast"
+			}]
+			subtitle: "Foguete Tier 3"
+			tasks: [
+				{
+					consume_items: false
+					id: "25C01A81C7B56430"
+					item: {
+						Count: 1
+						id: "ad_astra:tier_3_rocket"
+						tag: { }
+					}
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 6L
+					id: "78EB05FA9E5424FF"
+					item: { Count: 6, id: "ad_astra:ostrum_block" }
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 2L
+					id: "53B59C966430B87E"
+					item: { Count: 2, id: "ad_astra:ostrum_tank" }
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6C5291C5C100FA46"
+					item: "ad_astra:ostrum_engine"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "792E7B26E8477CA1"
+					item: { Count: 4, id: "ad_astra:rocket_fin" }
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "3D91166584BE9712"
+					item: "ad_astra:rocket_nose_cone"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			title: "Foguete Tier III"
 			x: 2.5d
+			y: -9.0d
+		}
+		{
+			dependencies: [
+				"048E76348C4D3244"
+				"13A9E5A2B8CD3625"
+				"1CCE7BBCC9294C54"
+				"3C9572F61C11442F"
+				"5D558A7F1508BBEC"
+			]
+			description: ["Esta é uma versão aprimorada da Space Suit comum. Com ela você pode viajar até &6Vênus&r e &4Mercúrio&r sem ser &cTORRADO&r pelo calor destes planetas. Sem a Netherite Space Suit você queima até a morte neles."]
+			icon: {
+				Count: 1
+				id: "ad_astra:netherite_space_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "56018673E5C37024"
+			rewards: [{
+				auto: "disabled"
+				description: ""
+				icon: {
+					Count: 1
+					id: "ad_astra:netherite_space_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "6A655964F5881D4A"
+				team_reward: true
+				title: "Me Cubra de Netherita"
+				type: "toast"
+			}]
+			subtitle: "Roupa Espacial de Netherite"
+			tasks: [
+				{
+					consume_items: false
+					id: "01C44700F85EC627"
+					item: {
+						Count: 1
+						id: "ad_astra:netherite_space_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "0C22896A348D050F"
+					item: {
+						Count: 1
+						id: "ad_astra:netherite_space_suit"
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "59B24CEE4D392D61"
+					item: {
+						Count: 1
+						id: "ad_astra:netherite_space_pants"
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6224CA017CB0B9DA"
+					item: {
+						Count: 1
+						id: "ad_astra:netherite_space_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["56018673E5C37024"]
+			description: ["Planeta Super quente. Ideal pra deixar as torres de evaporação do Mekanism"]
+			id: "554ADCC09024A861"
+			rewards: [{
+				description: ""
+				icon: "ad_astra:venus_globe"
+				id: "4D539057DA099417"
+				title: "Vênus Podcast"
+				type: "toast"
+			}]
+			subtitle: "Vênus"
+			tasks: [{
+				dimension: "ad_astra:venus"
+				icon: "ad_astra:venus_globe"
+				id: "659EE2CE126679EB"
+				title: "Chegue em Vênus"
+				type: "dimension"
+			}]
+			x: 4.0d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"554ADCC09024A861"
+				"56018673E5C37024"
+			]
+			description: ["&cCalorite&r é o &eÚltimo Metal Espacial&r do &bAd Astra&r. É com ele que se cria o &eÚltimo Foguete&r, o &cFoguete Tier IV&r"]
+			icon: "ad_astra:calorite_ingot"
+			id: "665E69E0B3D0FD62"
+			rewards: [{
+				description: ""
+				icon: "ad_astra:calorite_ingot"
+				id: "5B00CD9C601001C4"
+				title: "Nossa que Calor"
+				type: "toast"
+			}]
+			subtitle: "Calorite"
+			tasks: [
+				{
+					consume_items: false
+					id: "23F497B114801146"
+					item: "ad_astra:calorite_ingot"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "66A2B37F9620B51C"
+					item: "ad_astra:raw_calorite"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["665E69E0B3D0FD62"]
+			description: ["Este é o &b[Pináculo da Exploração Espacial]&r do Ad Astra. Com este foguete, você consegue cruzar o espaço, rumo a um planeta em outro &eSistema Solar&r que o do &aOverworld&r. O Sistema Solar se chama &bProxima Centauri&r, e o Sol deste sistema é frio, o Único planeta aqui é &bGlacio&r, um planeta gelado."]
+			icon: {
+				Count: 1
+				id: "ad_astra:tier_4_rocket"
+				tag: { }
+			}
+			id: "66890B4D00C6F89E"
+			rewards: [{
+				auto: "disabled"
+				description: ""
+				icon: {
+					Count: 1
+					id: "ad_astra:tier_4_rocket"
+					tag: { }
+				}
+				id: "20AE4D64BF2DB9B4"
+				team_reward: true
+				title: "Foguete Tier IV"
+				type: "toast"
+			}]
+			subtitle: "Foguete Tier 4"
+			tasks: [
+				{
+					consume_items: false
+					id: "68CCA7A756DE2B5D"
+					item: {
+						Count: 1
+						id: "ad_astra:tier_4_rocket"
+						tag: { }
+					}
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 6L
+					id: "5A943F5517F3BC49"
+					item: { Count: 6, id: "ad_astra:calorite_block" }
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 2L
+					id: "7CB7BB08B6F0B706"
+					item: { Count: 2, id: "ad_astra:calorite_tank" }
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "31710CB48886F318"
+					item: "ad_astra:calorite_engine"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "0A26E8099E2113CB"
+					item: { Count: 4, id: "ad_astra:rocket_fin" }
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "14C290551F6099E5"
+					item: "ad_astra:rocket_nose_cone"
+					match_nbt: false
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			title: "Foguete Tier IV"
+			x: 2.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"665E69E0B3D0FD62"
+				"66890B4D00C6F89E"
+			]
+			description: ["&bGlacio&r é um Planeta frio com atmosfera respirável. Isso significa que você não precisa de equipamentos espaciais ou oxigênio nesta dimensão."]
+			id: "1632DADE0E4E134C"
+			rewards: [{
+				auto: "disabled"
+				description: ""
+				icon: "ad_astra:glacio_globe"
+				id: "4803592BAC29488A"
+				team_reward: true
+				title: "Que Friiiiio!"
+				type: "toast"
+			}]
+			subtitle: "Glacio"
+			tasks: [{
+				dimension: "ad_astra:glacio"
+				icon: "ad_astra:glacio_globe"
+				id: "3CED534CA1007280"
+				title: "Visite Glacio!"
+				type: "dimension"
+			}]
+			x: 1.0d
 			y: -6.0d
 		}
 	]

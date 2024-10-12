@@ -34,9 +34,11 @@
 		}
 		{
 			dependencies: ["1722EAA94A958616"]
-			description: ["Está Maça Escurecida, quando usada para alimentar algum mob do Minecraft Vanilla, o faz gerar o livro manual do mod. &cATENÇÃO!!! ESTÁ RECEITA DESCRITA NÃO FOI IMPLEMENTADA PELO AUTOR DO MOD AINDA, PORÉM HÁ UMA RECEITA ALTERNATIVA DE MINHA AUTORIA ADICIONADA PELO KUBEJS USANDO OS RITUAIS DO OCCULTISM&r. Visite o JEI/REI pesquisando por Origins of Darkness e clicando nele para ver as receitas"]
-			hide: true
+			description: ["Está Maça Escurecida, quando usada para alimentar algum mob do Minecraft Vanilla, o faz gerar o livro manual do mod. Visite o JEI/REI pesquisando por Origins of Darkness e clicando nele para ver as receitas"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "19B5049C8457C301"
+			optional: true
 			rewards: [{
 				description: ""
 				icon: "evilcraft:darkened_apple"
@@ -53,54 +55,11 @@
 				type: "item"
 			}]
 			x: -10.5d
-			y: -2.0d
+			y: -4.0d
 		}
 		{
-			dependencies: [
-				"19B5049C8457C301"
-				"1722EAA94A958616"
-				"1A75C0408EDEC843"
-				"30A964BFDC3F4479"
-				"2C07D627583B7A94"
-				"242F5C223BA3B36C"
-				"7F5FBE804EA53148"
-				"3F464AB7A152C11F"
-				"2E80BDDAB239606C"
-				"29842928B6D1EC93"
-				"017B4E4AFCD9379C"
-				"6E3E82927F857651"
-				"5501E6215350526B"
-			]
-			description: ["&cATENÇÃO: A RECEITA PADRÃO DO MOD AINDA NÃO FOI IMPLEMENTADA&r. Porém há uma receita alternativa disponível de minha autoria adicionada pelo &dKubeJS&r para o &0Occultism&r. Você precisa de um &5Livro Vinculado de Djini&r e um &ePentáculo de Compulsão Espectral de Eziveus&r, &02 Dark Gems&r e &02 Darkened Apples&r"]
-			hide: true
-			id: "02AAF844FAB7B155"
-			rewards: [{
-				description: ""
-				icon: "evilcraft:origins_of_darkness"
-				id: "4F87D05FFBD732DC"
-				title: "Origem das Trevas"
-				type: "toast"
-			}]
-			shape: "gear"
-			tasks: [{
-				consume_items: false
-				id: "5C9138D581BBF4D1"
-				item: "evilcraft:origins_of_darkness"
-				match_nbt: false
-				only_from_crafting: false
-				type: "item"
-			}]
-			x: -9.0d
-			y: -2.0d
-		}
-		{
-			dependencies: [
-				"02AAF844FAB7B155"
-				"19B5049C8457C301"
-				"1722EAA94A958616"
-			]
+			dependencies: ["1722EAA94A958616"]
 			description: ["O &cBlood Extractor&r é a primeira ferramenta do &4Evil Craft&r que você deve fazer. É com ela que você extrai &cBlood (Sangue)&r de mobs. Segure ela no &eInventário&r enquanto mata mobs com uma ferramenta &a(Espada ou Atomic Disassembler por exemplo).&r É possível expandir o &cInventário de Sangue do Blood Extractor&r ao fabricar mais &cBlood Extractors&r &be juntá-los numa Crafting Grid&r. É recomendável ainda você fazer vários deles e juntá-los numa grid 3x3 e funciona."]
-			hide: true
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -211,13 +170,12 @@
 					type: "item"
 				}
 			]
-			x: -6.0d
+			x: -10.5d
 			y: -2.0d
 		}
 		{
 			dependencies: ["1722EAA94A958616"]
 			description: ["Este &eWeather Container&r é uma forma &cSurvival Sem Cheats&r de se ter controle sobre o clima. Fabrique alguns deles e procure por &6Estruturas no Mundo&r que possuam um Bloco chamado &bWeather Accumulator&r. Jogue o &eWeather Container&r nele e ele capturará o Clima dentro do Frasco. PS: O &bWeather Accumulator&r Precisa de um tempo para recarregar antes de poder capturar outro clima"]
-			hide: true
 			hide_dependency_lines: true
 			id: "662E4B1D0B214490"
 			optional: true
@@ -248,18 +206,15 @@
 				type: "item"
 			}]
 			title: "/Weather Survival"
-			x: -7.5d
-			y: -2.0d
+			x: -9.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
 				"4129EC0CE1149A28"
-				"02AAF844FAB7B155"
-				"19B5049C8457C301"
 				"1722EAA94A958616"
 			]
-			description: ["Para Fabricar uma &cDark Power Gem&r Faça uma &ePoça em formato de +&r &cde Baldes de Sangue no Chão&r Shift-Clicando com o Botão Direito com o &cBlood Extractor&r para Colocar &cSangue&r no Mundo e jogue uma &0Dark Gem&r na &cPoça&r, e ela consumirá todo o Sangue"]
-			hide: true
+			description: ["Para Fabricar uma &cDark Power Gem&r Faça uma &ePoça em formato de +&r &cde Baldes de Sangue no Chão&r Shift-Clicando com o Botão Direito com o &cBlood Extractor&r para Colocar &cSangue&r no Mundo e jogue uma &0Dark Gem&r na &cPoça&r, e ela consumirá todo o Sangue. Para que o processo funcione a Dark Gem precisa ser mergulhada em uma poça com pelo menos 5 blocos de Sangue Líquido"]
 			id: "70C04B244273D066"
 			rewards: [{
 				description: ""
@@ -277,19 +232,16 @@
 				only_from_crafting: false
 				type: "item"
 			}]
-			x: -4.5d
+			x: -9.0d
 			y: -2.0d
 		}
 		{
 			dependencies: [
 				"70C04B244273D066"
 				"4129EC0CE1149A28"
-				"02AAF844FAB7B155"
-				"19B5049C8457C301"
 				"1722EAA94A958616"
 			]
-			description: ["Crie &cPoças de Sangue&r do EvilCraft e espere o &4Sangue Coagular&r, formando um &4Bloco de Sangue Endurecido&r. Quebre-o e o coloque na fornanha e terá &4Hardened Blood Shards&r."]
-			hide: true
+			description: ["Crie &cPoças de Sangue&r do EvilCraft e espere o &4Sangue Coagular&r, formando um &4Bloco de Sangue Endurecido&r. Quebre-o e o coloque na fornalha e terá &4Hardened Blood Shards&r. Blocos de Sangue Endurecido só quebram com Flint Steel ou com alguma ferramenta com Silk Touch. Se quebrado fora destas condições ele retorna à forma líquida. Se quebrado com Flint Steel ele dropa Blood Shards, se quebrado com Silk Touch ele dropa o próprio Bloco de Sangue, que depois pode ser enriquecido na Enriquecido na Enrichment Chamber do Mekanism"]
 			id: "6E7A980C3105109E"
 			rewards: [{
 				description: ""
@@ -316,8 +268,21 @@
 					only_from_crafting: false
 					type: "item"
 				}
+				{
+					consume_items: false
+					id: "27330B16D024FE3C"
+					item: {
+						Count: 1
+						id: "minecraft:flint_and_steel"
+						tag: {
+							Damage: 0
+						}
+					}
+					only_from_crafting: true
+					type: "item"
+				}
 			]
-			x: -3.0d
+			x: -7.5d
 			y: -2.0d
 		}
 		{
@@ -325,10 +290,8 @@
 				"6E7A980C3105109E"
 				"70C04B244273D066"
 				"1722EAA94A958616"
-				"02AAF844FAB7B155"
 			]
 			description: ["Crie um &cBlood Infusion Core&r ao Envolver uma &4Dark Power Gem&r com &4Hardened Blood Shard&r na &eCrafting Grid&r "]
-			hide: true
 			id: "3AA2CD75D53BD56D"
 			rewards: [{
 				description: ""
@@ -345,23 +308,27 @@
 				only_from_crafting: true
 				type: "item"
 			}]
-			x: -1.5d
+			x: -6.0d
 			y: -2.0d
 		}
 		{
 			dependencies: [
 				"3AA2CD75D53BD56D"
 				"6E7A980C3105109E"
-				"19B5049C8457C301"
 				"1722EAA94A958616"
 				"70C04B244273D066"
 				"4129EC0CE1149A28"
-				"02AAF844FAB7B155"
 			]
 			description: ["Com um pouco de &7Pedregulho&r e o &cBlood Infusion Core&r feito na Quest Anterior, Crie um &cBlood Infuser&r, sua primeira máquina do EvilCraft."]
-			hide: true
 			icon: {
 				Count: 1
+				ForgeCaps: {
+					Parent: {
+						Amount: 0
+						FluidName: "minecraft:empty"
+						capacity: 10000
+					}
+				}
 				id: "evilcraft:blood_infuser"
 				tag: { }
 			}
@@ -387,6 +354,7 @@
 			subtitle: "Blood Infuser"
 			tasks: [
 				{
+					consume_items: false
 					id: "1C44753A3B33BC7D"
 					item: {
 						Count: 1
@@ -400,6 +368,8 @@
 						id: "evilcraft:blood_infuser"
 						tag: { }
 					}
+					match_nbt: false
+					only_from_crafting: true
 					type: "item"
 				}
 				{
@@ -411,13 +381,16 @@
 					type: "item"
 				}
 				{
+					consume_items: false
 					count: 8L
 					id: "4D17E3DE578C4B9C"
-					item: { Count: 8, id: "minecraft:cobblestone" }
+					item: "minecraft:cobblestone"
+					match_nbt: false
+					only_from_crafting: false
 					type: "item"
 				}
 			]
-			x: 0.0d
+			x: -4.5d
 			y: -2.0d
 		}
 		{
@@ -427,12 +400,9 @@
 				"6E7A980C3105109E"
 				"70C04B244273D066"
 				"4129EC0CE1149A28"
-				"02AAF844FAB7B155"
-				"19B5049C8457C301"
 				"1722EAA94A958616"
 			]
 			description: ["Consiga alguns &6Arbustos Secos&r e os &cInfunda com Sangue no Blood Infuser&r para criar &4Undead Sappling&r. &aEsta Quest&r Libera a quest de &cUndead Log&r no &9Botany Pot&r no Capítulo \"&bNo que Investir Primeiro&r\""]
-			hide: true
 			icon: "evilcraft:undead_sapling"
 			id: "2B4A113A56A15894"
 			rewards: [{
@@ -471,13 +441,13 @@
 						}
 					}
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					title: "Any #forge:shears"
 					type: "item"
 				}
 			]
 			title: "Morte Natural"
-			x: 1.5d
+			x: -3.0d
 			y: -2.0d
 		}
 	]

@@ -14,59 +14,58 @@
 				"124D708F7A16B52A"
 				"22BD549A06A95F6C"
 				"0AA512252248E3FD"
-				"090E0D3C5DB148C4"
-				"528E343031F2934B"
-				"6C3FB385968F1B92"
-				"190B96284C733869"
 			]
 			description: ["O &eGas Burn Generator&r é uma excelente fonte de energia limpa, infinita e barata, além de ser possível no Early Game com relativa facilidade"]
-			hide: true
 			icon: "mekanismgenerators:gas_burning_generator"
 			id: "72A8ACF7B6448830"
 			rewards: [
-				{
-					id: "509E5FE75DF56A07"
-					item: "mekanismgenerators:gas_burning_generator"
-					type: "item"
-				}
 				{
 					id: "441217BDACA63253"
 					type: "xp"
 					xp: 50
 				}
+				{
+					auto: "disabled"
+					description: ""
+					icon: "mekanismgenerators:gas_burning_generator"
+					id: "137FF06517AE578B"
+					team_reward: true
+					title: "Sentiu Cheiro de i5?"
+					type: "toast"
+				}
 			]
 			tasks: [
 				{
-					consume_items: true
+					consume_items: false
 					id: "3CDADE1542510CD1"
 					item: "mekanism:electrolytic_core"
-					match_nbt: true
+					match_nbt: false
 					only_from_crafting: true
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					count: 2L
 					id: "7ABFCB2E102F4EAF"
-					item: { Count: 2, id: "mekanism:steel_casing" }
-					match_nbt: true
+					item: "mekanism:steel_casing"
+					match_nbt: false
 					only_from_crafting: true
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					count: 4L
 					id: "2508819B156167EB"
-					item: { Count: 4, id: "mekanism:ingot_osmium" }
+					item: "mekanism:ingot_osmium"
 					match_nbt: false
 					only_from_crafting: false
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					count: 2L
 					id: "042910FB0A82F6F4"
-					item: { Count: 2, id: "mekanism:alloy_infused" }
+					item: "mekanism:alloy_infused"
 					match_nbt: false
 					only_from_crafting: false
 					type: "item"
@@ -93,42 +92,52 @@
 		{
 			dependencies: ["21BB60520638E008"]
 			description: ["O Separador Eletrolítico é uma máquina que separa 2 Gases distintos a Partir de um Fluido fornecido à Máquina"]
-			hide: true
 			icon: "mekanism:electrolytic_separator"
 			id: "124D708F7A16B52A"
 			rewards: [{
-				id: "1B4D8B296C5D58FC"
-				item: "mekanism:electrolytic_separator"
-				type: "item"
+				auto: "disabled"
+				description: ""
+				icon: "mekanism:electrolytic_separator"
+				id: "240B0C7E186DF495"
+				team_reward: true
+				title: "Separando Eletrolíticamente"
+				type: "toast"
 			}]
+			subtitle: "Electrolytic Separator"
 			tasks: [
 				{
-					consume_items: true
+					consume_items: false
 					count: 2L
 					id: "42D7C69598253ED4"
-					item: { Count: 4, id: "mekanism:alloy_infused" }
+					item: "mekanism:alloy_infused"
+					match_nbt: false
 					only_from_crafting: false
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					count: 4L
 					id: "4B2BD3C96BD7C215"
-					item: { Count: 4, id: "minecraft:iron_ingot" }
+					item: "minecraft:iron_ingot"
+					match_nbt: false
+					only_from_crafting: false
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "587E5E917C5BB856"
 					item: "mekanism:electrolytic_core"
+					match_nbt: false
 					only_from_crafting: true
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					count: 2L
 					id: "6ED4ED744D4B14AF"
-					item: { Count: 2, id: "minecraft:redstone" }
+					item: "minecraft:redstone"
+					match_nbt: false
+					only_from_crafting: false
 					type: "item"
 				}
 			]
@@ -142,40 +151,52 @@
 				"21BB60520638E008"
 			]
 			description: ["Esta máquina te possibilita triturar uma gama de Items. Permite a fabricação de &aBiocombustível&r a partir de qualquer &aMatéria Orgânica&r"]
-			hide: true
 			icon: "mekanism:crusher"
 			id: "22BD549A06A95F6C"
 			rewards: [{
-				id: "45D37D003512BA29"
-				item: "mekanism:crusher"
-				type: "item"
+				auto: "disabled"
+				description: ""
+				icon: "mekanism:crusher"
+				id: "38A9CAFF2DF8CAEE"
+				team_reward: true
+				title: "Crusher"
+				type: "toast"
 			}]
+			subtitle: "Triturador"
 			tasks: [
 				{
+					consume_items: false
+					count: 2L
 					id: "50925B47D75763A3"
 					item: "minecraft:lava_bucket"
+					match_nbt: false
+					only_from_crafting: false
 					type: "item"
 				}
 				{
-					id: "25B1D8D1E513FF4C"
-					item: "minecraft:lava_bucket"
-					type: "item"
-				}
-				{
+					consume_items: false
 					count: 2L
 					id: "3F8D77C959B362B2"
-					item: { Count: 2, id: "mekanism:basic_control_circuit" }
+					item: "mekanism:basic_control_circuit"
+					match_nbt: false
+					only_from_crafting: false
 					type: "item"
 				}
 				{
+					consume_items: false
 					id: "0B6A55B9387BBEB8"
 					item: "mekanism:steel_casing"
+					match_nbt: false
+					only_from_crafting: true
 					type: "item"
 				}
 				{
+					consume_items: false
 					count: 4L
 					id: "07C7B0EAB689C877"
-					item: { Count: 4, id: "minecraft:redstone" }
+					item: "minecraft:redstone"
+					match_nbt: false
+					only_from_crafting: false
 					type: "item"
 				}
 			]
@@ -191,55 +212,67 @@
 				"157598D1F68B822F"
 			]
 			description: ["O Biocombustível pode ser transformado em &dGás Etileno&r na &aCâmara de Reação Pressurizada&r com a adição de &fHidrogênio&r e &bÁgua&r e produz &eSubstrato&r no processo"]
-			hide: true
 			icon: "mekanism:pressurized_reaction_chamber"
 			id: "0AA512252248E3FD"
 			rewards: [{
-				id: "7419DAC0636E5E5E"
-				item: "mekanism:pressurized_reaction_chamber"
-				type: "item"
+				auto: "disabled"
+				description: ""
+				icon: "mekanism:pressurized_reaction_chamber"
+				id: "762F3C849C636859"
+				team_reward: true
+				title: "Segura a Pressão"
+				type: "toast"
 			}]
 			tasks: [
 				{
-					consume_items: true
+					consume_items: false
 					count: 2L
 					id: "19A52192DCF13D10"
 					item: "mekanism:basic_chemical_tank"
+					match_nbt: false
 					only_from_crafting: true
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "1F992B6795776132"
 					item: "mekanism:dynamic_tank"
+					match_nbt: false
 					only_from_crafting: true
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "3B28EF89FEDA4D0C"
 					item: "mekanism:enrichment_chamber"
+					match_nbt: false
 					only_from_crafting: true
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					count: 2L
 					id: "39FB67ADC858DD6A"
-					item: { Count: 2, id: "mekanism:basic_control_circuit" }
+					item: "mekanism:basic_control_circuit"
+					match_nbt: false
+					only_from_crafting: false
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					count: 2L
 					id: "0246FC8CDD01B571"
-					item: { Count: 2, id: "mekanism:ingot_steel" }
+					item: "mekanism:ingot_steel"
+					match_nbt: false
+					only_from_crafting: false
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "082390602E0A2984"
 					item: "mekanism:alloy_infused"
+					match_nbt: false
+					only_from_crafting: false
 					type: "item"
 				}
 			]
@@ -248,13 +281,19 @@
 			y: -5.0d
 		}
 		{
-			dependencies: [
-				"22BD549A06A95F6C"
-				"40DD270E7552EA93"
-			]
+			dependencies: ["22BD549A06A95F6C"]
 			description: ["Produzido Triturando qualquer Matéria Organiga no Crusher"]
-			hide: true
 			id: "157598D1F68B822F"
+			rewards: [{
+				auto: "disabled"
+				description: ""
+				icon: "mekanism:bio_fuel"
+				id: "671FBDBAD24FC82E"
+				team_reward: true
+				title: "Bio Combustível"
+				type: "toast"
+			}]
+			subtitle: "Bio Combustível"
 			tasks: [{
 				id: "2870F1F6D10E3FBE"
 				item: "mekanism:bio_fuel"
