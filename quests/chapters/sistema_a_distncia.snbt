@@ -1,0 +1,198 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "sistema_a_distncia"
+	group: "5684DBC9C605DBF3"
+	icon: "ae2:wireless_crafting_terminal"
+	id: "393E23110478A270"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["65FAAC5DFECE2C78"]
+			description: ["&bQuantum Ring&r é uma &dEstrutura Multibloco do AE2&r que lhe permitirá &9extender&r o Sistema entre grandes distâncias, inclusive &aentre dimensões&r. Além disso é possível conseguir &calcance infinito&r para o seu &dTerminal Wireless&r usando um &bQuantum Ring&r (Veja nas próximas quests), também &aCross-Dimension&r"]
+			icon: "ae2:quantum_ring"
+			id: "69DE597E3185C339"
+			subtitle: "Quantum Ring"
+			tasks: [
+				{
+					consume_items: false
+					count: 8L
+					id: "730FC6EFAADBE359"
+					item: "ae2:quantum_ring"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "4ED5E927554DB9CC"
+					item: "ae2:quantum_link"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "Fabrique um Quantum Ring"
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			description: ["A Primeira coisa que você deve fazer para conseguir uma Singularidade é um Matter Condenser, é a máquina que produz a Singularidade. &cATENÇÃO!! O Matter Condenser pode dar VOID em items, então use com cautela e nunca manipule com inventário cheio ou enquanto manipula items&r. Para produzir uma Singularidade, primeiro mude o modo do Matter Condenser para Singularidade. Depois coloque com cuidado um 64k Storage Component no lugar indicado e depois bombeie o máximo de água que conseguir para dentro do Matter Condenser. Para isso use uma Sink e Tubos Mecânicos do Mekanism no Tier Ultimate ou tubos do Integrated Dynamics para máxima performance"]
+			icon: "ae2:singularity"
+			id: "65FAAC5DFECE2C78"
+			subtitle: "Como Fazer?"
+			tasks: [
+				{
+					consume_items: false
+					id: "555579909396C896"
+					item: "ae2:condenser"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "1ABE29F2554DF714"
+					item: "ae2:cell_component_64k"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "5AAE15848981B819"
+					item: "ae2:singularity"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 2L
+					id: "2DB3F8E5A90B948A"
+					item: { Count: 2, id: "ae2:quantum_entangled_singularity" }
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "0E291858F08C6C0C"
+					item: "cookingforblockheads:sink"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					id: "6055BA1907FEC79D"
+					item: "integratedtunnels:part_importer_fluid"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0F1F2F62A4B94442"
+					item: "integratedtunnels:part_interface_fluid"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "133D13362FA2B475"
+					item: "integrateddynamics:cable"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "58BAF46375BC676E"
+					item: "integrateddynamics:variable"
+					optional_task: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "5D0AF7CA5117B4D1"
+					item: "mekanism:ultimate_mechanical_pipe"
+					match_nbt: false
+					only_from_crafting: false
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Produzindo Singularidades"
+			x: -4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"69DE597E3185C339"
+				"65FAAC5DFECE2C78"
+			]
+			description: ["Cada Terminal Wireless possui uma funcionalidade. O Wireless Crafting Terminal é basicamente a contra-parte do Crafting Terminal comum, com a diferença que este pode ser acessado remotamente. Nele você tem acesso a todos os items armazenados no sistema (Isto Inclui Items, Fluidos, Gases, e Energia), além de uma crafting grid interna para crafting. O Wireless Pattern Terminal é basicamente um Terminal de Padrões de Acesso remoto. Codifique receitas a distância! Por fim, o Extended Pattern Access Terminal te dá acesso remoto a todos os Pattern Providers ligados na rede ME. Para usar qualquer um dos terminais acima, é necessário um ME Access Point e o terminal vinculado a ele"]
+			icon: "ae2:wireless_crafting_terminal"
+			id: "43E30A778612CC67"
+			subtitle: "Utilidade"
+			tasks: [
+				{
+					consume_items: false
+					id: "2186E65069ECC44A"
+					item: "ae2:wireless_crafting_terminal"
+					match_nbt: false
+					only_from_crafting: false
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "60B0DA807EAA8ECA"
+					item: "ae2wtlib:wireless_pattern_encoding_terminal"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "75803C36CA5868FE"
+					item: "expatternprovider:wireless_ex_pat"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "72135C5C67070101"
+					item: "ae2:wireless_access_point"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "19B3E65871908623"
+					item: "ae2wtlib:wireless_universal_terminal"
+					match_nbt: false
+					only_from_crafting: false
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Terminais Sem Fio"
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"69DE597E3185C339"
+				"43E30A778612CC67"
+				"65FAAC5DFECE2C78"
+			]
+			description: ["O &dQuantum Bridge Card&r junto de uma &9Quantum Entangled Singularity&r dentro de um &bTerminal Wireless&r do AE2 permitem o player o acesso remoto ao sistema &cde qualquer dimensão ou distância&r. A &9Quantum Entangled Singularity&r dentro do Terminal deve estar vinculada à um &9Quantum Ring&r para fornecer tal funcionalidade. Uma dica é nomear um par de &9Singularities&r a fim de garantir a singularidade de nomes e NBTs"]
+			id: "50BFC10A112CB5B1"
+			subtitle: "Quantum Bridge Card"
+			tasks: [{
+				consume_items: false
+				id: "30D72D4B01CE75B2"
+				item: "ae2wtlib:quantum_bridge_card"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "Acessando o Sistema Remotamente"
+			x: 0.0d
+			y: 0.5d
+		}
+	]
+	title: "Sistema a Distância"
+}

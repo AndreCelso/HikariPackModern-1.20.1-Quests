@@ -29,102 +29,52 @@
 				}
 			}
 			id: "4B4F529D709C0AD9"
+			rewards: [{
+				auto: "enabled"
+				description: "b"
+				icon: {
+					Count: 1
+					id: "apotheosis:potion_charm"
+					tag: {
+						Damage: 0
+						Potion: "potionsmaster:diamond_sight"
+					}
+				}
+				id: "5E54056752D7377D"
+				team_reward: false
+				title: "a"
+				type: "toast"
+			}]
 			subtitle: "Potion, Potion, Potion Masters, Ohhhhhh!"
 			tags: [
 				"charms"
 				"potions_master"
 				"ore_sight"
 			]
-			tasks: [
-				{
-					consume_items: false
-					icon: {
-						Count: 1
-						id: "apotheosis:potion_charm"
-						tag: {
-							Damage: 0
-							Potion: "potionsmaster:diamond_sight"
-						}
+			tasks: [{
+				consume_items: false
+				icon: {
+					Count: 1
+					id: "apotheosis:potion_charm"
+					tag: {
+						Damage: 0
+						Potion: "potionsmaster:diamond_sight"
 					}
-					id: "0060382B0C9DB6A6"
-					item: {
-						Count: 1
-						id: "apotheosis:potion_charm"
-						tag: {
-							Damage: 0
-							Potion: "potionsmaster:diamond_sight"
-						}
-					}
-					match_nbt: false
-					only_from_crafting: false
-					optional_task: true
-					type: "item"
 				}
-				{
-					consume_items: false
-					id: "56D89904BEC0F007"
-					item: {
-						Count: 1
-						id: "apotheosis:potion_charm"
-						tag: {
-							Damage: 0
-							Potion: "potionsmaster:osmium_sight"
-						}
+				id: "0060382B0C9DB6A6"
+				item: {
+					Count: 1
+					id: "apotheosis:potion_charm"
+					tag: {
+						Damage: 0
+						Potion: "potionsmaster:diamond_sight"
 					}
-					match_nbt: false
-					only_from_crafting: true
-					optional_task: true
-					type: "item"
 				}
-				{
-					consume_items: false
-					id: "73450ED6A0EBDF29"
-					item: {
-						Count: 1
-						id: "apotheosis:potion_charm"
-						tag: {
-							Damage: 0
-							Potion: "potionsmaster:gold_sight"
-						}
-					}
-					match_nbt: false
-					only_from_crafting: true
-					optional_task: true
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "3ADAE131E75B6A3C"
-					item: {
-						Count: 1
-						id: "apotheosis:potion_charm"
-						tag: {
-							Damage: 0
-							Potion: "potionsmaster:redstone_sight"
-						}
-					}
-					match_nbt: false
-					only_from_crafting: true
-					optional_task: true
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "7F5E7B21518A7BD2"
-					item: {
-						Count: 1
-						id: "apotheosis:potion_charm"
-						tag: {
-							Damage: 0
-							Potion: "potionsmaster:iron_sight"
-						}
-					}
-					match_nbt: false
-					only_from_crafting: true
-					optional_task: true
-					type: "item"
-				}
-			]
+				match_nbt: false
+				only_from_crafting: false
+				optional_task: true
+				type: "item"
+			}]
 			title: "Amuleto de Tandera, Me dê visão além do Alcance"
 			x: 0.0d
 			y: -1.0d
@@ -146,25 +96,6 @@
 				}
 			}
 			id: "2599B1E599F3371F"
-			rewards: [{
-				auto: "disabled"
-				description: ""
-				icon: {
-					Count: 1
-					id: "reliquary:potion"
-					tag: {
-						effects: [{
-							duration: 1
-							name: "minecraft:instant_health"
-							potency: 0
-						}]
-					}
-				}
-				id: "187EC67751CB23F3"
-				team_reward: true
-				title: "Mestre de Poções"
-				type: "toast"
-			}]
 			tags: [
 				"ore_sight_part1"
 				"potion"
@@ -418,6 +349,7 @@
 				type: "kill"
 				value: 7L
 			}]
+			title: "Mate alguns Blazes"
 			x: 0.0d
 			y: 3.5d
 		}
@@ -446,18 +378,34 @@
 					id: "07ACDD82F5E28B2C"
 					item: "mysticalagriculture:inferium_farmland"
 					only_from_crafting: true
+					optional_task: true
 					type: "item"
 				}
 				{
+					consume_items: false
 					id: "3FD529BA6D9B759A"
 					item: "mysticalagriculture:prudentium_farmland"
-					only_from_crafting: true
+					match_nbt: false
+					only_from_crafting: false
+					optional_task: true
 					type: "item"
 				}
 				{
+					consume_items: false
 					id: "1357C7095CE9251B"
 					item: "mysticalagriculture:tertium_farmland"
-					only_from_crafting: true
+					match_nbt: false
+					only_from_crafting: false
+					optional_task: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6E2B10D6FBB0497D"
+					item: "mysticalagriculture:imperium_farmland"
+					match_nbt: false
+					only_from_crafting: false
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -486,6 +434,7 @@
 			id: "0F77CF08AD692249"
 			tasks: [
 				{
+					consume_items: false
 					id: "2F63E1DF6AB9A1AC"
 					item: {
 						Count: 1
@@ -494,6 +443,8 @@
 							value: "minecraft:logs"
 						}
 					}
+					match_nbt: false
+					only_from_crafting: false
 					title: "Any #minecraft:logs"
 					type: "item"
 				}
@@ -538,7 +489,7 @@
 				title: "Comandos Essenciais"
 				type: "checkmark"
 			}]
-			x: -5.0d
+			x: -7.5d
 			y: 4.5d
 		}
 		{
@@ -559,9 +510,11 @@
 			icon: "mysticalagriculture:inferium_essence"
 			id: "258D0BD178520DCB"
 			tasks: [{
+				consume_items: false
 				id: "7A80839087CC09CD"
 				item: "mysticalagriculture:inferium_seeds"
-				only_from_crafting: true
+				match_nbt: false
+				only_from_crafting: false
 				type: "item"
 			}]
 			title: "Plante Inferium no Botany Pot"
@@ -602,6 +555,7 @@
 				title: "Any #comforts:sleeping_bags"
 				type: "item"
 			}]
+			title: "Sacos de Dormir"
 			x: -14.0d
 			y: -0.5d
 		}
@@ -646,6 +600,7 @@
 					type: "item"
 				}
 			]
+			title: "O Verdadeiro Baiano"
 			x: -12.5d
 			y: -0.5d
 		}
@@ -663,7 +618,6 @@
 				title: "Tankas a XP?"
 				type: "toast"
 			}]
-			subtitle: "Armazenamento de XP"
 			tasks: [{
 				consume_items: false
 				id: "2C4507143B0184ED"
@@ -672,6 +626,7 @@
 				only_from_crafting: true
 				type: "item"
 			}]
+			title: "Armazenamento de XP"
 			x: -11.0d
 			y: -2.0d
 		}
@@ -693,6 +648,7 @@
 				only_from_crafting: true
 				type: "item"
 			}]
+			title: "Halo de XP"
 			x: -14.0d
 			y: -2.0d
 		}
@@ -721,6 +677,7 @@
 		{
 			description: ["Este Bloco scaneia todo inventário posicionado em sua área de funcionamento e te permite acessar estes inventários a partir dele, além de possuir uma Crafting Grid Integrada, muito útil"]
 			id: "7DA8BF72531BF402"
+			optional: true
 			subtitle: "Tudo em um só lugar"
 			tasks: [{
 				consume_items: false
@@ -761,7 +718,7 @@
 				Count: 1
 				id: "sophisticatedstorage:barrel"
 				tag: {
-					woodType: "oak"
+					woodType: "mangrove"
 				}
 			}
 			id: "221A712CEF4045F1"
@@ -779,9 +736,10 @@
 				type: "toast"
 			}]
 			shape: "pentagon"
+			subtitle: "Barril Sofisticado"
 			tasks: [{
 				consume_items: false
-				id: "41A94A443BB5664E"
+				id: "34A43DEF90FD82D7"
 				item: {
 					Count: 1
 					id: "itemfilters:tag"
@@ -801,6 +759,13 @@
 		{
 			dependencies: ["221A712CEF4045F1"]
 			description: ["Mais espaço interno para Items e Upgrades"]
+			icon: {
+				Count: 1
+				id: "sophisticatedstorage:iron_barrel"
+				tag: {
+					woodType: "mangrove"
+				}
+			}
 			id: "541DCA9A33AA23F8"
 			rewards: [{
 				description: ""
@@ -815,14 +780,28 @@
 				title: "Um Barril Maior"
 				type: "toast"
 			}]
-			tasks: [{
-				consume_items: false
-				id: "039A7F80AFCA7BC6"
-				item: "sophisticatedstorage:basic_to_iron_tier_upgrade"
-				match_nbt: false
-				only_from_crafting: true
-				type: "item"
-			}]
+			subtitle: "Upgrade para Ferro"
+			tasks: [
+				{
+					consume_items: false
+					id: "039A7F80AFCA7BC6"
+					item: "sophisticatedstorage:basic_to_iron_tier_upgrade"
+					match_nbt: false
+					only_from_crafting: true
+					optional_task: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "08A10F6C8891951B"
+					item: "sophisticatedstorage:copper_to_iron_tier_upgrade"
+					match_nbt: false
+					only_from_crafting: true
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Um Barril Maior"
 			x: -12.5d
 			y: -5.0d
 		}
@@ -831,6 +810,13 @@
 				"221A712CEF4045F1"
 				"541DCA9A33AA23F8"
 			]
+			icon: {
+				Count: 1
+				id: "sophisticatedstorage:gold_barrel"
+				tag: {
+					woodType: "mangrove"
+				}
+			}
 			id: "378D4B7B6B5E6C92"
 			rewards: [{
 				description: ""
@@ -853,6 +839,7 @@
 				only_from_crafting: true
 				type: "item"
 			}]
+			title: "Um Barril ainda Maior"
 			x: -11.0d
 			y: -5.0d
 		}
@@ -863,6 +850,13 @@
 				"378D4B7B6B5E6C92"
 			]
 			description: ["Um Baú bem Espaçoso com bastante espaço interno e mais slots de upgrade"]
+			icon: {
+				Count: 1
+				id: "sophisticatedstorage:diamond_barrel"
+				tag: {
+					woodType: "mangrove"
+				}
+			}
 			id: "72303DEB590A8ADC"
 			rewards: [{
 				description: ""
@@ -885,6 +879,7 @@
 				only_from_crafting: true
 				type: "item"
 			}]
+			title: "Um Barril Ainda Ainda Maior"
 			x: -9.5d
 			y: -5.0d
 		}
@@ -896,6 +891,13 @@
 				"72303DEB590A8ADC"
 			]
 			description: ["O Tier Máximo de Barris do Sophisticated Backpacks. Possui o maior espaço interno e slots de upgrade"]
+			icon: {
+				Count: 1
+				id: "sophisticatedstorage:netherite_barrel"
+				tag: {
+					woodType: "mangrove"
+				}
+			}
 			id: "6E48F6C4F91A74EB"
 			rewards: [{
 				description: ""
@@ -916,6 +918,7 @@
 				only_from_crafting: true
 				type: "item"
 			}]
+			title: "A Mansão do Chaves"
 			x: -8.0d
 			y: -5.0d
 		}
@@ -964,6 +967,7 @@
 				only_from_crafting: false
 				type: "item"
 			}]
+			title: "Armazenamento Portátil"
 			x: -14.0d
 			y: -3.5d
 		}
@@ -1014,6 +1018,7 @@
 				only_from_crafting: true
 				type: "item"
 			}]
+			title: "Uma Mochila maior"
 			x: -12.5d
 			y: -3.5d
 		}
@@ -1065,6 +1070,7 @@
 				only_from_crafting: true
 				type: "item"
 			}]
+			title: "Uma Mochila ainda Maior"
 			x: -11.0d
 			y: -3.5d
 		}
@@ -1116,6 +1122,7 @@
 				only_from_crafting: true
 				type: "item"
 			}]
+			title: "Mochilão Brabo"
 			x: -9.5d
 			y: -3.5d
 		}
@@ -1169,6 +1176,7 @@
 				only_from_crafting: true
 				type: "item"
 			}]
+			title: "A Mochila Mais Bolada de Todas"
 			x: -8.0d
 			y: -3.5d
 		}
@@ -1317,7 +1325,7 @@
 				description: ""
 				icon: "angelring:diamond_ring"
 				id: "3F90E11CAC053ED3"
-				title: "Um Passo para o Céu"
+				title: "Diamond Ring"
 				type: "toast"
 			}]
 			shape: "diamond"
@@ -1379,6 +1387,7 @@
 					type: "dimension"
 				}
 			]
+			title: "Um Passo para o Céu"
 			x: -14.0d
 			y: -6.5d
 		}
@@ -1470,13 +1479,15 @@
 				only_from_crafting: false
 				type: "item"
 			}]
+			title: "Fabrique 5 Blocos de Flux"
 			x: -12.5d
 			y: 1.0d
 		}
 		{
 			dependencies: [
-				"0106AB27D975BAB0"
 				"7F16728B542B2786"
+				"43F2769CC0BF340A"
+				"0106AB27D975BAB0"
 				"3D2BE04543566B4D"
 			]
 			description: ["O Ponto de Flux serve como uma Saída de Energia a partir da Rede do Flux Networks. Veja a Descrição do Flux Point na Tooltip do item"]
@@ -1486,7 +1497,6 @@
 				description: ""
 				icon: "fluxnetworks:flux_point"
 				id: "52CEEB6E82BEF130"
-				title: "Saida de Eletrons"
 				type: "toast"
 			}]
 			tasks: [
@@ -1516,11 +1526,13 @@
 					type: "item"
 				}
 			]
-			x: -9.5d
+			title: "Saída de Elétrons"
+			x: -8.0d
 			y: 1.0d
 		}
 		{
 			dependencies: [
+				"43F2769CC0BF340A"
 				"0106AB27D975BAB0"
 				"3D2BE04543566B4D"
 			]
@@ -1561,14 +1573,13 @@
 					type: "item"
 				}
 			]
-			x: -11.0d
+			title: "Entrada de Elétrons"
+			x: -9.5d
 			y: 1.0d
 		}
 		{
 			dependencies: [
 				"0106AB27D975BAB0"
-				"7F16728B542B2786"
-				"3F2D2264E97FE3A2"
 				"3D2BE04543566B4D"
 			]
 			description: ["É com este Bloco que você &9Cria e Gerencia suas Rede de Energia Flux Networks&r. E onde você habilita a maravilhosa habilidade de &eRecarga Wireless&r de seus items, estando eles, no &eInventário Curios&r, &bInventário&r, &cHotbar&r, &3Mão Principal&r, &5Off Hand&r e &dSlot de Armadura&r"]
@@ -1617,7 +1628,8 @@
 					type: "item"
 				}
 			]
-			x: -8.0d
+			title: "Central da Cemig"
+			x: -11.0d
 			y: 1.0d
 		}
 		{
@@ -1640,6 +1652,7 @@
 			]
 			description: ["Farme Undead Log no Botany Pot "]
 			id: "3054B6FBFE09D98D"
+			optional: true
 			tasks: [{
 				consume_items: false
 				count: 10L
@@ -1675,6 +1688,7 @@
 				only_from_crafting: true
 				type: "item"
 			}]
+			title: "Fabrique 2x Dark Stick"
 			x: -14.0d
 			y: 2.5d
 		}
@@ -1687,6 +1701,183 @@
 			}]
 			x: -14.0d
 			y: 1.0d
+		}
+		{
+			description: ["Imã bem early game e barato de fazer. Item primordial do Early game"]
+			id: "6CD35FE9A5D39433"
+			rewards: [{
+				auto: "enabled"
+				description: ""
+				icon: {
+					Count: 1
+					id: "simplemagnets:advancedmagnet"
+					tag: { }
+				}
+				id: "7C1305456A3212FC"
+				title: "Imã Early Game"
+				type: "toast"
+			}]
+			subtitle: "Advanced Magnet"
+			tasks: [{
+				consume_items: false
+				id: "3478386B61F6AD56"
+				item: {
+					Count: 1
+					id: "simplemagnets:advancedmagnet"
+					tag: { }
+				}
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "Imã Early Game"
+			x: -12.5d
+			y: 4.0d
+		}
+		{
+			description: ["O Time in a Bottle lhe permite guardar o tempo de jogo do teu Mundo no Minecraft e utilizá-lo para Acelerar Máquinas. Pega leve nisso ae pois ele acelera chunks próximos e pode causar problemas se usado indiscriminadamente"]
+			id: "09E61938B0FD7B71"
+			shape: "hexagon"
+			subtitle: "Time in a Bottle"
+			tasks: [{
+				consume_items: false
+				id: "68F8E2B57554D7BB"
+				item: {
+					Count: 1
+					id: "tiab:time_in_a_bottle"
+					tag: { }
+				}
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "Poupando Tempo"
+			x: -5.0d
+			y: -6.5d
+		}
+		{
+			description: ["A Infinity Wand é uma varinha de Construção que facilitará sua vida Construindo. Possui vários modos de construção e diferente das outras varinhas de construção, a Infinity Wand não gasta durabilidade quando usada"]
+			id: "1DD5FE3B69966882"
+			subtitle: "Infinity Wand"
+			tasks: [{
+				consume_items: false
+				id: "623C44DFF14729B5"
+				item: {
+					Count: 1
+					id: "constructionwand:infinity_wand"
+					tag: {
+						wand_options: { }
+					}
+				}
+				match_nbt: false
+				only_from_crafting: true
+				type: "item"
+			}]
+			title: "Cajado da Odebretch"
+			x: -14.0d
+			y: 5.5d
+		}
+		{
+			description: ["O Eccentric Tome permite que você guarde todos os Guias de Mods na forma de livros dentro dele, e funciona similarmente à uma Morph-O-Tool, onde você pode trocar entre qualquer um dos livros dentro do Eccentric Tome e lê-los quando quiser"]
+			id: "5B1263F4F91F3E16"
+			subtitle: "Eccentric Tome"
+			tasks: [{
+				consume_items: false
+				id: "056886991539F925"
+				item: {
+					Count: 1
+					id: "eccentrictome:tome"
+					tag: {
+						"eccentrictome:mods": { }
+					}
+				}
+				match_nbt: false
+				only_from_crafting: true
+				type: "item"
+			}]
+			title: "Biblioteca Portátil"
+			x: -14.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["5B1263F4F91F3E16"]
+			description: ["Mesma funcionalidade do Eccentric Tome, mas para Wrenches de vários mods técnicos. Utilize a Morphing Tool para Guardar multiplas ferramentas de diferentes mods em um só lugar, e trocar entre elas sempre que quiser"]
+			id: "698900AAB5FAB080"
+			subtitle: "Morphing Tool"
+			tasks: [{
+				consume_items: false
+				id: "0484AA510DDC569B"
+				item: "morphtool:tool"
+				match_nbt: false
+				only_from_crafting: true
+				type: "item"
+			}]
+			title: "Chave de Fenda dos Power Rangers"
+			x: -12.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["1DD5FE3B69966882"]
+			id: "3B19D103BD01AA5F"
+			tasks: [{
+				consume_items: false
+				id: "5A913829227EFE7F"
+				item: "constructionwand:core_angel"
+				match_nbt: false
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -12.5d
+			y: 5.5d
+		}
+		{
+			description: ["O Mod Crafting Station traz de volta à 1.20.1 a Crafting Station do Tinkers Construct. Nela você pode Craftar sem se preocupar de seus items sairem da Mesa quando tu fecha a GUI"]
+			id: "3717B47653F08779"
+			subtitle: "Fabrique uma Crafting Station"
+			tasks: [{
+				consume_items: false
+				id: "3F16846FB5B2F745"
+				item: "craftingstation:crafting_station"
+				match_nbt: false
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"0D999F9F9E70317E"
+				"757FDA8015B193D6"
+			]
+			description: ["Fundir mais de um material juntos, formando ligas diversas"]
+			id: "33F8B0F9FB5B4040"
+			subtitle: "Utilidade"
+			tasks: [{
+				consume_items: false
+				id: "68F62DE56DA4D3DC"
+				item: "enderio:alloy_smelter"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.5d
+		}
+		{
+			id: "2D046DB36B56C0CB"
+			subtitle: "Sink"
+			tasks: [{
+				consume_items: false
+				id: "61C8DD2D9C47190C"
+				item: "cookingforblockheads:sink"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "Água Infinita em 1 Bloco"
+			x: -7.5d
+			y: -1.5d
 		}
 	]
 	subtitle: ["Estes são os primeiros recursos os quais você deve investir primeiro"]

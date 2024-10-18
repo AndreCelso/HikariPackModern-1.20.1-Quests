@@ -1,0 +1,112 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "thermal__basic"
+	group: "252BB708E7A55B17"
+	icon: "thermal:machine_pulverizer"
+	id: "2E90F229322008E3"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Está Linha de Quests te Fornecerá uma visão das máquinas mais úteis do Thermal Expansion para se utilizar"]
+			id: "754D3A5E4BE469D0"
+			subtitle: "Descrição"
+			tasks: [{
+				id: "77DFF9595F74452A"
+				title: "Máquinas Básicas"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["754D3A5E4BE469D0"]
+			description: ["Funciona basicamente como uma máquina crusher, que tritura minérios em pó de minério, geralmente multiplicando-o"]
+			id: "6BFDD2B0F39348A8"
+			subtitle: "Utilidade"
+			tasks: [{
+				id: "24F7900A45E71E66"
+				item: "thermal:machine_pulverizer"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["754D3A5E4BE469D0"]
+			description: ["O Multiservo Press serve para produzir placas dos mais variados metais, utilizadas nos mais variados craftings"]
+			id: "2683563D6A30C867"
+			subtitle: "Utilidade"
+			tasks: [{
+				consume_items: false
+				id: "582871293F7AD89E"
+				item: "thermal:machine_press"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["754D3A5E4BE469D0"]
+			description: ["[\"O Fluid Encapsulator serve para encher quaisquer containers de Fluidos como Garrafas de Vidro ou Baldes com o Fluido fornecido à máquina. Há uma máquina com funcionalidade semelhante no Applied Energistics chamada \", { \"text\": \"ME Caner\", \"underlined\": \"true\",\"color\":\"light_purple\",\"bold\":\"true\",\"clickEvent\": { \"action\": \"change_page\", \"value\": \"58063C92BF648B25\" }}, \" que também enche Containers de Fluido, porém apenas Baldes\"]"]
+			id: "5AFE5B23867C928D"
+			subtitle: "Utilidade"
+			tasks: [{
+				consume_items: false
+				id: "0A7A02A602D0EC08"
+				item: "thermal:machine_bottler"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["754D3A5E4BE469D0"]
+			description: ["Funciona basicamente como um Suporte de Poções, porém podendo ser automatizado, e acelerado com upgrades"]
+			id: "5ECAD68EC6969C0C"
+			subtitle: "Utilidade"
+			tasks: [{
+				id: "779F00F5EEA4A210"
+				item: "thermal:machine_brewer"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["754D3A5E4BE469D0"]
+			description: ["[\"Similar à \", { \"text\": \"Alloy Smelter\", \"underlined\": \"true\", \"color\": \"yellow\",\"bold\":\"true\",\"clickEvent\": { \"action\": \"change_page\", \"value\": \"33F8B0F9FB5B4040\"}}, \" porém possui a capacidade de se utilizar catalisadores para melhor output\"]"]
+			id: "4A9234B2EFF4EBF8"
+			subtitle: "Utilidade"
+			tasks: [{
+				id: "0744B2E7C99DF639"
+				item: "thermal:machine_smelter"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["754D3A5E4BE469D0"]
+			description: ["É útil para duplicar ancient dust do Thermal Extra"]
+			id: "602573DF23CBBF25"
+			subtitle: "Utilidade"
+			tasks: [{
+				consume_items: false
+				id: "7C7BA35BB674A09C"
+				item: "thermal:machine_crystallizer"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+	]
+	title: "Thermal - Basic"
+}

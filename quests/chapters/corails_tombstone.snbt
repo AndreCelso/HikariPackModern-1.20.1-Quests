@@ -34,6 +34,7 @@
 					type: "toast"
 				}
 			]
+			subtitle: "Consiga Grave Dust"
 			tasks: [
 				{
 					consume_items: false
@@ -51,7 +52,7 @@
 					id: "16D028FD6C2AD6C2"
 					title: "Mate 10 Zumbis"
 					type: "kill"
-					value: 30L
+					value: 7L
 				}
 				{
 					entity: "minecraft:skeleton"
@@ -59,10 +60,10 @@
 					id: "5F069BD579BCA026"
 					title: "Mate 10 Esqueletos"
 					type: "kill"
-					value: 20L
+					value: 7L
 				}
 			]
-			title: "Consiga Grave Dust"
+			title: "E Morreu..."
 			x: -9.5d
 			y: -6.0d
 		}
@@ -80,6 +81,7 @@
 				title: "Marbles on Stream"
 				type: "toast"
 			}]
+			subtitle: "Grave Marbles"
 			tasks: [{
 				consume_items: false
 				id: "2A7947FB8CC169CD"
@@ -95,6 +97,7 @@
 				title: "Any #tombstone:grave_marbles"
 				type: "item"
 			}]
+			title: "Fabrique Grave Marbles"
 			x: -8.0d
 			y: -6.0d
 		}

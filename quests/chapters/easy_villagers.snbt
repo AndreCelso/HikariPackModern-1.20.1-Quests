@@ -1,0 +1,63 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "easy_villagers"
+	group: "455999BBFBEF424D"
+	icon: "easy_villagers:trader"
+	id: "2929FCC822B990D8"
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Mod Responsável por &aFacilitar&r vários aspectos de gameplay do Minecraft com os &aVillagers&r. Contém máquinas específicas para simular várias gimmicks dos Villagers como as &bTrades&r (&bTrocas com os Villagers&r), &9Farm de Ferro com Iron Golem&r dentro de um único Bloco, &5Conversor de Villagers para Zumbi&r (também os cura usando uma &6Maçã Dourada&r e uma &cPoção de Weakness&r), &esimplificando&r a gimmick de &bcurar villagers&r zumbis. É possivel capturar villagers com a mão, clickando neles com &bShift + Right Click&r)"]
+			id: "6AD6E1F55BE51AED"
+			subtitle: "Easy Villagers"
+			tasks: [{
+				id: "508D6BBB1981A0C1"
+				title: "Começando Easy Villagers"
+				type: "checkmark"
+			}]
+			x: -8.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6AD6E1F55BE51AED"]
+			description: [
+				"&aTrader&r é a máquina do &bEasy Villagers&r responsável por &esimular&r a &aGimmick de Trocar com os Villagers&r. Ao invés de você ir fisicamente até uma vila para trocar com um villager específico, apenas capture-o apertando &aShift + Right Click&r nele e você vai pegá-lo nas mãos e o villager ficará no teu inventário. Leve-o até a sua base e o insira dentro de um &atrader&r, lembrando que você pode &breatribuir a profissão de um Villager&r ao colocar outro &9Bloco Atribuidor de Função&r dentro do &aTrader&r. &dDuas Profissões de Villagers&r para se explorar no começo são a de &6Fletcher&r [Ao trocar com um &6Fletcher&r é possível obter &aEsmeralda&r ao custo de &eGravetos de Madeira&r, se curado &c5x&r no Converter, &acada esmeralda sai por 1 Graveto&r] e a de &5Fluix Research&r [AE2 - Bloco Atribuidor de Profissão: &bCharger&r]."
+				"Há também o mod &3Trade Cycling&r que permite que você &3cicle a troca&r de qualquer &aVillager&r dentro do &aTrader&r indefinidamente [&cEnquanto não for feita a primeira troca com ele&r]"
+			]
+			id: "2AB0240DD8575748"
+			subtitle: "Fabrique um Trader"
+			tasks: [{
+				consume_items: false
+				id: "14E379C36F540560"
+				item: "easy_villagers:trader"
+				match_nbt: false
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"2AB0240DD8575748"
+				"6AD6E1F55BE51AED"
+			]
+			description: ["O &aConverter&r &bconverte Villagers em Zumbis e depois os cura&r, simulando a &9Mecânica de Curar Zombie Villagers do Vanilla&r. Apenas insira o &aVillager&r dentro da &3Máquina&r junto de uma &eMaçã Dourada&r e uma &cPoção de Fraqueza (Weakness)&r e espere o processo ser concluído. Depois de curado pela &d5ª Vez&r, o Villager oferecerá o &9maior desconto&r possível em suas trocar com o Player"]
+			id: "3391F09CB3A87D51"
+			subtitle: "Fabrique um Conversor de Villagers"
+			tasks: [{
+				consume_items: false
+				id: "4C703D0B595DBB89"
+				item: "easy_villagers:converter"
+				match_nbt: false
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -5.5d
+			y: 0.5d
+		}
+	]
+	title: "Easy Villagers"
+}

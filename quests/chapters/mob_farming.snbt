@@ -1,0 +1,99 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mob_farming"
+	group: "6A64FD893155BC3E"
+	icon: "industrialforegoing:mob_crusher"
+	id: "6C1DB73A63BABAC5"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		dependencies: ["710FEF23C57935EB"]
+		description: ["O Mob Crusher é uma máquina End Game do Industrial Foregoing que mata qualquer mob hitkill e recolhe a sua loottable em seu inventário interno, além de gerar Mob Essence que pode ser convertida intercambiavelmente para XP Líquida ou XP de Player"]
+		icon: "mob_grinding_utils:fluid_xp_bucket"
+		id: "4ECC9844C7099540"
+		subtitle: "Mob Crusher"
+		tasks: [
+			{
+				consume_items: false
+				id: "7DFA4ADD189C5D49"
+				item: "industrialforegoing:mob_crusher"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				id: "426B0C1ED0CB6F70"
+				item: {
+					Count: 1
+					id: "industrialforegoing:speed_addon_2"
+					tag: {
+						TitaniumAugment: {
+							Speed: 3.0f
+						}
+					}
+				}
+				match_nbt: false
+				only_from_crafting: false
+				optional_task: true
+				type: "item"
+			}
+			{
+				consume_items: false
+				id: "03C2E50FC6474D27"
+				item: {
+					Count: 1
+					id: "industrialforegoing:efficiency_addon_2"
+					tag: {
+						TitaniumAugment: {
+							Efficiency: 0.8f
+						}
+					}
+				}
+				match_nbt: false
+				only_from_crafting: false
+				optional_task: true
+				type: "item"
+			}
+			{
+				consume_items: false
+				id: "744951DD1FF4CCEC"
+				item: {
+					Count: 1
+					id: "industrialforegoing:processing_addon_2"
+					tag: {
+						TitaniumAugment: {
+							Processing: 3.0f
+						}
+					}
+				}
+				match_nbt: false
+				only_from_crafting: false
+				optional_task: true
+				type: "item"
+			}
+			{
+				consume_items: false
+				id: "502461BF4CCDA343"
+				item: {
+					Count: 1
+					id: "industrialforegoing:range_addon2"
+					tag: {
+						TitaniumAugment: {
+							Range: 2.0f
+						}
+					}
+				}
+				match_nbt: false
+				only_from_crafting: false
+				optional_task: true
+				type: "item"
+			}
+		]
+		title: "Farm de Mobs via Industrial Foregoing"
+		x: -4.0d
+		y: 0.0d
+	}]
+	title: "Mob Farming"
+}

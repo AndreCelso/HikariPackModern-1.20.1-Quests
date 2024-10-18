@@ -1,0 +1,582 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "enchanting_module"
+	group: "7F298F3A58653C61"
+	icon: "apotheosis:rectifier_t3"
+	id: "320111664615CD36"
+	images: [{
+		click: "https://encurtador.net/IAXhC"
+		height: 1.0d
+		hover: ["Tutorial Automatic Enchantment Setup for Apotheosis by EpicEnchants"]
+		image: "hikaripackmodern:textures/automatic_apotheosis_enchanting_table_area.png"
+		rotation: 0.0d
+		width: 1.783457249070632d
+		x: 7.5d
+		y: -0.5d
+	}]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4ECC9844C7099540"]
+			description: ["Esta trilha de Quests do Apotheosis, Guiará você por todo o caminho até o setup perfeito de encantamento do Apotheosis. Com a melhor Mesa de Encantamentos do Apotheosis, você poderá encantar items com o maior nível de encantamento disponível para cada encantamento no jogo"]
+			id: "19014DE75E77FC01"
+			rewards: [{
+				command: "/tellraw @p [\"\",{\"text\":\"Clique Aqui para Assistir ao Tutorial\",\"color\":\"purple\",\"bold\":true,\"underlined\":true,\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://www.youtube.com/watch?v=CkS9LqSSpDU\"}}] "
+				id: "0E3720BCFE680624"
+				title: "Tutorial de Progressão by EpicEnchants"
+				type: "command"
+			}]
+			shape: "pentagon"
+			subtitle: "Descrição"
+			tasks: [{
+				id: "20187F39F7FD6DB0"
+				title: "Best Enchantment Table Setup Path"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["19014DE75E77FC01"]
+			description: ["Com estas 15 Bookshelves do Vanilla que você fabricou, é possível encantar items no nível máximo pretendido pelo vanilla, excluindo-se os Encantamentos de Nível Superior adicionados pelo Apotheosis, pois para estes você precisará de uma mesa que possua níveis mais altos de Quanta, Eterna e Arcana, que são os três novos aspectos presentes na Mesa de Encantamentos do Vanilla e que influenciam na potência dos encantamentos e na probabilidade de Sacá-los por exemplo. Para saber como Aprimorar sua Mesa de Encantamentos, vá para a próxima quest!"]
+			id: "6002588C6DDE266F"
+			subtitle: "Nível de Encantamento Vanilla"
+			tasks: [{
+				consume_items: false
+				count: 15L
+				id: "17EF6F11C9E11883"
+				item: "minecraft:bookshelf"
+				match_nbt: false
+				only_from_crafting: false
+				title: "Fabrique 15 Bookshelves"
+				type: "item"
+			}]
+			title: "Enchantment Setup Tier Vanilla"
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"6002588C6DDE266F"
+				"19014DE75E77FC01"
+			]
+			description: [
+				"&aEterna&r: Determina em que Nível de XP algo pode ser encantado. Deve-se sempre visar o maior Nível de Eterna quando possível"
+				"&cQuanta&r: Influencia o Fator RNG dos Encantamentos Obtidos na Mesa. Influencia no Quão Poderosos vão ser os encantamentos Obtidos na Mesa"
+				"&dArcana&r: Torna Encantamentos Raros mais comuns e Aumenta o Número de Encantamentos"
+			]
+			id: "0E5974FFA1F908F0"
+			tasks: [{
+				id: "72E3507431CF1E76"
+				title: "Quanta Eterna Arcana"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"0E5974FFA1F908F0"
+				"19014DE75E77FC01"
+				"6002588C6DDE266F"
+			]
+			description: [
+				"Em um Setup de Encantamento Vanilla, você obtém um Máximo de &a15&r pontos de &aEterna&r, usando &e15 Estantes Vanilla&r. Para progredir no Módulo de Encantamentos do Apotheosis, deve-se criar &6Estantes&r que lhe fornecerão melhores status de &cQuanta&r, &aEterna&r e &dArcana&r. As &cHellshelves&r e &bSeashelves&r são as primeiras nesta progressão."
+				"&aEterna&r após esta quest: &a22.50/50.00&r"
+				"Além das 15 &eEstantes Vanilla&r, adicione as outras &c5 Hellshelves&r criadas para alcançar a quantidade de &aEterna&r acima."
+			]
+			id: "3A23434628C513B6"
+			subtitle: "Apotheosis Shelves"
+			tasks: [{
+				consume_items: false
+				count: 5L
+				id: "590954B219DFDD60"
+				item: "apotheosis:hellshelf"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "Progressão da Eterna - Preparação"
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"3A23434628C513B6"
+				"0E5974FFA1F908F0"
+				"19014DE75E77FC01"
+				"6002588C6DDE266F"
+			]
+			description: [
+				"O próximo passo para progredir é fazer sua Primeira Infusão na Mesa de Encantamentos. Para isso você precisa de um total de:"
+				"-&aEterna: 22.50/50.00&r"
+				"-&cQuanta: 30.00%&r"
+				"-&dArcana: 0.00%&r"
+				"-&e15&r &cHellshelves&r"
+				"Após Infundir todas as &cHellshelves&r, transforme-as em &6Glowing&r &cHellshelves&r."
+				"Status da Mesa após esta Quest:"
+				"-&aEterna: 30.00/50.00&r"
+				"-&cQuanta: 45.00%&r"
+				"-&dArcana: 60.00%&r"
+			]
+			icon: "apotheosis:infused_hellshelf"
+			id: "1C0D6270CE601427"
+			subtitle: "Infused Hellshelf"
+			tasks: [
+				{
+					consume_items: false
+					id: "36F99C38944D13EA"
+					item: "apotheosis:infused_hellshelf"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 15L
+					id: "2771B19CBFCF5AE3"
+					item: "apotheosis:glowing_hellshelf"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "Enchant Infusion - Enchantment Setup Tier I"
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"1C0D6270CE601427"
+				"3A23434628C513B6"
+				"0E5974FFA1F908F0"
+				"6002588C6DDE266F"
+				"19014DE75E77FC01"
+			]
+			description: [
+				"Status da Mesa depois dessa Quest:"
+				"-&aEterna: 40.00/50.00&r"
+				"-&cQuanta: 20.00%&r"
+				"-&dArcana: 100.00%&r"
+				"-&3Enchanting Clues: 2&r"
+			]
+			id: "46FE564542415315"
+			subtitle: "Mesa Tier II"
+			tasks: [
+				{
+					consume_items: false
+					count: 15L
+					id: "648A58961AD2DCB7"
+					item: "apotheosis:dormant_deepshelf"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 14L
+					id: "1211D9FDDF50AA3A"
+					item: "apotheosis:echoing_deepshelf"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "1F8F6C4BD3193A3F"
+					item: "apotheosis:echoing_sculkshelf"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "Deep Dark Bracket - Enchanting Setup Tier II"
+			x: 3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"46FE564542415315"
+				"1C0D6270CE601427"
+				"3A23434628C513B6"
+				"0E5974FFA1F908F0"
+				"19014DE75E77FC01"
+				"6002588C6DDE266F"
+			]
+			description: [
+				"Status da Mesa depois dessa Quest:"
+				"-&aEterna: 50.00/50.00&r"
+				"-&cQuanta: 75.00%&r"
+				"-&dArcana: 60.00%&r"
+				"-&3Enchanting Clues: 1&r"
+			]
+			id: "45BCDD817840060D"
+			subtitle: "EndShelves Bracket - Tier III"
+			tasks: [
+				{
+					consume_items: false
+					count: 9L
+					id: "4DCB6C785D280B33"
+					item: "apotheosis:endshelf"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 8L
+					id: "5E2160C2B2BAF178"
+					item: "apotheosis:pearl_endshelf"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "361E7EBD6A1CAC85"
+					item: "apotheosis:draconic_endshelf"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "End Bracket - Enchantment Setup Tier III"
+			x: 5.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["45BCDD817840060D"]
+			id: "7844540E3ABAD16D"
+			tasks: [
+				{
+					consume_items: false
+					id: "7BE0F97F262F6B1D"
+					item: "apotheosis:rectifier"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "28DBBA61E3C0D53C"
+					item: "apotheosis:infused_seashelf"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "Retificação Tier I"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["45BCDD817840060D"]
+			id: "6686BF075CD0D898"
+			tasks: [{
+				consume_items: false
+				count: 3L
+				id: "053AA28F7D651FFF"
+				item: "apotheosis:sightshelf"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "Enchantment Clues - Parte I"
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6686BF075CD0D898"]
+			id: "2FDABC030FD27618"
+			tasks: [{
+				consume_items: false
+				count: 3L
+				id: "7F46656DF5996269"
+				item: "apotheosis:sightshelf_t2"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "Enchantment Clues - Parte II"
+			x: 9.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7844540E3ABAD16D"]
+			id: "630051B3CB223CF9"
+			tasks: [{
+				consume_items: false
+				id: "2EE7C7B7EB03B11C"
+				item: "apotheosis:rectifier_t2"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "Retificação Tier II"
+			x: 7.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"630051B3CB223CF9"
+				"7844540E3ABAD16D"
+			]
+			id: "5715EEBC4F8AB296"
+			tasks: [{
+				consume_items: false
+				count: 4L
+				id: "5BAD646E48D1C64C"
+				item: "apotheosis:rectifier_t3"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "Pináculo da Retificação"
+			x: 9.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"&dChorus&r: Remove IA de Mobs Spawnados pelo Spawner com ele adicionado."
+				"&cComparator&r: Adiciona Controle de Spawners via Sinal de Redstone"
+				"&bSoul Lantern&r: Ignora Luz"
+				"&dOvo de Dragão&r: Ignora Condições Especiais de Spawn"
+				"&aAçúcar&r: Reduz Delay de Spawn Mínimo"
+				"&eRelógio&r: Reduz Delay de Spawn Máximo"
+				"&4Olho de Aranha&r: Aumenta Max Entidades por ciclo de spawn"
+				"E vários outros"
+				"Para reduzir ou remover algum status do spawner, segure um &6Nether Quartz&r na &9Off-hand&r e o &bModificador&r que deseja diminuir ou retirar na &3Main-Hand&r"
+			]
+			id: "787FFC1A16AF2AEC"
+			shape: "diamond"
+			subtitle: "Modificadores de Spawn"
+			tasks: [
+				{
+					consume_items: false
+					id: "191A0A22EDF69AC6"
+					item: "minecraft:chorus_fruit"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "2FF38BAD53D296C4"
+					item: "minecraft:comparator"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "235DAB0F923D7A77"
+					item: "minecraft:soul_lantern"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6568975715E0F346"
+					item: "minecraft:dragon_egg"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "79903AA2393516BF"
+					item: "minecraft:sugar"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6AD2C33035961F9E"
+					item: "minecraft:clock"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "614C3C90A8C13115"
+					item: "minecraft:fermented_spider_eye"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7B2143811370F518"
+					item: "minecraft:blaze_rod"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "Modificadores de Spawn do Apotheosis"
+			x: -5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"5715EEBC4F8AB296"
+				"2FDABC030FD27618"
+			]
+			description: [
+				"Área de Construção da Mesa de Encantamentos Automática:"
+				"12 Blocos de Largura x 19 Blocos de Comprimento x 4 Blocos de Altura "
+				"{image:hikaripackmodern:textures/automatic_apotheosis_enchanting_table_area.png width:100 height:100 align:center fit:true}"
+				"Link do Video Tutorial:"
+				"https://www.youtube.com/watch?v=yv5nTWXJjBk"
+			]
+			icon: "apotheosis:draconic_endshelf"
+			id: "02B7DBFB1D2BB53F"
+			rewards: [{
+				command: "/tellraw @p [\"\",{\"text\":\"Clique Aqui para Assistir ao Tutorial\",\"color\":\"red\",\"bold\":true,\"underlined\":true,\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://www.youtube.com/watch?v=yv5nTWXJjBk\"}}] "
+				id: "17E3D9FACA013334"
+				title: "Tutorial by Epic Enchants"
+				type: "command"
+			}]
+			shape: "gear"
+			subtitle: "Source / Fonte"
+			tasks: [
+				{
+					consume_items: false
+					count: 15L
+					id: "04F4976AD37E3E1A"
+					item: { Count: 14, id: "minecraft:sticky_piston" }
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 5L
+					id: "793E2DB4FACFB396"
+					item: { Count: 5, id: "apotheosis:draconic_endshelf" }
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 7L
+					id: "45906F93873D1991"
+					item: { Count: 7, id: "apotheosis:echoing_deepshelf" }
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 6L
+					id: "060F26A3257BA683"
+					item: { Count: 6, id: "apotheosis:soul_touched_deepshelf" }
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "09534A4CB028F770"
+					item: "apotheosis:endshelf"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "298BA771D5FC4CBA"
+					item: { Count: 4, id: "apotheosis:rectifier_t3" }
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 3L
+					id: "259C18EB023EDF18"
+					item: "apotheosis:sightshelf_t2"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "1ED8EA599AF7B165"
+					item: "apotheosis:melonshelf"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 5L
+					id: "7C866DD16A70774C"
+					item: { Count: 5, id: "rftoolsutility:redstone_transmitter" }
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 5L
+					id: "4E243C5991EB1523"
+					item: { Count: 5, id: "minecraft:glow_item_frame" }
+					match_nbt: false
+					only_from_crafting: false
+					optional_task: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "725E60BA760E034C"
+					item: "rftoolsbase:tablet"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "31CBA151076711F9"
+					item: {
+						Count: 1
+						id: "rftoolsutility:redstone_information"
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "3E2485646A5AC3AB"
+					item: "rftoolsutility:redstone_receiver"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "5674F87FA8935E32"
+					item: "rftoolsutility:logic"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "Setup Final Otimizado e Automatizado"
+			x: 10.0d
+			y: -0.5d
+		}
+	]
+	title: "Enchanting Module"
+}

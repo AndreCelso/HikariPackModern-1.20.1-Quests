@@ -1,0 +1,117 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "energia_end_game"
+	group: "35520D5EE1C6AE96"
+	id: "6A3A1ACFF432B9EE"
+	images: [{
+		click: "https://encurtador.net/OZJVN"
+		height: 1.0d
+		hover: ["Mais Informações sobre o Setup Aqui"]
+		image: "hikaripackmodern:textures/mekanism_logo.png"
+		rotation: 0.0d
+		width: 1.0d
+		x: -2.0d
+		y: -0.5d
+	}]
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		description: [
+			"Construa 14 Turbinas Max Size [Base 17x17] [Altura: 18], sem condensers. Para o frame de cada turbina:"
+			"-Vents: 345"
+			"-Turbine Casing: 192 [Frame Apenas, Estrutura Apenas, exclui-se as paredes da turbinas, pois serão de Structural Glass]"
+			"-Rotors: 14"
+			"-Rotor Blades: 28"
+			"-Coils: 7"
+			"-Dispersers: 224"
+			"-Rotational Complex: 1"
+			"-Turbine Valve: 2"
+			"Preencha os espaços vazios das faces da Turbina com Structural Glass"
+		]
+		id: "2BC9A4BFD24E4E6F"
+		rewards: [{
+			command: "/tellraw @p {\"text\":\"Clique Aqui para Saber como fazer!\",\"color\":\"green\",\"underlined\":\"true\",\"bold\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://encurtador.net/OZJVN\"}}]"
+			id: "4AD076FC5EDEBAF8"
+			type: "command"
+		}]
+		subtitle: "Setup 14 Turbinas Max Size"
+		tasks: [
+			{
+				consume_items: false
+				count: 192L
+				id: "24A363ECEFF18272"
+				item: "mekanismgenerators:turbine_casing"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				count: 345L
+				id: "5850EAFF1EFA7B17"
+				item: { Count: 345, id: "mekanismgenerators:turbine_vent" }
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				count: 14L
+				id: "0BF3E5D260DE341B"
+				item: { Count: 14, id: "mekanismgenerators:turbine_rotor" }
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				count: 28L
+				id: "4F5BF0BE6504F876"
+				item: { Count: 28, id: "mekanismgenerators:turbine_blade" }
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				count: 7L
+				id: "69FE174DBF99BA34"
+				item: { Count: 7, id: "mekanismgenerators:electromagnetic_coil" }
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				count: 224L
+				id: "1C41CB55B66611D6"
+				item: { Count: 224, id: "mekanism:pressure_disperser" }
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				id: "2CF09E80F66D4440"
+				item: "mekanismgenerators:rotational_complex"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				count: 2L
+				id: "7CFFCFFF5C2C4F26"
+				item: { Count: 2, id: "mekanismgenerators:turbine_valve" }
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}
+		]
+		title: "Energia End Game Mekanism"
+		x: -3.5d
+		y: -0.5d
+	}]
+	title: "Energia End Game"
+}

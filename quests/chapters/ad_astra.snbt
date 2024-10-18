@@ -273,10 +273,7 @@
 			y: -6.0d
 		}
 		{
-			dependencies: [
-				"45BE17CEBF3D756A"
-				"78D9D3EEB91DAF63"
-			]
+			dependencies: ["56966804775BEDB5"]
 			description: [
 				"Uma &aBase Espacial&r é algo muito interessante de se ter e fazer, contudo, também vem com outros downsides."
 				"Primeiro de tudo, a &aBase Espacial&r &cNÃO VEM PRESSURIZADA POR PADRÃO&r, o que significa que você precisa fazer algumas máquinas e setups iniciais para que sua base seja habitável e possua suporte a vida. Fabrique um &9Oxygen Distributor&r e um &bOxygen Loader&r. O &bOxygen Loader&r é utilizado para Produzir &bOxigênio&r a partir da &9Água&r se fornecido com &6Energia&r. Ele é necessário para se poder visitar o espaço sideral &csem morrer sufocado&r. Além disso, você precisará de uma &dRoupa Espacial&r para não congelar no espaço. &cATENÇÃO, TODAS AS PEÇAS DA ROUPA ESPACIAL SÃO NECESSÁRIAS EM UM AMBIENTE DESPRESSURIZADO COMO O ESPAÇO!!!&r. Carregue o &1Peitoral&r da &5Roupa Espacial&r com &bOxigênio&r no &bOxygen Loader&r e você estará &apronto para visitar o espaço&r. O &9Oxygen Distributor&r servirá para tornar sua &aBase Espacial&r habitável sem a necessidade de &dRoupa Espacial&r enquanto ela estiver &apressurizada&r. Vale lembrar também, que caso um bloco da base espacial que atue na vedação da"
@@ -417,7 +414,7 @@
 				}
 			]
 			title: "Base Espacial!!"
-			x: -3.5d
+			x: -0.5d
 			y: -9.0d
 		}
 		{
@@ -425,6 +422,7 @@
 				"1CCE7BBCC9294C54"
 				"3C9572F61C11442F"
 				"5D558A7F1508BBEC"
+				"56966804775BEDB5"
 			]
 			description: ["&5Ostrum&r é o Segundo Material Espacial do Ad Astra e é Obtido em Marte. Com ele é possível criar partes para o Próximo Tier de Foguete"]
 			icon: "ad_astra:ostrum_ingot"
@@ -448,11 +446,12 @@
 					type: "item"
 				}
 			]
-			x: 1.0d
+			title: "Descubra e Consiga Ostrum"
+			x: 2.5d
 			y: -9.0d
 		}
 		{
-			dependencies: ["5D558A7F1508BBEC"]
+			dependencies: ["56966804775BEDB5"]
 			description: [
 				"&6Desh&r é um &bMetal&r encontrado na &9Lua&r, é com ele que você consegue fazer o &dFoguete&r Tier &e2&r do &aAd Astra&r. Então obtenha um pouco dele e construa o &apróximo&r &cTier de Foguete&r para poder explorar &boutros planetas&r."
 				"É possível construir &6Portas de Desh&r também"
@@ -494,6 +493,7 @@
 					type: "item"
 				}
 			]
+			title: "Consiga Desh"
 			x: -2.0d
 			y: -9.0d
 		}
@@ -501,7 +501,7 @@
 			dependencies: [
 				"3C9572F61C11442F"
 				"5D558A7F1508BBEC"
-				"45BE17CEBF3D756A"
+				"56966804775BEDB5"
 			]
 			description: ["Com este &6Foguete Tier II&r você consegue voar para mais longe, assim conseguindo visitar planetas mais distantes da &aTerra&r"]
 			icon: {
@@ -521,7 +521,7 @@
 				title: "Foguete Tier II"
 				type: "toast"
 			}]
-			subtitle: "Foguete Tier 2"
+			subtitle: "Fabrique o Foguete Tier 2"
 			tasks: [
 				{
 					consume_items: false
@@ -580,7 +580,7 @@
 				}
 			]
 			title: "Foguete Tier II"
-			x: -0.5d
+			x: 1.0d
 			y: -9.0d
 		}
 		{
@@ -589,6 +589,7 @@
 				"1CCE7BBCC9294C54"
 				"3C9572F61C11442F"
 				"5D558A7F1508BBEC"
+				"56966804775BEDB5"
 			]
 			description: ["Com este foguete, você consegue voar pra planetas ainda mais distantes do Overworld. &6Vênus&r e &4Mercúrio&r se Abrem pra você agora"]
 			icon: {
@@ -610,7 +611,7 @@
 				title: "Foguete Tier III"
 				type: "toast"
 			}]
-			subtitle: "Foguete Tier 3"
+			subtitle: "Fabrique o Foguete Tier 3"
 			tasks: [
 				{
 					consume_items: false
@@ -669,7 +670,7 @@
 				}
 			]
 			title: "Foguete Tier III"
-			x: 2.5d
+			x: 4.0d
 			y: -9.0d
 		}
 		{
@@ -679,6 +680,7 @@
 				"1CCE7BBCC9294C54"
 				"3C9572F61C11442F"
 				"5D558A7F1508BBEC"
+				"56966804775BEDB5"
 			]
 			description: ["Esta é uma versão aprimorada da Space Suit comum. Com ela você pode viajar até &6Vênus&r e &4Mercúrio&r sem ser &cTORRADO&r pelo calor destes planetas. Sem a Netherite Space Suit você queima até a morte neles."]
 			icon: {
@@ -704,7 +706,7 @@
 				title: "Me Cubra de Netherita"
 				type: "toast"
 			}]
-			subtitle: "Roupa Espacial de Netherite"
+			subtitle: "Fabrique a Roupa Espacial de Netherite"
 			tasks: [
 				{
 					consume_items: false
@@ -763,7 +765,8 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
+			title: "Me Cubra de Netherita no Espaço"
+			x: 5.5d
 			y: -9.0d
 		}
 		{
@@ -785,7 +788,7 @@
 				title: "Chegue em Vênus"
 				type: "dimension"
 			}]
-			x: 4.0d
+			x: 5.5d
 			y: -7.5d
 		}
 		{
@@ -803,7 +806,7 @@
 				title: "Nossa que Calor"
 				type: "toast"
 			}]
-			subtitle: "Calorite"
+			subtitle: "Consiga Calorite"
 			tasks: [
 				{
 					consume_items: false
@@ -822,7 +825,8 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
+			title: "Que Calor de Metal"
+			x: 5.5d
 			y: -6.0d
 		}
 		{
@@ -906,7 +910,7 @@
 				}
 			]
 			title: "Foguete Tier IV"
-			x: 2.5d
+			x: 4.0d
 			y: -6.0d
 		}
 		{
@@ -933,7 +937,50 @@
 				title: "Visite Glacio!"
 				type: "dimension"
 			}]
-			x: 1.0d
+			x: 2.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["45BE17CEBF3D756A"]
+			description: ["A Lua do Ad Astra é a primeira dimensão do Ad Astra que você deve visitar. É nela que você adquire os recursos para construir sua Base Espacial na Órbita da Terra, como o Desh, Minério encontrado na Lua."]
+			id: "56966804775BEDB5"
+			subtitle: "Lua"
+			tasks: [{
+				dimension: "ad_astra:moon"
+				icon: "ad_astra:moon_globe"
+				id: "76FDF19F0EC92D5E"
+				title: "Visite a Lua do Ad Astra"
+				type: "dimension"
+			}]
+			x: -3.5d
+			y: -9.0d
+		}
+		{
+			id: "5D453D652B3C49C7"
+			tasks: [{
+				id: "0DECA9F6CFC3305C"
+				item: {
+					Count: 1
+					id: "ad_astra_giselle_addon:netherite_oxygen_can"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: -6.0d
+		}
+		{
+			id: "46F5746713D52F4B"
+			tasks: [{
+				id: "5A30220E4A523867"
+				item: {
+					Count: 1
+					id: "ad_astra_giselle_addon:oxygen_can"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.5d
 			y: -6.0d
 		}
 	]

@@ -458,8 +458,10 @@
 			}]
 			subtitle: "Cabo Universal Básico"
 			tasks: [{
+				consume_items: false
 				id: "5BF689CBACD10903"
 				item: "mekanism:basic_universal_cable"
+				match_nbt: false
 				only_from_crafting: true
 				type: "item"
 			}]

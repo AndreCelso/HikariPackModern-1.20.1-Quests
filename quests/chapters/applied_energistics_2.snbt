@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "applied_energistics_2"
-	group: "455999BBFBEF424D"
+	group: "5684DBC9C605DBF3"
 	icon: "ae2:controller"
 	id: "2BA73598999659E0"
-	order_index: 7
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
@@ -39,6 +39,7 @@
 					type: "item"
 				}
 			]
+			title: "Encontre um Meteorito do AE2"
 			x: -18.5d
 			y: -4.0d
 		}
@@ -62,7 +63,7 @@
 					id: "5B79972DD1A09031"
 					item: "mekanism:cardboard_box"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 				{
@@ -110,6 +111,7 @@
 				only_from_crafting: false
 				type: "item"
 			}]
+			title: "Consiga Certus Quartz Crystal"
 			x: -15.5d
 			y: -4.0d
 		}
@@ -139,6 +141,7 @@
 				only_from_crafting: false
 				type: "item"
 			}]
+			title: "Consiga Fluix Crystal"
 			x: -14.0d
 			y: -4.0d
 		}
@@ -148,6 +151,8 @@
 				"55F53AB24B9C3432"
 				"5C83928B48FB2EEA"
 				"70F65307F87FA488"
+				"67C91D09D1FFD815"
+				"149170E20633AF66"
 			]
 			description: ["Com um [&9ME Drive&r + Um &dHD de Items&r, exemplo o &eItem Storage Cell de 4k&r (&aOpção 1&r)] 1 &cCrafting Terminal&r, [1 &bStorage Bus&r + &bAlgum Inventário com Bastante Espaço&r, exemplo um &eBarrel de Ouro&r pra cima do &6Sophisticated Backpacks&r (&6Opção 2&r)] e alguns cabos são suficientes para criar uma &bRede Adhoc&r (&bRede Sem Controlador&r) totalmente funcional"]
 			icon: "ae2:drive"
@@ -166,7 +171,7 @@
 					id: "2403B452343F062D"
 					item: "ae2:drive"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					optional_task: true
 					type: "item"
 				}
@@ -179,7 +184,7 @@
 						tag: { }
 					}
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 				{
@@ -187,16 +192,16 @@
 					id: "70FCD3580393C79E"
 					item: "ae2:storage_bus"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 				{
 					consume_items: false
 					count: 16L
 					id: "53E8EDF96896A72B"
-					item: { Count: 16, id: "ae2:fluix_glass_cable" }
+					item: "ae2:fluix_glass_cable"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 				{
@@ -209,7 +214,7 @@
 				}
 			]
 			title: "Sistema AE2 Básico"
-			x: -12.5d
+			x: -9.5d
 			y: -4.0d
 		}
 		{
@@ -219,6 +224,8 @@
 				"7AC29AD9F7F9DE89"
 				"55F53AB24B9C3432"
 				"5C83928B48FB2EEA"
+				"149170E20633AF66"
+				"67C91D09D1FFD815"
 			]
 			description: [
 				"Para que seu &dSistema do AE2&r seja capaz de criar items automaticamente, é necessário ter a estrutura apropriada. Sem &9CPUs de Crafting&r &cé impossível&r criar items automaticamente, seja items processados em máquinas ou de crafting grid. Por isso começe fazendo &aCPUs de Crafting&r (&aStorage Units&r) de &c1&r, &e4&r ou &a16&rk para iniciar. Quanto &emaior&r o &btamanho&r da sua CPU, &9maior&r e &bmais complexos&r craftings ela consegue suportar."
@@ -242,7 +249,7 @@
 					id: "7B6A22AE78B66D0B"
 					item: "ae2:4k_crafting_storage"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 				{
@@ -251,7 +258,7 @@
 					id: "25FA3D6A613F7B0F"
 					item: "ae2:crafting_accelerator"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 				{
@@ -260,7 +267,7 @@
 					id: "1201CB3404CAB50B"
 					item: "ae2:pattern_provider"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 				{
@@ -269,7 +276,7 @@
 					id: "6550E1E7E132BED5"
 					item: "ae2:molecular_assembler"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 				{
@@ -277,7 +284,7 @@
 					id: "5FE338C5CD70E335"
 					item: "ae2:cable_pattern_provider"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 				{
@@ -285,7 +292,7 @@
 					id: "4DCF38076A475B59"
 					item: "ae2:16k_crafting_storage"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 				{
@@ -293,17 +300,20 @@
 					id: "55FEB335B960D8CF"
 					item: "ae2:pattern_encoding_terminal"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 			]
 			title: "Sistema de Crafting Automático Básico"
-			x: -11.0d
+			x: -8.0d
 			y: -4.0d
 		}
 		{
+			description: ["Ender Chests lhe permitirão transportar items Cross Dimension e ao longo de grandes distâncias. Se ligado ao Sistema do AE2 lhe permitirá receber items vindo de lugares muito distantes direto para o Sistema"]
 			id: "18035329AE40249A"
+			subtitle: "Ender Chest"
 			tasks: [{
+				consume_items: false
 				id: "439F765971C7FFA5"
 				item: {
 					Count: 1
@@ -313,12 +323,31 @@
 						owner: "all"
 					}
 				}
+				match_nbt: false
+				only_from_crafting: true
 				type: "item"
 			}]
-			x: 8.0d
-			y: -7.0d
+			title: "Transporte de Items Cross Dimension"
+			x: -18.5d
+			y: -6.0d
 		}
 		{
+			dependencies: [
+				"30E853C64AC38CA4"
+				"062ECFDC41C0E0DE"
+				"7AC29AD9F7F9DE89"
+				"55F53AB24B9C3432"
+				"5C83928B48FB2EEA"
+				"70F65307F87FA488"
+				"149170E20633AF66"
+				"67C91D09D1FFD815"
+			]
+			description: [
+				"-&6Extended Pattern Provider&r: &ePattern Provider&r com muito mais espaço interno para Patterns [&dx4&r mais espaço que o Pattern Provider Padrão do AE2] "
+				"-&dME P2P Tunnel&r: Transporta Canais fornecidos pela face de &9ME Controller&r Adjacente a ele para outro &dP2P Vinculado&r &6Na Mesma Frequência&r em outro lugar."
+				"-&bAdvanced Memory Card&r: &3Memory Card do AE2&r mas aprimorado, com &5GUI Própria&r e possibilidade de vincular P2Ps &9direto de sua GUI&r."
+				"-&5Extended Molecular Assembler&r: &3Molecular Assembler Aprimorado&r capaz de processar&d 8 tarefas de crafting simultaneamente&r"
+			]
 			icon: "expatternprovider:ex_molecular_assembler"
 			id: "6F2536A720181E1A"
 			rewards: [{
@@ -330,13 +359,14 @@
 				title: "Processamento Next Gen"
 				type: "toast"
 			}]
+			subtitle: "Melhorando o Sistema do AE2"
 			tasks: [
 				{
 					consume_items: false
 					id: "7976593CAA64E51A"
 					item: "expatternprovider:ex_pattern_provider"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 				{
@@ -344,16 +374,16 @@
 					id: "36196222B662E6BC"
 					item: "expatternprovider:ex_molecular_assembler"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 				{
 					consume_items: false
 					count: 2L
 					id: "0E05BD7309F82DDD"
-					item: { Count: 2, id: "ae2:me_p2p_tunnel" }
+					item: "ae2:me_p2p_tunnel"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 				{
@@ -368,7 +398,7 @@
 						}
 					}
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 				{
@@ -376,14 +406,98 @@
 					id: "64C1F2EDED3044EF"
 					item: "ae2:controller"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 			]
 			title: "Tornando o Sistema mais Robusto"
-			x: -9.5d
+			x: -6.5d
 			y: -4.0d
 		}
+		{
+			description: ["[\"Assim como um \" , { \"text\": \"Fluid Encapsulator\", \"underlined\": \"true\", \"color\":\"aqua\",\"bold\":\"true\",\"clickEvent\": { \"action\": \"change_page\", \"value\": \"5AFE5B23867C928D\" } }, \" o ME Caner tem a funcionalidade de encher Containers de Fluido com o Fluido Fornecido a ele. Porém, diferentemente do Fluid Encapsulator do Thermal Expansion, ele enche apenas Baldes\"] "]
+			id: "58063C92BF648B25"
+			subtitle: "Utilidade"
+			tasks: [{
+				id: "71F130DD1DE2C3BE"
+				item: "expatternprovider:caner"
+				type: "item"
+			}]
+			x: -17.0d
+			y: -6.0d
+		}
+		{
+			description: ["O ME IO Port permite que você movimente items em 2 direções no seu sistema, como por exemplo, dos HDs para a Rede e vice versa. Útil para Organização de HDs"]
+			id: "0E3C4503DA1F5DEA"
+			tasks: [{
+				id: "31C966331A4B7FA7"
+				item: "ae2:io_port"
+				type: "item"
+			}]
+			title: "Organizando HDs - Parte I"
+			x: -18.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0E3C4503DA1F5DEA"]
+			description: ["A Cell Workbench permite que você particione seus HDs, através da criação de um filtro para o HD que passará a aceitar somente items contidos em seu filtro. Útil para separar tipos de items diferentes entre HDs"]
+			id: "733A545F30D3A469"
+			subtitle: "Particionando HDs"
+			tasks: [{
+				id: "77042D5B6C5F6718"
+				item: "ae2:cell_workbench"
+				type: "item"
+			}]
+			title: "Organizando HDs - Parte II"
+			x: -17.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"7AC29AD9F7F9DE89"
+				"55F53AB24B9C3432"
+				"5C83928B48FB2EEA"
+				"70F65307F87FA488"
+			]
+			description: ["O Inscriber é a máquina do AE2 responsável pela fabricação de Circuitos e Processadores, que são amplamente usados no AE2"]
+			id: "149170E20633AF66"
+			subtitle: "Utilidade"
+			tasks: [{
+				id: "06CDDBA06FD9A169"
+				item: "ae2:inscriber"
+				type: "item"
+			}]
+			x: -12.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"149170E20633AF66"
+				"7AC29AD9F7F9DE89"
+				"55F53AB24B9C3432"
+				"5C83928B48FB2EEA"
+				"70F65307F87FA488"
+			]
+			description: ["O Extended Inscriber é um Inscriber aprimorado que possui suporte a 4 jobs de crafting simultaneamente nele"]
+			id: "67C91D09D1FFD815"
+			tasks: [{
+				id: "1AE837C86828BB97"
+				item: "expatternprovider:ex_inscriber"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -4.0d
+		}
+		{
+			id: "0462EFC5AC7ACA4E"
+			tasks: [{
+				id: "391FC940633CA61E"
+				item: "ae2:annihilation_plane"
+				type: "item"
+			}]
+			x: -15.5d
+			y: -2.5d
+		}
 	]
-	title: "Applied Energistics 2"
+	title: "AE2 - Começos"
 }

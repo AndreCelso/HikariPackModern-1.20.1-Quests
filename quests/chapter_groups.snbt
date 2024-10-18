@@ -2,5 +2,11 @@
 	chapter_groups: [
 		{ id: "455999BBFBEF424D", title: "Começos" }
 		{ id: "35520D5EE1C6AE96", title: "Mekanism" }
+		{ id: "7F298F3A58653C61", title: "Apotheosis" }
+		{ id: "6A64FD893155BC3E", title: "Industrial Forgoing" }
+		{ id: "5684DBC9C605DBF3", title: "Applied Energistics 2" }
+		{ id: "73D975CA3E22D3D7", title: "Sophisticated Core" }
+		{ id: "252BB708E7A55B17", title: "Thermal Expansion" }
+		{ id: "0A7DD7E798DF1611", title: "RFTools" }
 	]
 }

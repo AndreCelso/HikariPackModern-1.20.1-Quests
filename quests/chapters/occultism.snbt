@@ -135,58 +135,7 @@
 				"7F5FBE804EA53148"
 				"242F5C223BA3B36C"
 				"2C07D627583B7A94"
-			]
-			description: ["Jogue &dMadeira do Outro Mundo&r em um &5Fogo Místico&r e receba de volta &eCinzas do Outro Mundo&r"]
-			id: "30A964BFDC3F4479"
-			rewards: [{
-				description: ""
-				icon: "occultism:otherworld_ashes"
-				id: "57FA82C0F024A5E6"
-				title: "Burned, It's All Burnt Away, Burt to Pure White Ashes"
-				type: "toast"
-			}]
-			tasks: [{
-				consume_items: false
-				count: 12L
-				id: "66E190CECE80C8C6"
-				item: "occultism:otherworld_ashes"
-				match_nbt: false
-				only_from_crafting: false
-				type: "item"
-			}]
-			x: -3.0d
-			y: -8.0d
-		}
-		{
-			dependencies: ["2C07D627583B7A94"]
-			description: ["Consiga &9Outra Pedra&r ao Jogar &7Pedra Lisa&r do Vanilla no &dFogo Místico&r"]
-			id: "31189A9927099758"
-			rewards: [{
-				description: ""
-				icon: "occultism:otherstone"
-				id: "4F6E8F3E9E2F130C"
-				title: "Basalto do Outro Mundo"
-				type: "toast"
-			}]
-			tasks: [{
-				consume_items: false
-				count: 32L
-				id: "490BC898FB006D36"
-				item: "occultism:otherstone"
-				match_nbt: false
-				only_from_crafting: false
-				type: "item"
-			}]
-			x: -4.5d
-			y: -8.0d
-		}
-		{
-			dependencies: [
-				"7F5FBE804EA53148"
-				"242F5C223BA3B36C"
-				"2C07D627583B7A94"
-				"30A964BFDC3F4479"
-				"31189A9927099758"
+				"770D1C8FE88CC6B1"
 			]
 			description: ["Primeiro de Tudo, pegue as &dOutra Pedras&r que você obteve na última quest e Coloque-as na &eFornalha&r, para se transformarem em &bOutra Pedra Queimada&r. Depois misture &dOutra Pedra Queimada&r na &eCrafting Table&r com &bCinzas do Outro Mundo&r para criar um &6Giz Branco Impuro&r. Por Fim, jogue o &6Giz Impuro&r no &dFogo Místico&r para &bPurificá-lo&r. O Apagador serve para vcoê apagar os símbolos colocados em lugar errado no chão"]
 			icon: {
@@ -266,7 +215,6 @@
 		{
 			dependencies: [
 				"1A75C0408EDEC843"
-				"30A964BFDC3F4479"
 				"242F5C223BA3B36C"
 				"7F5FBE804EA53148"
 				"2C07D627583B7A94"
@@ -552,6 +500,64 @@
 			}]
 			title: "Ritual de Eziveus"
 			x: 7.5d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"2C07D627583B7A94"
+				"242F5C223BA3B36C"
+				"7F5FBE804EA53148"
+			]
+			description: ["Otherstones são um dos recursos primordiais do Occultism"]
+			id: "770D1C8FE88CC6B1"
+			rewards: [{
+				description: ""
+				icon: "occultism:otherstone"
+				id: "759D76ABA5A095D5"
+				title: "Consiga Otherstone"
+				type: "toast"
+			}]
+			subtitle: "Otherstone"
+			tasks: [{
+				consume_items: false
+				count: 32L
+				id: "6B9E156CC01CC8EB"
+				item: "occultism:otherstone"
+				match_nbt: false
+				only_from_crafting: false
+				title: "Consiga 32 Otherstones"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"770D1C8FE88CC6B1"
+				"2C07D627583B7A94"
+				"242F5C223BA3B36C"
+				"7F5FBE804EA53148"
+			]
+			id: "4449A5B631F02EE7"
+			rewards: [{
+				description: ""
+				icon: "occultism:otherworld_ashes"
+				id: "6D5AAC8DB7B5839A"
+				title: "Consiga Otherworld Ashes"
+				type: "toast"
+			}]
+			subtitle: "Otherworld Ashes"
+			tasks: [{
+				consume_items: false
+				count: 16L
+				id: "75AFE07B92383446"
+				item: "occultism:otherworld_ashes"
+				match_nbt: false
+				only_from_crafting: false
+				title: "Consiga 16 Otherworld Ashes"
+				type: "item"
+			}]
+			x: -3.0d
 			y: -8.0d
 		}
 	]

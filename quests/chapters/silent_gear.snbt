@@ -79,7 +79,7 @@
 					type: "item"
 				}
 			]
-			title: "Vermelho com Sangue II"
+			title: "Vermelho como Sangue II"
 			x: -6.0d
 			y: -0.5d
 		}
@@ -98,7 +98,7 @@
 				title: "Transformando Materiais em Ligas"
 				type: "toast"
 			}]
-			subtitle: "Fundidora de Ligas Metálicas"
+			subtitle: "Fabrique uma Fundidora de Ligas Metálicas"
 			tasks: [{
 				consume_items: false
 				id: "7F8AFA5FB5473A36"
@@ -107,6 +107,7 @@
 				only_from_crafting: true
 				type: "item"
 			}]
+			title: "Fundidora de Ligas"
 			x: -4.5d
 			y: -0.5d
 		}
@@ -307,7 +308,7 @@
 				title: "Gotta Go Fast - Sanic"
 				type: "toast"
 			}]
-			subtitle: "Azure Electrum"
+			subtitle: "Descubra Azure Electrum"
 			tasks: [{
 				consume_items: false
 				id: "1542C5B9B8A4454A"
@@ -399,7 +400,6 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["731F31702DBF898D"]
 			description: [
 				"&9Sword Blade&r - &9Refined Obsidian&r do &aMekanism&r (no Tier &dMAX&r)"
 				"Tip - &9Lapis Lazuri&r para &9Luck&r (Não é &9Looting&r) (Tier &dMAX&r)"
@@ -411,24 +411,16 @@
 			id: "14E76204210BCDFF"
 			shape: "pentagon"
 			subtitle: "Setup Espada"
-			tasks: [
-				{
-					icon: "silentgear:sword_blueprint"
-					id: "125E33C8D86DD3CE"
-					title: "Boa espada Early Game"
-					type: "custom"
-				}
-				{
-					id: "709DF8BF53983CB2"
-					title: "Estou Ciente"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "709DF8BF53983CB2"
+				title: "Estou Ciente"
+				type: "checkmark"
+			}]
+			title: "Top Espada Early Game"
 			x: -9.0d
 			y: -2.5d
 		}
 		{
-			dependencies: ["731F31702DBF898D"]
 			description: [
 				"Pickaxe Head - &1Azure Electrum&r (Tier &dMAX&r) para &bMining Speed&r Alto"
 				"Tool Rod - &bLiga de Aço de Tyrian&r ( 1x &5Aço de Tyrian&r + 2x &4Aço Carmesim&r + 1x &9Azure Electrum&r) para mais durabilidade (Tier &dMAX&r)"
@@ -446,19 +438,12 @@
 				type: "toast"
 			}]
 			shape: "hexagon"
-			tasks: [
-				{
-					icon: "silentgear:pickaxe_blueprint"
-					id: "6916CCF8D6DD043E"
-					title: "Boa Picareta"
-					type: "custom"
-				}
-				{
-					id: "247F85DD07B23644"
-					title: "Estou Ciente"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "247F85DD07B23644"
+				title: "Estou Ciente"
+				type: "checkmark"
+			}]
+			title: "Boa Picareta Early Game"
 			x: -7.5d
 			y: -2.5d
 		}
@@ -575,6 +560,7 @@
 				only_from_crafting: true
 				type: "item"
 			}]
+			title: "Reciclando"
 			x: 3.0d
 			y: -0.5d
 		}

@@ -5,7 +5,7 @@
 	group: "455999BBFBEF424D"
 	icon: "mysticalagriculture:honey_seeds"
 	id: "33FC8A3723E3C8B7"
-	order_index: 8
+	order_index: 7
 	quest_links: [ ]
 	quests: [
 		{
@@ -121,8 +121,11 @@
 					type: "item"
 				}
 				{
+					consume_items: false
 					id: "7DF5834B5D27F394"
 					item: "minecraft:lily_pad"
+					match_nbt: false
+					only_from_crafting: false
 					type: "item"
 				}
 				{
@@ -376,15 +379,21 @@
 					type: "item"
 				}
 				{
+					consume_items: false
 					count: 4L
 					id: "2D93DCA6B1776F56"
-					item: { Count: 4, id: "ae2:fluix_crystal" }
+					item: "ae2:fluix_crystal"
+					match_nbt: false
+					only_from_crafting: false
 					type: "item"
 				}
 				{
+					consume_items: false
 					count: 4L
 					id: "1AA97E6912FE6BFB"
-					item: { Count: 4, id: "mysticalagriculture:imperium_essence" }
+					item: "mysticalagriculture:imperium_essence"
+					match_nbt: false
+					only_from_crafting: false
 					type: "item"
 				}
 				{
@@ -392,7 +401,7 @@
 					id: "02F28AFDF61478C1"
 					item: "mysticalagriculture:prosperity_seed_base"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 			]
@@ -474,9 +483,9 @@
 					consume_items: false
 					count: 4L
 					id: "640565134CE07D1F"
-					item: { Count: 4, id: "mysticalagriculture:tertium_essence" }
+					item: "mysticalagriculture:tertium_essence"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 				{
@@ -484,7 +493,7 @@
 					id: "6354F3740D67CCBB"
 					item: "mysticalagriculture:prosperity_seed_base"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 			]
@@ -520,9 +529,9 @@
 					consume_items: false
 					count: 4L
 					id: "1010533619A476D2"
-					item: { Count: 4, id: "mysticalagriculture:imperium_essence" }
+					item: "mysticalagriculture:imperium_essence"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 				{
@@ -530,7 +539,7 @@
 					id: "4E0D4512D839A760"
 					item: "mysticalagriculture:prosperity_seed_base"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 				{
@@ -575,9 +584,9 @@
 					consume_items: false
 					count: 4L
 					id: "55F7D373B18A57DB"
-					item: { Count: 4, id: "mysticalagriculture:supremium_essence" }
+					item: "mysticalagriculture:supremium_essence"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 				{
@@ -594,7 +603,7 @@
 					id: "41F1A75671121D9C"
 					item: "mysticalagriculture:prosperity_seed_base"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 			]
@@ -630,18 +639,18 @@
 					consume_items: false
 					count: 4L
 					id: "102BE9053CFF5C3F"
-					item: { Count: 4, id: "mysticalagriculture:supremium_essence" }
+					item: "mysticalagriculture:supremium_essence"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 				{
 					consume_items: false
 					count: 4L
 					id: "14183F6F75BB5376"
-					item: { Count: 4, id: "minecraft:netherite_ingot" }
+					item: "minecraft:netherite_ingot"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 				{
@@ -649,7 +658,7 @@
 					id: "67B2976A23097F48"
 					item: "mysticalagriculture:prosperity_seed_base"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 			]
@@ -694,9 +703,9 @@
 					consume_items: false
 					count: 4L
 					id: "4C027800CDC10801"
-					item: { Count: 4, id: "mysticalagriculture:imperium_essence" }
+					item: "mysticalagriculture:imperium_essence"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 				{
@@ -704,7 +713,7 @@
 					id: "03782CB40D6B88D1"
 					item: "mysticalagriculture:prosperity_seed_base"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 			]
@@ -740,7 +749,7 @@
 					consume_items: false
 					count: 4L
 					id: "385F7C12C284014C"
-					item: { Count: 4, id: "minecraft:redstone" }
+					item: "minecraft:redstone"
 					match_nbt: false
 					only_from_crafting: false
 					type: "item"
@@ -749,9 +758,9 @@
 					consume_items: false
 					count: 4L
 					id: "2DAC5DCE33B36DBE"
-					item: { Count: 4, id: "mysticalagriculture:tertium_essence" }
+					item: "mysticalagriculture:tertium_essence"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 				{
@@ -759,7 +768,7 @@
 					id: "507771138F93A1F9"
 					item: "mysticalagriculture:prosperity_seed_base"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 			]
@@ -792,18 +801,21 @@
 					type: "item"
 				}
 				{
+					consume_items: false
 					count: 4L
 					id: "325DCE4AA8DDE98D"
-					item: { Count: 4, id: "minecraft:glowstone_dust" }
+					item: "minecraft:glowstone_dust"
+					match_nbt: false
+					only_from_crafting: false
 					type: "item"
 				}
 				{
 					consume_items: false
 					count: 4L
 					id: "7115242ADD41BC8C"
-					item: { Count: 4, id: "mysticalagriculture:tertium_essence" }
+					item: "mysticalagriculture:tertium_essence"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 				{
@@ -811,7 +823,7 @@
 					id: "5AAA35F925DB8DBE"
 					item: "mysticalagriculture:prosperity_seed_base"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 			]
@@ -836,23 +848,29 @@
 			subtitle: "Emerald Seed"
 			tasks: [
 				{
+					consume_items: false
 					id: "1ED1080B833100F6"
 					item: "mysticalagriculture:emerald_seeds"
+					match_nbt: false
+					only_from_crafting: false
 					type: "item"
 				}
 				{
 					consume_items: false
 					count: 4L
 					id: "6CF6BDF674D3BE21"
-					item: { Count: 4, id: "mysticalagriculture:supremium_essence" }
+					item: "mysticalagriculture:supremium_essence"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 				{
+					consume_items: false
 					count: 4L
 					id: "2A065C934A9BB6A2"
-					item: { Count: 4, id: "minecraft:emerald" }
+					item: "minecraft:emerald"
+					match_nbt: false
+					only_from_crafting: false
 					type: "item"
 				}
 				{
@@ -860,7 +878,7 @@
 					id: "1CCD12E67DDDD1BE"
 					item: "mysticalagriculture:prosperity_seed_base"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 			]
@@ -896,18 +914,18 @@
 					consume_items: false
 					count: 4L
 					id: "01F23645D2089E42"
-					item: { Count: 4, id: "mysticalagriculture:dye_agglomeratio" }
+					item: "mysticalagriculture:dye_agglomeratio"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 				{
 					consume_items: false
 					count: 4L
 					id: "4806E03954292445"
-					item: { Count: 4, id: "mysticalagriculture:prudentium_essence" }
+					item: "mysticalagriculture:prudentium_essence"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 				{
@@ -915,7 +933,7 @@
 					id: "334A75746972CBDD"
 					item: "mysticalagriculture:prosperity_seed_base"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 			]
@@ -948,18 +966,21 @@
 					type: "item"
 				}
 				{
+					consume_items: false
 					count: 4L
 					id: "45D53645CF4CBD88"
-					item: { Count: 4, id: "minecraft:quartz" }
+					item: "minecraft:quartz"
+					match_nbt: false
+					only_from_crafting: false
 					type: "item"
 				}
 				{
 					consume_items: false
 					count: 4L
 					id: "6A93B24B8A23EE9E"
-					item: { Count: 4, id: "mysticalagriculture:tertium_essence" }
+					item: "mysticalagriculture:tertium_essence"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 				{
@@ -967,7 +988,7 @@
 					id: "2C33E571E3460645"
 					item: "mysticalagriculture:prosperity_seed_base"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 			]
@@ -1014,7 +1035,7 @@
 					id: "60C9A787981C2606"
 					item: "mysticalagriculture:supremium_essence"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 				{
@@ -1022,7 +1043,7 @@
 					id: "181E778EE36AE2A6"
 					item: "mysticalagriculture:prosperity_seed_base"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 			]
@@ -1071,17 +1092,17 @@
 					consume_items: false
 					count: 4L
 					id: "17EDDC4ED1F0F6CA"
-					item: { Count: 4, id: "mysticalagriculture:imperium_essence" }
+					item: "mysticalagriculture:imperium_essence"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "13BC61795C1EDDF3"
-					item: { Count: 4, id: "mysticalagriculture:prosperity_seed_base" }
+					item: "mysticalagriculture:prosperity_seed_base"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 			]
@@ -1143,9 +1164,12 @@
 					type: "item"
 				}
 				{
+					consume_items: false
 					count: 4L
 					id: "26D25F9B8212E3B3"
-					item: { Count: 4, id: "minecraft:iron_ingot" }
+					item: "minecraft:iron_ingot"
+					match_nbt: false
+					only_from_crafting: false
 					type: "item"
 				}
 			]
@@ -1274,7 +1298,7 @@
 					id: "2671FA7CCCF781BE"
 					item: "mysticalagriculture:soulium_seed_base"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 				{
@@ -1342,7 +1366,7 @@
 					id: "7CCE7DCDA30529FF"
 					item: "mysticalagriculture:soulium_seed_base"
 					match_nbt: false
-					only_from_crafting: true
+					only_from_crafting: false
 					type: "item"
 				}
 			]
@@ -1354,6 +1378,7 @@
 			description: ["O &dGrowth Accelerator&r &cAcelera&r o &eCrescimento de Crops&r do &bMystical Agriculture&r em um raio (&3Veja a Tooltip&r) e quanto melhor o &6Tier&r, &2mais rápido&r as plantas crescem e &1maior&r é o raio. Este é o Tier &a1&r"]
 			hide_dependency_lines: true
 			id: "413BC9DFDCDDB029"
+			optional: true
 			rewards: [{
 				description: ""
 				icon: "mysticalagriculture:inferium_growth_accelerator"
@@ -1378,6 +1403,7 @@
 			description: ["O &dGrowth Accelerator&r &cAcelera&r o &eCrescimento de Crops&r do &bMystical Agriculture&r em um raio (&3Veja a Tooltip&r) e quanto melhor o &6Tier&r, &2mais rápido&r as plantas crescem e &1maior&r é o raio. Este é o Tier &22&r"]
 			hide_dependency_lines: true
 			id: "0111ED82436B21A6"
+			optional: true
 			subtitle: "Growth Accelerator"
 			tasks: [{
 				consume_items: false
@@ -1394,6 +1420,7 @@
 			dependencies: ["7305E40E78D85CEE"]
 			hide_dependency_lines: true
 			id: "3F6F1BE627049203"
+			optional: true
 			rewards: [{
 				description: ""
 				icon: "mysticalagriculture:tertium_growth_accelerator"
@@ -1416,6 +1443,7 @@
 			dependencies: ["2D327BD55796D3C4"]
 			hide_dependency_lines: true
 			id: "21D487EC4578C9E8"
+			optional: true
 			rewards: [{
 				description: ""
 				icon: "mysticalagriculture:imperium_growth_accelerator"
@@ -1438,6 +1466,7 @@
 			dependencies: ["763D3B797A6F686F"]
 			hide_dependency_lines: true
 			id: "1519839FB38D9377"
+			optional: true
 			rewards: [{
 				description: ""
 				icon: "mysticalagriculture:supremium_growth_accelerator"

@@ -1,0 +1,173 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ae2__avanado"
+	group: "5684DBC9C605DBF3"
+	icon: "megacells:accumulation_processor"
+	id: "1015198A667F2E2E"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Esta trilha lhe apresentará os principais items de interesse do Addon do Applied Energistics 2, o MEGA CELLS"]
+			id: "37F039C5E488FD01"
+			tasks: [{
+				id: "58E61A8790392071"
+				title: "Trilha Mega Cells"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"0AFE28CEDA2031AD"
+				"51C8222179120CD0"
+				"2BBCF90BC49842F1"
+				"1765B9F6CCD24A15"
+				"67BDD36137D91456"
+				"37F039C5E488FD01"
+			]
+			id: "08C610303ACDD37C"
+			tasks: [{
+				consume_items: false
+				id: "142BEDBDC0B478F5"
+				item: "megacells:mega_crafting_accelerator"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["37F039C5E488FD01"]
+			description: ["Sky Steel é a liga base do Mega Cells. os principais dispositivos do MEGA CELLS para o AE2 são feitos com ele"]
+			id: "1765B9F6CCD24A15"
+			subtitle: "Sky Steel"
+			tasks: [{
+				consume_items: false
+				id: "7F57D6858525913A"
+				item: "megacells:sky_steel_ingot"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"1765B9F6CCD24A15"
+				"37F039C5E488FD01"
+			]
+			description: ["O Inscriber Accumulation Press é a prensa utilizada para fazer os circuitos do Mega Cells, que serão usados para fazer o processador do Mega Cells, utilizado em vários craftings. A Forma mais simples de se obtê-lo é no Inscriber (Veja JEI)"]
+			id: "2BBCF90BC49842F1"
+			subtitle: "Utilidade"
+			tasks: [{
+				id: "69121B623878D566"
+				item: "megacells:accumulation_processor_press"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"2BBCF90BC49842F1"
+				"1765B9F6CCD24A15"
+				"37F039C5E488FD01"
+			]
+			description: ["Circuito feito com Sky Steel, usado na produção de"]
+			id: "67BDD36137D91456"
+			tasks: [{
+				id: "3A36FB7AC6D87F8A"
+				item: "megacells:printed_accumulation_processor"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"67BDD36137D91456"
+				"2BBCF90BC49842F1"
+				"1765B9F6CCD24A15"
+				"37F039C5E488FD01"
+			]
+			id: "51C8222179120CD0"
+			tasks: [{
+				id: "65D65410BBCBD376"
+				item: "megacells:accumulation_processor"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"51C8222179120CD0"
+				"2BBCF90BC49842F1"
+				"67BDD36137D91456"
+				"1765B9F6CCD24A15"
+				"37F039C5E488FD01"
+			]
+			id: "0AFE28CEDA2031AD"
+			tasks: [{
+				consume_items: false
+				id: "37A11DD0C480C5EB"
+				item: "megacells:mega_crafting_unit"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			description: ["Com o ME Requester você pode definir para o seu sistema do AE2 deixar uma quantidade de certo item sempre disponível para você no sistema, e sempre que esse item estiver em uma quantidade abaixo do especificado, o sistema automaticamente requisita o suficiente para manter aquele item nos níveis especificados. Também é possivel especificar a quantidade de items que cada request fará"]
+			id: "33CDEFDF583F5C9E"
+			subtitle: "ME Requester"
+			tasks: [{
+				consume_items: false
+				id: "4255CD18E6A181D9"
+				item: "merequester:requester"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "Passivação Automática"
+			x: -5.5d
+			y: 0.5d
+		}
+		{
+			description: ["Ficou sem espaço para guardar seus HDs? o ExtendedAE tem a solução. O Extended ME Drive possui o dobro da capacidade de um ME Drive comum, permitindo que você guarde muito mais HDs em um Gabinete Extendido do que em um Gabinete Comum"]
+			id: "65034312042770EB"
+			subtitle: "Extended ME Drive"
+			tasks: [{
+				id: "404A1C83D3070407"
+				item: "expatternprovider:ex_drive"
+				type: "item"
+			}]
+			title: "Servidor do Google"
+			x: -4.0d
+			y: 0.5d
+		}
+		{
+			id: "2805ACD19CA1119F"
+			subtitle: "Oia que fofinho!"
+			tasks: [{
+				consume_items: false
+				id: "46953817133EE6D6"
+				item: "expatternprovider:fishbig"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "Cirnium"
+			x: -2.5d
+			y: 0.5d
+		}
+	]
+	title: "AE2 - Avançado"
+}

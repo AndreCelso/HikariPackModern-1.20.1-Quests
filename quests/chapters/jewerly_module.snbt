@@ -1,0 +1,503 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "jewerly_module"
+	group: "7F298F3A58653C61"
+	icon: {
+		Count: 1
+		id: "apotheosis:gem"
+		tag: {
+			affix_data: {
+				rarity: "apotheosis:ancient"
+			}
+			gem: "apotheosis:overworld/royalty"
+		}
+	}
+	id: "3CEA7BE195C0452C"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"6A9333E97867B615"
+				"19F61A76E6F8B774"
+			]
+			description: ["A &aSalvaging Table&r permite que você desmantele gemas e &bEquipamento com Afixos dos Apotheosis&r em &9Gem Dusts&r para gemas e &eMateriais especiais&r como &dArcane Sands&r ou &6Godforged Pearl&r no caso de equipamentos . Cada material devolvido depende do &dNível de Raridade&r do Equipamento Desmontado"]
+			icon: "apotheosis:salvaging_table"
+			id: "5B354B3A0D8FF5E7"
+			subtitle: "Salvaging Table"
+			tasks: [
+				{
+					consume_items: false
+					id: "11DE8F7E51029BC6"
+					item: "apotheosis:salvaging_table"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "373058BFA1E21587"
+					item: "apotheosis:rare_material"
+					match_nbt: false
+					only_from_crafting: false
+					optional_task: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6B1768E44954D6FA"
+					item: "apotheosis:epic_material"
+					match_nbt: false
+					only_from_crafting: false
+					optional_task: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "35CEA2B14BA065CE"
+					item: "apotheosis:uncommon_material"
+					match_nbt: false
+					only_from_crafting: false
+					optional_task: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "5FFC398FD60C0397"
+					item: "apotheosis:common_material"
+					match_nbt: false
+					only_from_crafting: false
+					optional_task: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "65EEEE44DFA53A47"
+					item: "apotheosis:mythic_material"
+					match_nbt: false
+					only_from_crafting: false
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Desmantelando, Reciclando e Lucrando"
+			x: -4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["19F61A76E6F8B774"]
+			description: ["Para conseguir &9Gem Dust&r inicialmente, fabrique uma &eBigorna&r, drope algumas &bgemas&r no chão e derrube a &eBigorna&r sobre elas à pelo menos 1 bloco de altura das gemas e elas se transformarão em &9Gem Dust (Pó de Gema)&r"]
+			icon: "apotheosis:gem_dust"
+			id: "6A9333E97867B615"
+			subtitle: "Gem Dust"
+			tasks: [
+				{
+					consume_items: false
+					id: "099AB6EAC870E0B1"
+					item: "minecraft:anvil"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 2L
+					id: "51663318D22D0D0D"
+					item: "apotheosis:gem_dust"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "Consiga Gem Dust"
+			x: -6.0d
+			y: 3.5d
+		}
+		{
+			description: ["Este Capítulo de Quests aborda o &bMódulo de Gemas \\& Afixos do Apotheosis&r. Sua principal forma de ficar &9Imortal&r e &aOnipotente&r em seu próprio Mundo! Veja como fazer isso seguindo a linha de quests"]
+			id: "19F61A76E6F8B774"
+			subtitle: "Apotheosis Jewerly Path"
+			tasks: [{
+				id: "64F9E5CD64326CBE"
+				title: "Caminho das Pedras"
+				type: "checkmark"
+			}]
+			x: -7.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"5B354B3A0D8FF5E7"
+				"6A9333E97867B615"
+				"19F61A76E6F8B774"
+			]
+			description: [
+				"&6Barrels + Advanced Magnet Upgrades&r: Cada Barrel capturará tipos de items diferentes e rejeitará outros. Um dos baús atrairá apenas gemas e rejeitará qualquer outro item enquanto o outro atrairá quaisquer outros items e rejeitará apenas as gemas"
+				"&aStorage Buses&r + &9Quantum Ring&r: Um dos &aStorage Buses&r com &bFuzzy Card&r no modo [&7Match Any&r] será ligado direto à um &9Quantum Ring&r para acesso direto às gemas remotamente sem que elas se acumulem no sistema, o que seria problemático. O Outro &aStorage Bus&r será usado no &6Outro Barrel&r de Equipamentos do Apotheosis para"
+				"separar quais itens irão para o lixo e quais serão enviados para o Sistema via Ender Chest "
+				"&dDreadful Dirt&r: Acelerará o Spawn de Endermans na Farm"
+				"&eElevadores&r: Facilitarão o acesso entre Piso Superior e Inferior da Farm"
+				"&6Desmagnetizador&r: Evitará que os Magnets do Player puxem items indesejados dentro da área da farm"
+				"&cTag Bus&r: Descarte de Mochilas dos Endermans"
+				"Calcite: Bloco de Construção da Estrutura"
+				"&7Trash&r: Void de Items Indesejados"
+			]
+			icon: "enderio:enderman_head"
+			id: "55D5718C6D48EE1C"
+			rewards: [{
+				command: "/tellraw @p [\"\",{\"text\":\"Clique Aqui para Assistir ao Tutorial\",\"color\":\"lime\",\"bold\":true,\"underlined\":true,\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://youtu.be/nh8voJScSbw?si=dfdvUQAVz65f9nyd\"}}] "
+				id: "624832F218FBD64E"
+				title: "Assista ao Tutorial"
+				type: "command"
+			}]
+			subtitle: "Tutorial"
+			tasks: [
+				{
+					id: "7AB1CD43D0759BBB"
+					title: "Faça uma Farm de Enderman Vanilla no The End"
+					type: "checkmark"
+				}
+				{
+					consume_items: false
+					count: 2L
+					id: "2F63D1395D74CD57"
+					item: {
+						Count: 2
+						id: "sophisticatedstorage:netherite_barrel"
+						tag: {
+							woodType: "mangrove"
+						}
+					}
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 2L
+					id: "2F69F444EF68F75D"
+					item: { Count: 2, id: "sophisticatedbackpacks:advanced_magnet_upgrade" }
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "1C1F7CD243690906"
+					item: "ae2:fuzzy_card"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 16L
+					id: "70A615A246638245"
+					item: { Count: 16, id: "ae2:quantum_ring" }
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 2L
+					id: "782D1319998F166D"
+					item: { Count: 2, id: "ae2:quantum_link" }
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 2L
+					id: "518B48CFF6A76D62"
+					item: "ae2:storage_bus"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "21C7C051AF688A2F"
+					item: {
+						Count: 1
+						id: "enderchests:ender_chest"
+						tag: {
+							code: "000"
+							owner: "all"
+						}
+					}
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					id: "615CB2A47A059295"
+					item: "trashcans:item_trash_can"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "0990A3C43D8402CA"
+					item: "expatternprovider:tag_export_bus"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7F210E6CC4487020"
+					item: "ae2:export_bus"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "7477AF6EB4B08E36"
+					item: { Count: 4, id: "ae2:speed_card" }
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "434675AF63931903"
+					item: "mob_grinding_utils:dreadful_dirt"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "4D63B4E017895C90"
+					item: "simplemagnets:advanced_demagnetization_coil"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 2L
+					id: "4E46898FA8FDDACE"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "elevatorid:elevators"
+						}
+					}
+					match_nbt: false
+					only_from_crafting: false
+					title: "Any #elevatorid:elevators"
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2A7596766578FD16"]
+			id: "2418BDB7DF129E97"
+			tasks: [{
+				advancement: "apotheosis:affix/ancient_gem"
+				criterion: ""
+				icon: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:ancient"
+						}
+						gem: "apotheosis:core/warlord"
+					}
+				}
+				id: "40793AAAD2546AD5"
+				title: "Consiga sua Primeira Gema Perfeita do Apotheosis"
+				type: "advancement"
+			}]
+			title: "Consiga sua Primeira Gema Perfeita do Apotheosis"
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"55D5718C6D48EE1C"
+				"5B354B3A0D8FF5E7"
+				"6A9333E97867B615"
+				"19F61A76E6F8B774"
+			]
+			description: ["Luck difere de Fortuna ou Looting porque ela afeta a Probabilidade de Drops Raros acontecerem e não a quantidade de drops no geral. Ideal para acelerar o drop de gemas de alto nível"]
+			icon: "ars_nouveau:glyph_fortune"
+			id: "10FA93A65D8AC441"
+			subtitle: "Setup para Luck"
+			tasks: [
+				{
+					id: "109C1F4F0D24F4F5"
+					item: "mysticalagriculture:luck_iii_augment"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "1E48480E3C61D7DB"
+					item: {
+						Count: 1
+						id: "mysticalagriculture:supremium_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+					only_from_crafting: false
+					optional_task: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "09E482271813B0A9"
+					item: {
+						Count: 1
+						id: "mysticalagriculture:supremium_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+					only_from_crafting: false
+					optional_task: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "4F38422D37C3FBBD"
+					item: {
+						Count: 1
+						id: "mysticalagriculture:supremium_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+					only_from_crafting: false
+					optional_task: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "61B45C8F5518823D"
+					item: {
+						Count: 1
+						id: "mysticalagriculture:supremium_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+					only_from_crafting: false
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Setup de Luck III para Farmar Gemas"
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"10FA93A65D8AC441"
+				"55D5718C6D48EE1C"
+				"5B354B3A0D8FF5E7"
+				"6A9333E97867B615"
+				"19F61A76E6F8B774"
+			]
+			description: ["É nesta mesa em que você aprimora suas gemas, subindo-as de um Nível de Raridade para outro. Uma Gema Perfeita é feita da Combinação de 2 Gemas Flawless e pelo menos um dos 3 requisitos de Materiais Especiais do Apotheosis (varia de acordo com o Nível da Gema). Quanto mais alta for a raridade da Gema, melhor os bônus que ela te fornece"]
+			id: "2A7596766578FD16"
+			subtitle: "Gem Cutting"
+			tasks: [
+				{
+					advancement: "apotheosis:affix/gem_cut"
+					criterion: ""
+					id: "1A08AF402D3E01AE"
+					title: "Use uma Gem Cutting Table para lapidar uma Gema"
+					type: "advancement"
+				}
+				{
+					consume_items: false
+					id: "685F67B428288CC1"
+					item: "apotheosis:gem_cutting_table"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "Lapidando Gemas"
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"4ECC9844C7099540"
+				"2A7596766578FD16"
+			]
+			description: ["A Reforging Table é o conferirá aos seus equipamentos de Uso Principais, Afixos do Apotheosis, com suas séries de Bônus e feitos. O Ideal é você Afixar Armaduras Robustas e End Game como a MekaSuit do Mekanism. Fazendo isso você terá todas as vantagens da MekaSuit, somadas aos bonus do Apotheosis. Também é Possível afixar Armas, sendo o recomendado Afixar um Allthemodium Alloy Axe"]
+			icon: "apotheosis:reforging_table"
+			id: "724644DBA08A38F4"
+			tasks: [
+				{
+					consume_items: false
+					id: "37978A82CE88B3EB"
+					item: "apotheosis:reforging_table"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					advancement: "apotheosis:affix/mythic"
+					criterion: ""
+					icon: "apotheosis:mythic_material"
+					id: "6689EF89EB0E2EBE"
+					title: "Consiga um Item com Afixo de Nível Mítico"
+					type: "advancement"
+				}
+			]
+			title: "Reforjando Afixos"
+			x: 1.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["724644DBA08A38F4"]
+			description: ["A Augmentation Table permite que você Substituir um de seus bonus do Afixo por outro no Ciclo de Bonus ou Aprimorar ao máximo um Bônus Existente"]
+			id: "713C63C4EB0972EB"
+			tasks: [{
+				consume_items: false
+				id: "437059AED618526B"
+				item: "apotheosis:augmenting_table"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "Reciclando Afixos"
+			x: 3.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"2418BDB7DF129E97"
+				"713C63C4EB0972EB"
+			]
+			description: ["Pegue seu melhor equipamento, suas melhores Gemas e que começe a Festa"]
+			icon: "minecraft:smithing_table"
+			id: "0281F6E4CCE938F7"
+			tasks: [{
+				id: "3D08E46C66358F28"
+				title: "Afixe uma Gema Perfeita em um item com Afixo"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: 2.0d
+		}
+	]
+	title: "Jewerly Module"
+}
