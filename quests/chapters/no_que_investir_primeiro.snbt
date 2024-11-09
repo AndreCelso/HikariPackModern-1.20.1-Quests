@@ -286,7 +286,6 @@
 		{
 			dependencies: ["4782948A24DD7717"]
 			description: ["&dFerro Carmesim&r é um material primordial para o &9Silent Gear&r, é a partir dele que você fará ligas ainda mais poderosas neste mod"]
-			hide: true
 			id: "30ABE5C4A11FD0DA"
 			rewards: [{
 				id: "1544D057F81A3C75"
@@ -333,7 +332,6 @@
 		{
 			dependencies: ["4782948A24DD7717"]
 			description: ["Pra se fazer um omelete é preciso quebrar alguns ovos. Pra continuar a progressão você vai ter que matar alguns blazes para obter Blaze Rod"]
-			hide: true
 			id: "757FDA8015B193D6"
 			rewards: [{
 				id: "5D126C6131B1FBDB"
@@ -974,7 +972,6 @@
 		{
 			dependencies: ["4AF141BC1EBDC358"]
 			description: ["Com o &fUpgrade de Ferro&r da &eMochila do Sophisticated Backpacks&r, você terá &amais espaço&r para &2items&r e &caddons&r utilitários da mochila"]
-			hide: true
 			id: "4E1E8BFEA4924D20"
 			rewards: [{
 				description: ""
